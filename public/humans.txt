@@ -1,0 +1,43 @@
+        _   ___ ___ ___ _____ _   _ ___ ___
+       /_\ | _ \ __| _ \_   _| | | | _ \ __|
+      / _ \|  _/ _||   / | | | |_| |   / _|
+     /_/ \_\_| |___|_|_\ |_|  \___/|_|_\___|
+              S C I E N C E   I N N O V A T O R S
+
+/* THE COMPANY */
+    President & Founder: Cave Johnson
+    Personal Secretary to the President: Caroline
+    Motto: We Do What We Must Because We Can
+    Location: The Enrichment Center, Test Shaft 09, Upper Peninsula, Michigan
+    Established: 1943, as Aperture Fixtures
+    Telephone: ENrichment 9-0943
+    Cable: APERTURE UPMICH
+
+/* THIS PUBLICATION */
+    Edition: Spring 1957
+    Form: ASI-1
+    Printing: 40M copies, Enrichment Center Press
+    Typefaces: a geometric sans, a text serif, a typewriter, and a didone
+               for the advertising, because the advertising must sell.
+    Photography: none. The Art Department was reorganised into the
+               Materials Department in the spring and did not come back.
+
+/* WITH THANKS */
+    To the 1,247 men and women of the Enrichment Center.
+    To the volunteers, all of them, wherever they ended up.
+    To Greg, who cleans the reactor room and has never once complained.
+
+/* A NOTE FROM THE ACTUAL AUTHORS */
+    This is a fan work. Portal, Portal 2, Aperture Science, Cave Johnson,
+    GLaDOS and everything else worth loving about all of the above are the
+    property of Valve Corporation. Nobody here is affiliated with Valve.
+    Nobody here has been asked to be. We just liked the shower curtains.
+
+    Built with Next.js. Hosted on Vercel. No images were harmed, or indeed
+    used — every mark on this site is drawn in SVG or faked in CSS.
+
+/* IF YOU HAVE READ THIS FAR */
+    Try /terminal.
+    Try typing a word — any word — on any page. Some of them are doors.
+    Try the old sequence. Up, up, down, down, left, right, left, right, B, A.
+    Try printing a page. The ink knows things the screen does not.

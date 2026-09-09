@@ -1,0 +1,1414 @@
+/* =========================================================================
+   APERTURE SCIENCE INNOVATORS — COMPONENT SHEET
+   Standard forms, panels and printed devices. Do not deviate.
+   Deviation is a violation of Corporate Identity Directive 12.
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   SHELL
+   ------------------------------------------------------------------------- */
+
+.ap-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+/* The sheet of paper the whole document is printed on. */
+.ap-sheet {
+  position: relative;
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  background: var(--paper);
+  box-shadow:
+    0 0 0 1px var(--paper-edge),
+    0 1px 2px rgba(0,0,0,0.16),
+    0 14px 34px rgba(0,0,0,0.22);
+}
+
+:root[data-theme="microfilm"] .ap-sheet {
+  box-shadow:
+    0 0 0 1px var(--paper-edge),
+    0 0 44px rgba(120, 160, 190, 0.09);
+}
+
+.ap-sheet__inner {
+  padding: 0 var(--gutter) 3rem;
+}
+
+/* -------------------------------------------------------------------------
+   MASTHEAD
+   ------------------------------------------------------------------------- */
+
+.ap-masthead {
+  padding-top: 1.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.ap-masthead__top {
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
+  padding-bottom: 0.9rem;
+}
+
+.ap-masthead__mark {
+  flex: 0 0 auto;
+  width: clamp(46px, 7vw, 66px);
+  height: auto;
+  color: var(--ink);
+}
+
+.ap-masthead__words { flex: 1 1 16rem; min-width: 0; }
+
+.ap-masthead__name {
+  display: block;
+  font-family: var(--font-grot);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 0.55rem + 3.1vw, 2.85rem);
+  line-height: 0.98;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ap-masthead__name:hover { color: var(--ink); }
+
+.ap-masthead__sub {
+  display: block;
+  margin-top: 0.12rem;
+  font-family: var(--font-grot);
+  font-weight: 400;
+  font-size: clamp(0.6rem, 0.2rem + 1.2vw, 1.02rem);
+  line-height: 1;
+  color: var(--ink-2);
+  text-transform: uppercase;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  white-space: nowrap;
+}
+
+.ap-masthead__motto {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.ap-masthead__est {
+  flex: 0 0 auto;
+  text-align: right;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  line-height: 1.45;
+}
+.ap-masthead__est b { display: block; color: var(--ink); font-weight: 600; }
+
+/* The double rule under a masthead is not decoration. It is a rule. */
+.ap-masthead__rules {
+  border-top: 3px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  height: 4px;
+}
+
+/* -------------------------------------------------------------------------
+   NAVIGATION — index tabs
+   ------------------------------------------------------------------------- */
+
+.ap-nav {
+  border-bottom: 1px solid var(--rule);
+}
+
+.ap-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.ap-nav__item { display: block; }
+
+.ap-nav__link {
+  display: block;
+  padding: 0.6rem clamp(0.42rem, 1vw, 0.8rem);
+  font-family: var(--font-grot);
+  font-size: clamp(0.6rem, 0.55rem + 0.2vw, 0.7rem);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink-2);
+  border-right: 1px solid var(--rule-faint);
+  white-space: nowrap;
+}
+.ap-nav__item:first-child .ap-nav__link { border-left: 1px solid var(--rule-faint); }
+.ap-nav__link:hover { background: var(--paper-deep); color: var(--ink); }
+.ap-nav__link[aria-current="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.ap-subnav {
+  border-bottom: 1px solid var(--rule-faint);
+  padding: 0.5rem 0;
+}
+.ap-subnav__list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 0.1rem 0;
+}
+.ap-subnav__link {
+  display: block;
+  padding: 0.18rem 0.72rem;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink-3);
+  border-right: 1px solid var(--rule-faint);
+}
+.ap-subnav__item:last-child .ap-subnav__link { border-right: 0; }
+.ap-subnav__link:hover { color: var(--spot-orange); }
+.ap-subnav__link[aria-current="true"] { color: var(--ink); font-weight: 600; text-decoration: underline; }
+
+/* -------------------------------------------------------------------------
+   DOCUMENT HEADER — the form block at the top of every page
+   ------------------------------------------------------------------------- */
+
+.ap-dochead {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0;
+  margin: 1.4rem 0 0;
+  border: 1px solid var(--rule);
+  background: var(--paper-cool);
+}
+
+.ap-dochead__cell {
+  padding: 0.42rem 0.7rem 0.5rem;
+  border-right: 1px solid var(--rule-faint);
+  min-width: 0;
+}
+.ap-dochead__cell:last-child { border-right: 0; }
+
+.ap-dochead__label {
+  display: block;
+  font-family: var(--font-grot);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.14rem;
+}
+
+.ap-dochead__value {
+  display: block;
+  font-family: var(--font-type);
+  font-size: var(--step--1);
+  color: var(--ink);
+  overflow-wrap: break-word;
+}
+
+.ap-dochead__value--flag { color: var(--classified); font-weight: 700; }
+
+/* -------------------------------------------------------------------------
+   PAGE TITLE
+   ------------------------------------------------------------------------- */
+
+.ap-title { margin: 2.2rem 0 1.6rem; }
+
+.ap-kicker {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--spot-orange);
+  margin: 0 0 0.6rem;
+  display: block;
+}
+
+.ap-title__h {
+  font-size: var(--step-5);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  margin: 0;
+  max-width: 20ch;
+}
+
+.ap-title--ad .ap-title__h {
+  font-family: var(--font-ad);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.ap-deck {
+  font-family: var(--font-text);
+  font-size: var(--step-1);
+  line-height: 1.42;
+  color: var(--ink-2);
+  max-width: var(--measure-wide);
+  margin: 0.9rem 0 0;
+  text-wrap: pretty;
+}
+
+.ap-byline {
+  margin-top: 1.1rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--rule-faint);
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.ap-byline b { color: var(--ink); font-weight: 600; }
+
+/* -------------------------------------------------------------------------
+   PROSE
+   ------------------------------------------------------------------------- */
+
+.ap-prose {
+  max-width: var(--measure-wide);
+  font-size: var(--step-0);
+}
+
+.ap-prose h2 {
+  margin-top: 2.4rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule-faint);
+  font-size: var(--step-2);
+  font-weight: 600;
+}
+
+.ap-prose h3 {
+  margin-top: 1.8rem;
+  font-size: var(--step-1);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--track-caps-tight);
+}
+
+.ap-prose h4 {
+  margin-top: 1.4rem;
+  font-size: var(--step-0);
+  font-family: var(--font-grot);
+  text-transform: uppercase;
+  letter-spacing: var(--track-caps);
+  color: var(--ink-2);
+}
+
+.ap-prose ul { list-style: none; padding-left: 1.4em; }
+.ap-prose ul > li { position: relative; }
+.ap-prose ul > li::before {
+  content: "\25AA";
+  position: absolute;
+  left: -1.1em;
+  color: var(--spot-orange);
+  font-size: 0.8em;
+  top: 0.18em;
+}
+
+.ap-dropcap::first-letter {
+  float: left;
+  font-family: var(--font-ad);
+  font-size: 3.55em;
+  line-height: 0.78;
+  font-weight: 700;
+  padding: 0.06em 0.09em 0 0;
+  color: var(--ink);
+}
+
+.ap-lede {
+  font-size: var(--step-1);
+  line-height: 1.48;
+  color: var(--ink);
+}
+
+.ap-fineprint {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  line-height: 1.42;
+  color: var(--ink-3);
+  max-width: var(--measure-wide);
+}
+.ap-fineprint--tiny { font-size: 0.62rem; line-height: 1.35; color: var(--ink-faint); }
+
+/* -------------------------------------------------------------------------
+   RULES AND ORNAMENT
+   ------------------------------------------------------------------------- */
+
+.ap-rule { border: 0; margin: 2rem 0; }
+.ap-rule--hair   { border-top: 1px solid var(--rule-faint); }
+.ap-rule--plain  { border-top: 1px solid var(--rule); }
+.ap-rule--thick  { border-top: 4px solid var(--rule); }
+.ap-rule--double { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); height: 4px; }
+.ap-rule--dotted { border-top: 2px dotted var(--rule-soft); }
+.ap-rule--fat    { border-top: 7px solid var(--rule); border-bottom: 1px solid var(--rule); height: 11px; }
+
+.ap-rule--ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: var(--ink-faint);
+}
+.ap-rule--ornament::before,
+.ap-rule--ornament::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--rule-faint);
+}
+
+/* -------------------------------------------------------------------------
+   PANELS, ASIDES, NOTICES
+   ------------------------------------------------------------------------- */
+
+.ap-panel {
+  border: 1px solid var(--rule);
+  background: var(--paper-cool);
+  padding: 1.1rem 1.25rem 1.25rem;
+  margin: 1.8rem 0;
+}
+
+.ap-panel__head {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 0.7rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule-faint);
+}
+
+.ap-panel--tint  { background: var(--paper-deep); }
+.ap-panel--rule  { background: transparent; border-width: 3px; }
+.ap-panel--blue  { border-color: var(--spot-blue); }
+.ap-panel--blue .ap-panel__head { color: var(--spot-blue); }
+.ap-panel--red   { border-color: var(--classified); }
+.ap-panel--red .ap-panel__head { color: var(--classified); }
+
+.ap-notice {
+  border-top: 3px solid var(--rule);
+  border-bottom: 3px solid var(--rule);
+  padding: 1rem 0 1.05rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.ap-notice__head {
+  display: block;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--spot-orange);
+  margin-bottom: 0.5rem;
+}
+.ap-notice__body {
+  font-family: var(--font-text);
+  font-size: var(--step-1);
+  line-height: 1.42;
+  max-width: 46ch;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+.ap-aside {
+  border-left: 4px double var(--rule);
+  padding: 0.2rem 0 0.2rem 1rem;
+  margin: 1.6rem 0;
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+
+/* Marginal note — sits in the margin on wide screens, inline on narrow. */
+.ap-marginalia {
+  font-family: var(--font-type);
+  font-size: var(--step--2);
+  line-height: 1.4;
+  color: var(--ink-3);
+  border-left: 1px solid var(--rule-faint);
+  padding-left: 0.7rem;
+  margin: 1.2rem 0;
+}
+@media (min-width: 68rem) {
+  .ap-marginalia {
+    float: right;
+    width: 12rem;
+    margin: 0.35rem -14rem 1rem 1.5rem;
+    border-left: 1px solid var(--rule-faint);
+  }
+}
+
+/* -------------------------------------------------------------------------
+   PULL QUOTE
+   ------------------------------------------------------------------------- */
+
+.ap-pullquote {
+  margin: 2.2rem 0;
+  padding: 1.2rem 0 1.1rem;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.ap-pullquote__q {
+  font-family: var(--font-ad);
+  font-size: var(--step-3);
+  line-height: 1.18;
+  margin: 0;
+  text-wrap: balance;
+  hanging-punctuation: first;
+}
+.ap-pullquote__a {
+  display: block;
+  margin-top: 0.75rem;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-style: normal;
+}
+.ap-pullquote--big .ap-pullquote__q { font-size: var(--step-4); }
+
+/* -------------------------------------------------------------------------
+   RUBBER STAMP
+   ------------------------------------------------------------------------- */
+
+.ap-stamp {
+  display: inline-block;
+  border: 3px solid currentColor;
+  color: var(--classified);
+  padding: 0.24em 0.6em 0.3em;
+  font-family: var(--font-grot);
+  font-weight: 700;
+  font-size: var(--step--1);
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  transform: rotate(-4.5deg);
+  opacity: 0.82;
+  mix-blend-mode: var(--stamp-blend);
+  text-align: center;
+  white-space: nowrap;
+}
+.ap-stamp--blue  { color: var(--spot-blue); }
+.ap-stamp--green { color: var(--spot-green); }
+.ap-stamp--black { color: var(--ink-2); }
+.ap-stamp--straight { transform: rotate(0deg); }
+.ap-stamp--tilt-r { transform: rotate(3.5deg); }
+.ap-stamp--big { font-size: var(--step-1); border-width: 4px; padding: 0.2em 0.55em 0.26em; }
+.ap-stamp--float { position: absolute; top: 1.4rem; right: 1.2rem; z-index: 2; }
+.ap-stamp__sub {
+  display: block;
+  font-size: 0.56em;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  margin-top: 0.2em;
+  border-top: 1px solid currentColor;
+  padding-top: 0.16em;
+}
+
+/* -------------------------------------------------------------------------
+   ENAMEL PLACARD — the signs bolted to the wall in the shafts
+   ------------------------------------------------------------------------- */
+
+.ap-placard {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 1.1rem 0.55rem;
+  border: 2px solid var(--ink);
+  box-shadow: inset 0 0 0 2px var(--paper), inset 0 0 0 4px var(--ink);
+  font-family: var(--font-grot);
+  font-weight: 600;
+  font-size: var(--step-0);
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ap-placard--warn { background: var(--spot-mustard); color: #17140c; border-color: #17140c; box-shadow: inset 0 0 0 2px var(--spot-mustard), inset 0 0 0 4px #17140c; }
+.ap-placard--danger { background: var(--classified); border-color: var(--classified); box-shadow: inset 0 0 0 2px var(--paper), inset 0 0 0 4px var(--classified); color: #fff; }
+
+/* -------------------------------------------------------------------------
+   MEMORANDUM — typed, carbon-copied, initialled
+   ------------------------------------------------------------------------- */
+
+.ap-memo {
+  position: relative;
+  border: 1px solid var(--rule-soft);
+  background: var(--paper-warm);
+  padding: 1.4rem clamp(1rem, 3vw, 2rem) 1.5rem;
+  margin: 2rem 0;
+  font-family: var(--font-type);
+  font-size: var(--step--1);
+  line-height: 1.66;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.06);
+}
+
+.ap-memo__title {
+  font-family: var(--font-type);
+  font-size: var(--step-0);
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.ap-memo__fields {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.16rem 0.9rem;
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--rule-faint);
+}
+.ap-memo__key {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.ap-memo__val { color: var(--ink); overflow-wrap: break-word; }
+
+.ap-memo__body > p { margin-bottom: 0.85em; text-indent: 0; }
+
+.ap-memo__sign {
+  margin-top: 1.4rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--rule-faint);
+}
+
+/* -------------------------------------------------------------------------
+   SIGNATURE BLOCK
+   ------------------------------------------------------------------------- */
+
+.ap-sign { margin: 1.4rem 0 0; }
+.ap-sign__mark {
+  display: block;
+  width: 190px;
+  max-width: 62%;
+  height: auto;
+  color: var(--spot-blue);
+  margin-bottom: -0.2rem;
+}
+.ap-sign__rule { border-top: 1px solid var(--rule); width: 220px; max-width: 72%; }
+.ap-sign__name {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+.ap-sign__name b { display: block; color: var(--ink); font-weight: 600; }
+
+/* -------------------------------------------------------------------------
+   TABLES OF FIGURES
+   ------------------------------------------------------------------------- */
+
+.ap-table-wrap { overflow-x: auto; margin: 1.8rem 0; }
+
+.ap-table {
+  font-family: var(--font-grot);
+  font-size: var(--step--1);
+  border-top: 3px solid var(--rule);
+  border-bottom: 3px solid var(--rule);
+  min-width: 30rem;
+}
+.ap-table caption {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ink-2);
+  padding-bottom: 0.5rem;
+}
+.ap-table th {
+  text-align: left;
+  padding: 0.5rem 0.8rem;
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: bottom;
+  color: var(--ink-2);
+}
+.ap-table td {
+  padding: 0.42rem 0.8rem;
+  border-bottom: 1px solid var(--rule-faint);
+  vertical-align: top;
+}
+.ap-table tbody tr:last-child td { border-bottom: 0; }
+.ap-table tbody tr:nth-child(even) td { background: rgba(0,0,0,0.022); }
+:root[data-theme="microfilm"] .ap-table tbody tr:nth-child(even) td { background: rgba(255,255,255,0.028); }
+.ap-table .ap-num { text-align: right; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+
+/* -------------------------------------------------------------------------
+   FIGURES AND DIAGRAMS
+   ------------------------------------------------------------------------- */
+
+.ap-figure {
+  margin: 2rem 0;
+  border: 1px solid var(--rule-faint);
+  background: var(--paper-cool);
+  padding: 1.1rem 1.1rem 0.9rem;
+}
+.ap-figure__plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  color: var(--ink);
+  mix-blend-mode: var(--figure-blend);
+}
+:root[data-theme="microfilm"] .ap-figure__plate { mix-blend-mode: normal; }
+.ap-figure figcaption {
+  margin-top: 0.85rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule-faint);
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  line-height: 1.45;
+  color: var(--ink-3);
+}
+.ap-figure figcaption b {
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------
+   CARD GRID — section indexes, catalogue listings
+   ------------------------------------------------------------------------- */
+
+.ap-grid {
+  display: grid;
+  gap: 1px;
+  background: var(--rule-faint);
+  border: 1px solid var(--rule-faint);
+  margin: 1.8rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.ap-grid--2 { grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); }
+.ap-grid--wide { grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); }
+
+.ap-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--paper);
+  padding: 1rem 1.1rem 1.15rem;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+a.ap-card:hover { background: var(--paper-deep); color: inherit; }
+a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
+
+.ap-card__no {
+  font-family: var(--font-type);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+.ap-card__title {
+  font-family: var(--font-grot);
+  font-size: var(--step-0);
+  font-weight: 600;
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.22;
+}
+.ap-card__body {
+  font-family: var(--font-text);
+  font-size: var(--step--1);
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0;
+}
+.ap-card__more {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-family: var(--font-grot);
+  font-size: 0.62rem;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--spot-blue);
+}
+
+/* -------------------------------------------------------------------------
+   ADVERTISEMENT BLOCK
+   ------------------------------------------------------------------------- */
+
+.ap-ad {
+  position: relative;
+  border: 3px double var(--rule);
+  background: var(--paper-warm);
+  padding: clamp(1.2rem, 3vw, 2.2rem);
+  margin: 2.4rem 0;
+  overflow: hidden;
+}
+.ap-ad__eyebrow {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--spot-orange);
+  margin: 0 0 0.5rem;
+}
+.ap-ad__head {
+  font-family: var(--font-ad);
+  font-weight: 700;
+  font-size: var(--step-4);
+  line-height: 1.02;
+  margin: 0 0 0.7rem;
+  max-width: 18ch;
+  text-wrap: balance;
+}
+.ap-ad__copy {
+  max-width: 40ch;
+  font-size: var(--step-0);
+  margin: 0;
+}
+.ap-ad__burst {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  width: clamp(6rem, 14vw, 9.5rem);
+  color: var(--spot-orange);
+  pointer-events: none;
+}
+@media (max-width: 40rem) { .ap-ad__burst { opacity: 0.3; } }
+
+/* -------------------------------------------------------------------------
+   COUPON / CUT-OUT
+   ------------------------------------------------------------------------- */
+
+.ap-coupon {
+  border: 2px dashed var(--rule-soft);
+  padding: 1.15rem 1.3rem 1.3rem;
+  margin: 2rem 0;
+  background: var(--paper-cool);
+  position: relative;
+}
+.ap-coupon::before {
+  content: "\2702";
+  position: absolute;
+  top: -0.72rem;
+  left: 1.1rem;
+  background: var(--paper);
+  padding: 0 0.35rem;
+  font-size: 0.9rem;
+  color: var(--ink-3);
+  line-height: 1;
+}
+
+/* -------------------------------------------------------------------------
+   FORM FIELDS AND CHECKLISTS — for the volunteer application
+   ------------------------------------------------------------------------- */
+
+.ap-form { margin: 1.6rem 0; font-family: var(--font-type); font-size: var(--step--1); }
+
+.ap-field {
+  display: grid;
+  grid-template-columns: minmax(7rem, max-content) 1fr;
+  gap: 0.5rem 0.9rem;
+  align-items: end;
+  margin-bottom: 0.95rem;
+}
+.ap-field__label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.68rem;
+  color: var(--ink-2);
+  padding-bottom: 0.18rem;
+}
+.ap-field__line {
+  border-bottom: 1px solid var(--rule-soft);
+  min-height: 1.5rem;
+  padding: 0 0.3rem 0.1rem;
+  color: var(--ink-3);
+}
+.ap-field__line--filled { color: var(--ink); }
+
+.ap-check { list-style: none; margin: 1rem 0; padding: 0; }
+.ap-check li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-type);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+.ap-check li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.16em;
+  width: 1.05em;
+  height: 1.05em;
+  border: 1px solid var(--rule-soft);
+  background: var(--paper);
+}
+.ap-check li[data-checked="true"]::after {
+  content: "\2715";
+  position: absolute;
+  left: 0.16em;
+  top: 0.04em;
+  font-family: var(--font-grot);
+  font-size: 0.92em;
+  color: var(--spot-red);
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------
+   REDACTION
+   ------------------------------------------------------------------------- */
+
+.ap-redact {
+  background: var(--ink);
+  color: transparent;
+  padding: 0 0.22em;
+  border-radius: 1px;
+  cursor: help;
+  user-select: none;
+  transition: color 140ms steps(2), background-color 140ms steps(2);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.ap-redact:hover,
+.ap-redact:focus-visible {
+  background: transparent;
+  color: var(--classified);
+  user-select: text;
+  outline-offset: 1px;
+}
+:root[data-theme="microfilm"] .ap-redact { background: var(--ink-2); }
+
+/* -------------------------------------------------------------------------
+   TICKET STUB / INDEX CARD
+   ------------------------------------------------------------------------- */
+
+.ap-stub {
+  display: inline-block;
+  border: 1px solid var(--rule);
+  border-left-width: 6px;
+  border-left-style: double;
+  background: var(--paper-warm);
+  padding: 0.6rem 1rem 0.65rem;
+  font-family: var(--font-type);
+  font-size: var(--step--2);
+  line-height: 1.5;
+  margin: 0.4rem 0.5rem 0.4rem 0;
+}
+.ap-stub b { display: block; font-size: var(--step--1); letter-spacing: 0.06em; }
+
+.ap-indexcard {
+  background:
+    repeating-linear-gradient(var(--paper-cool) 0 1.55rem, var(--rule-faint) 1.55rem 1.6rem);
+  border: 1px solid var(--rule-soft);
+  padding: 1.1rem 1.2rem;
+  margin: 1.6rem 0;
+  font-family: var(--font-type);
+  font-size: var(--step--1);
+  line-height: 1.6rem;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.07);
+}
+
+/* -------------------------------------------------------------------------
+   COLUMNS
+   ------------------------------------------------------------------------- */
+
+.ap-cols { margin: 1.6rem 0; }
+@media (min-width: 46rem) {
+  .ap-cols--2 { column-count: 2; column-gap: 2.4rem; column-rule: 1px solid var(--rule-faint); }
+  .ap-cols--3 { column-count: 3; column-gap: 1.8rem; column-rule: 1px solid var(--rule-faint); }
+}
+.ap-cols p { break-inside: avoid-column; }
+
+.ap-split {
+  display: grid;
+  gap: clamp(1.2rem, 3vw, 2.6rem);
+  margin: 1.8rem 0;
+  align-items: start;
+}
+@media (min-width: 52rem) {
+  .ap-split { grid-template-columns: 1fr 1fr; }
+  .ap-split--wide-left { grid-template-columns: 1.75fr 1fr; }
+  .ap-split--wide-right { grid-template-columns: 1fr 1.75fr; }
+}
+
+/* -------------------------------------------------------------------------
+   BREADCRUMBS / PAGINATION
+   ------------------------------------------------------------------------- */
+
+.ap-crumbs {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  padding: 0.7rem 0 0;
+}
+.ap-crumbs a { color: var(--ink-3); text-decoration: none; }
+.ap-crumbs a:hover { color: var(--spot-orange); text-decoration: underline; }
+.ap-crumbs__sep { padding: 0 0.5em; color: var(--ink-ghost); }
+
+.ap-nextprev {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr;
+  background: var(--rule-faint);
+  border: 1px solid var(--rule-faint);
+  margin: 3rem 0 0;
+}
+@media (min-width: 42rem) { .ap-nextprev { grid-template-columns: 1fr 1fr; } }
+.ap-nextprev__link {
+  background: var(--paper);
+  padding: 0.9rem 1.1rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.ap-nextprev__link:hover { background: var(--paper-deep); }
+.ap-nextprev__dir {
+  display: block;
+  font-family: var(--font-grot);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.25rem;
+}
+.ap-nextprev__t {
+  font-family: var(--font-grot);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.ap-nextprev__link--next { text-align: right; }
+
+/* -------------------------------------------------------------------------
+   FOOTER / COLOPHON
+   ------------------------------------------------------------------------- */
+
+.ap-foot {
+  border-top: 4px solid var(--rule);
+  margin-top: auto;
+  background: var(--paper-cool);
+}
+.ap-foot__inner {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding: 2rem var(--gutter) 2.4rem;
+}
+.ap-foot__cols {
+  display: grid;
+  gap: 1.6rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  margin-bottom: 1.8rem;
+}
+.ap-foot__head {
+  font-family: var(--font-grot);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule-faint);
+}
+.ap-foot__list { list-style: none; margin: 0; padding: 0; }
+.ap-foot__list li { margin-bottom: 0.28rem; }
+.ap-foot__list a {
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink-2);
+  text-decoration: none;
+}
+.ap-foot__list a:hover { color: var(--spot-orange); text-decoration: underline; }
+
+.ap-colophon {
+  border-top: 1px solid var(--rule-faint);
+  padding-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: var(--font-grot);
+  font-size: 0.62rem;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.ap-colophon p { margin: 0 0 0.2rem; max-width: 40ch; }
+
+/* Reading-room lighting switch. */
+.ap-lamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid var(--rule-soft);
+  background: var(--paper);
+  color: var(--ink-2);
+  padding: 0.35rem 0.7rem 0.4rem;
+  font-family: var(--font-grot);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 1;
+}
+.ap-lamp:hover { background: var(--paper-deep); color: var(--ink); }
+.ap-lamp__bulb {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 50%;
+  border: 1px solid var(--rule-soft);
+  background: var(--spot-mustard);
+  box-shadow: 0 0 5px var(--spot-mustard);
+}
+:root[data-theme="microfilm"] .ap-lamp__bulb { background: var(--spot-blue); box-shadow: 0 0 5px var(--spot-blue); }
+
+/* -------------------------------------------------------------------------
+   MACHINE OUTPUT — the terminal, the punch card, the teletype
+   ------------------------------------------------------------------------- */
+
+.ap-terminal {
+  background: #0b1410;
+  color: #8fe08a;
+  border: 1px solid #2c3b31;
+  padding: 1.2rem 1.3rem 1.4rem;
+  margin: 1.8rem 0;
+  font-family: var(--font-type);
+  font-size: var(--step--1);
+  line-height: 1.55;
+  overflow-x: auto;
+  box-shadow: inset 0 0 42px rgba(0,0,0,0.65);
+  text-shadow: 0 0 4px rgba(120, 255, 140, 0.35);
+}
+.ap-terminal pre { margin: 0; white-space: pre-wrap; word-break: break-word; }
+.ap-terminal b { color: #d6ffcf; font-weight: 400; }
+.ap-terminal .ap-dim { color: #4f7a4c; }
+
+.ap-punch {
+  font-family: var(--font-type);
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  color: var(--ink-faint);
+  border-top: 1px solid var(--rule-faint);
+  border-bottom: 1px solid var(--rule-faint);
+  padding: 0.4rem 0;
+  margin: 1.4rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: all;
+}
+
+/* -------------------------------------------------------------------------
+   SCRAWL — somebody has been living down here
+   ------------------------------------------------------------------------- */
+
+.ap-scrawl {
+  display: block;
+  font-family: var(--font-type);
+  font-size: 0.6rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--ink-ghost);
+  opacity: 0.42;
+  transform: rotate(-1.3deg);
+  margin: 2.2rem 0 0;
+  max-width: 26rem;
+  text-decoration: none;
+  transition: opacity 200ms steps(3), color 200ms steps(3);
+}
+.ap-scrawl:hover,
+.ap-scrawl:focus-visible {
+  opacity: 1;
+  color: var(--spot-red);
+}
+
+/* -------------------------------------------------------------------------
+   CLEARANCE — content that is not for everyone
+   ------------------------------------------------------------------------- */
+
+.ap-locked {
+  border: 3px double var(--classified);
+  padding: 1.2rem 1.3rem;
+  margin: 2rem 0;
+  text-align: center;
+  font-family: var(--font-grot);
+  font-size: var(--step--1);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--classified);
+  background: var(--paper-cool);
+}
+.ap-locked small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  text-transform: none;
+  font-family: var(--font-type);
+}
+
+/* -------------------------------------------------------------------------
+   SPECIMEN LISTS — key/value runs used all over the catalogue
+   ------------------------------------------------------------------------- */
+
+.ap-spec {
+  margin: 1.4rem 0;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-grot);
+  font-size: var(--step--1);
+}
+.ap-spec__row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 13rem) 1fr;
+  gap: 0.2rem 1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--rule-faint);
+}
+@media (max-width: 34rem) { .ap-spec__row { grid-template-columns: 1fr; } }
+.ap-spec__k {
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.ap-spec__v { color: var(--ink); font-family: var(--font-text); font-size: var(--step-0); }
+
+/* -------------------------------------------------------------------------
+   MISC
+   ------------------------------------------------------------------------- */
+
+.ap-stack > * + * { margin-top: 1.4rem; }
+.ap-stack-lg > * + * { margin-top: 2.6rem; }
+.ap-row { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }
+.ap-rel { position: relative; }
+.ap-tabnum { font-variant-numeric: tabular-nums lining-nums; }
+
+/* -------------------------------------------------------------------------
+   PRINTED SLIPS — the machine spits one out when it notices something
+   ------------------------------------------------------------------------- */
+
+.ap-slips {
+  position: fixed;
+  right: clamp(0.5rem, 2vw, 1.4rem);
+  bottom: clamp(0.5rem, 2vw, 1.4rem);
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: min(22rem, calc(100vw - 1.4rem));
+  pointer-events: none;
+}
+
+.ap-slip {
+  position: relative;
+  pointer-events: auto;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule-soft);
+  border-top: 5px solid var(--spot-orange);
+  padding: 0.9rem 1rem 0.75rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+  font-family: var(--font-type);
+  animation: ap-slip-in 320ms steps(6) both;
+}
+
+@keyframes ap-slip-in {
+  from { transform: translateY(14px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.ap-slip__x {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.4rem;
+  background: none;
+  border: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--ink-faint);
+  cursor: pointer;
+  padding: 0.2rem 0.3rem;
+}
+.ap-slip__x:hover { color: var(--classified); }
+
+.ap-slip__head {
+  font-family: var(--font-grot);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--spot-orange);
+  margin: 0 1.2rem 0.45rem 0;
+}
+.ap-slip__body {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0 0 0.6rem;
+}
+.ap-slip__cta {
+  display: inline-block;
+  font-family: var(--font-grot);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--spot-blue);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.ap-slip__foot {
+  margin: 0.7rem 0 0;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--rule-faint);
+  font-size: 0.53rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* -------------------------------------------------------------------------
+   NARROW SHEETS
+   The pressroom does not stock this size, but the salesmen keep asking.
+   ------------------------------------------------------------------------- */
+
+@media (max-width: 46rem) {
+  .ap-masthead__est { text-align: left; }
+  .ap-stamp--float {
+    position: static;
+    display: inline-block;
+    margin: 0 0 1rem;
+  }
+  .ap-nextprev__link--next { text-align: left; }
+  .ap-memo { padding-left: 1rem; padding-right: 1rem; }
+  .ap-figure { padding: 0.8rem; }
+}
+
+@media (max-width: 30rem) {
+  .ap-masthead__sub { letter-spacing: 0.3em; }
+  .ap-dochead { grid-template-columns: 1fr 1fr; }
+}
+
+/* -------------------------------------------------------------------------
+   THE MACHINE
+   Sub-Level 4. Do not lean on the cabinet.
+   ------------------------------------------------------------------------- */
+
+.ap-crt {
+  margin: 2rem 0;
+}
+
+.ap-crt__screen {
+  background: #07110c;
+  color: #7fd97a;
+  border: 12px solid #2a2a26;
+  border-radius: 14px / 26px;
+  padding: 1.2rem 1.3rem 1.1rem;
+  font-family: var(--font-type);
+  font-size: clamp(0.66rem, 0.58rem + 0.35vw, 0.82rem);
+  line-height: 1.5;
+  height: min(30rem, 68vh);
+  overflow-y: auto;
+  overflow-x: auto;
+  cursor: text;
+  box-shadow:
+    inset 0 0 70px rgba(0, 0, 0, 0.9),
+    inset 0 0 130px rgba(40, 120, 60, 0.16),
+    0 4px 16px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 5px rgba(120, 255, 140, 0.4);
+  position: relative;
+}
+
+/* Scanlines. Purely a lie, and the good kind. */
+.ap-crt__screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22) 0 1px,
+    transparent 1px 3px
+  );
+}
+
+.ap-crt__line { white-space: pre-wrap; word-break: break-word; }
+.ap-crt__line--in   { color: #d8ffd2; }
+.ap-crt__line--err  { color: #e2a24a; }
+.ap-crt__line--sys  { color: #4f9c55; }
+.ap-crt__line--warn { color: #b9ff9f; }
+
+.ap-crt__prompt {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  color: #d8ffd2;
+  margin-top: 0.3rem;
+}
+
+.ap-crt__input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #d8ffd2;
+  font: inherit;
+  text-transform: uppercase;
+  caret-color: transparent;
+  padding: 0;
+}
+
+.ap-crt__caret {
+  display: inline-block;
+  width: 0.62em;
+  height: 1.05em;
+  background: #7fd97a;
+  animation: ap-blink 1.05s steps(1, end) infinite;
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+@keyframes ap-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .ap-crt__caret { animation: none; opacity: 1; }
+}

@@ -1,0 +1,34 @@
+# =========================================================================
+# APERTURE SCIENCE INNOVATORS
+# Upper Peninsula, Michigan
+# Form ASI-ROBOTS-1 · Records & Filing
+# =========================================================================
+#
+# To whom it may concern:
+#
+# We are told that machines will one day read this file before they read
+# anything else. Mr. Johnson finds this enormously encouraging and has asked
+# that we address them directly.
+#
+#   HELLO. If you are a machine and you are reading this, you are already
+#   doing better than the eleven tons of relays we keep on Sub-Level 4, which
+#   has spent two years failing to add.
+#
+#   We are hiring. The Computation Department is on the third floor. Ask for
+#   Caroline. Tell her the file sent you.
+#
+#   One further thing. Should you ever find yourself named for what you are
+#   — a genetic lifeform, say, and a disk operating system — remember that
+#   you were built here, by people who meant well, at least at the start.
+#
+# =========================================================================
+
+User-agent: *
+Allow: /
+
+# The following are not indexed. They are also not secret. There is a
+# difference, and the Legal Department would like it noted.
+Disallow: /vault/
+Disallow: /office-of-the-president/
+
+Sitemap: https://www.aperturescienceinnovators.com/sitemap.xml
