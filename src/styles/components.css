@@ -1223,6 +1223,11 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-stack > * + * { margin-top: 1.4rem; }
 .ap-stack-lg > * + * { margin-top: 2.6rem; }
 .ap-row { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }
+/* A flex item's minimum width is its content's, which for a table set at
+   thirty picas is thirty picas. Let the item shrink; the table wrapper
+   already scrolls. */
+.ap-row > * { min-width: 0; max-width: 100%; }
+.ap-table-wrap { min-width: 0; max-width: 100%; }
 .ap-rel { position: relative; }
 .ap-tabnum { font-variant-numeric: tabular-nums lining-nums; }
 
