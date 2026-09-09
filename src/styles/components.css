@@ -179,7 +179,7 @@
   border-right: 1px solid var(--rule-faint);
 }
 .ap-subnav__item:last-child .ap-subnav__link { border-right: 0; }
-.ap-subnav__link:hover { color: var(--spot-orange); }
+.ap-subnav__link:hover { color: var(--accent); }
 .ap-subnav__link[aria-current="true"] { color: var(--ink); font-weight: 600; text-decoration: underline; }
 
 /* -------------------------------------------------------------------------
@@ -234,7 +234,7 @@
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--spot-orange);
+  color: var(--accent);
   margin: 0 0 0.6rem;
   display: block;
 }
@@ -315,7 +315,7 @@
   content: "\25AA";
   position: absolute;
   left: -1.1em;
-  color: var(--spot-orange);
+  color: var(--accent);
   font-size: 0.8em;
   top: 0.18em;
 }
@@ -414,7 +414,7 @@
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--spot-orange);
+  color: var(--accent);
   margin-bottom: 0.5rem;
 }
 .ap-notice__body {
@@ -726,7 +726,7 @@
   position: relative;
 }
 a.ap-card:hover { background: var(--paper-deep); color: inherit; }
-a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
+a.ap-card:hover .ap-card__title { color: var(--accent); }
 
 .ap-card__no {
   font-family: var(--font-type);
@@ -759,7 +759,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   font-size: 0.62rem;
   letter-spacing: var(--track-caps);
   text-transform: uppercase;
-  color: var(--spot-blue);
+  color: var(--accent);
 }
 
 /* -------------------------------------------------------------------------
@@ -780,7 +780,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--spot-orange);
+  color: var(--accent);
   margin: 0 0 0.5rem;
 }
 .ap-ad__head {
@@ -802,7 +802,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   top: -0.5rem;
   right: -0.5rem;
   width: clamp(6rem, 14vw, 9.5rem);
-  color: var(--spot-orange);
+  color: var(--accent);
   pointer-events: none;
 }
 @media (max-width: 40rem) { .ap-ad__burst { opacity: 0.3; } }
@@ -896,7 +896,6 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   background: var(--ink);
   color: transparent;
   padding: 0 0.22em;
-  border-radius: 1px;
   cursor: help;
   user-select: none;
   transition: color 140ms steps(2), background-color 140ms steps(2);
@@ -978,7 +977,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   padding: 0.7rem 0 0;
 }
 .ap-crumbs a { color: var(--ink-3); text-decoration: none; }
-.ap-crumbs a:hover { color: var(--spot-orange); text-decoration: underline; }
+.ap-crumbs a:hover { color: var(--accent); text-decoration: underline; }
 .ap-crumbs__sep { padding: 0 0.5em; color: var(--ink-ghost); }
 
 .ap-nextprev {
@@ -1057,7 +1056,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   color: var(--ink-2);
   text-decoration: none;
 }
-.ap-foot__list a:hover { color: var(--spot-orange); text-decoration: underline; }
+.ap-foot__list a:hover { color: var(--accent); text-decoration: underline; }
 
 .ap-colophon {
   border-top: 1px solid var(--rule-faint);
@@ -1148,8 +1147,8 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   font-size: 0.6rem;
   line-height: 1.35;
   letter-spacing: 0.02em;
-  color: var(--ink-ghost);
-  opacity: 0.42;
+  color: var(--ink-faint);
+  opacity: 0.62;
   transform: rotate(-1.3deg);
   margin: 2.2rem 0 0;
   max-width: 26rem;
@@ -1162,7 +1161,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   color: var(--spot-red);
 }
 
-:root[data-theme="microfilm"] .ap-scrawl { opacity: 0.55; }
+:root[data-theme="microfilm"] .ap-scrawl { opacity: 0.7; }
 
 /* -------------------------------------------------------------------------
    CLEARANCE — content that is not for everyone
@@ -1248,7 +1247,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   pointer-events: auto;
   background: var(--paper-warm);
   border: 1px solid var(--rule-soft);
-  border-top: 5px solid var(--spot-orange);
+  border-top: 5px solid var(--accent);
   padding: 0.9rem 1rem 0.75rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.28);
   font-family: var(--font-type);
@@ -1280,7 +1279,7 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--spot-orange);
+  color: var(--accent);
   margin: 0 1.2rem 0.45rem 0;
 }
 .ap-slip__body {

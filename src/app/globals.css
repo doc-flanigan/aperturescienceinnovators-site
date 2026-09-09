@@ -25,8 +25,8 @@
   --ink:          #1e1b16;
   --ink-2:        #453e33;
   --ink-3:        #6f6554;
-  --ink-faint:    #9c9179;
-  --ink-ghost:    #b9ae94;
+  --ink-faint:    #6a6252;
+  --ink-ghost:    #8a8069;
 
   /* Rules and hairlines */
   --rule:         #2a251d;
@@ -34,12 +34,13 @@
   --rule-faint:   #c0b393;
 
   /* Spot colours. A 1950s job ran black plus one or two of these. */
-  --spot-orange:  #c25a1c;
+  --spot-orange:  #a84812;
   --spot-blue:    #1d5878;
   --spot-red:     #8d2f21;
   --spot-green:   #46664e;
   --spot-mustard: #b28a1e;
   --spot-teal:    #2f6f6b;
+  --spot-bronze:  #7d5a10;
 
   /* Aperture's own two colours, used as spot inks — sparingly. */
   --portal-blue:   #2d7fb4;
@@ -49,6 +50,7 @@
   --accent:        var(--spot-orange);
   --accent-cool:   var(--spot-blue);
   --classified:    var(--spot-red);
+  --focus:         #a84812;
   --link:          #1a4f6d;
   --link-visited:  #5a3a6b;
 
@@ -74,23 +76,40 @@
   --font-type: var(--font-courier-prime), "Prestige Elite", "Courier New", ui-monospace, monospace;
   --font-ad:   var(--font-bodoni), "Bodoni MT", "Didot", "Playfair Display", serif;
 
-  /* Fluid print scale. Body sits at a generous reading size. */
-  --step--2: clamp(0.66rem, 0.63rem + 0.14vw, 0.74rem);
-  --step--1: clamp(0.79rem, 0.76rem + 0.17vw, 0.88rem);
-  --step-0:  clamp(1rem, 0.97rem + 0.16vw, 1.09rem);
-  --step-1:  clamp(1.2rem, 1.13rem + 0.34vw, 1.4rem);
-  --step-2:  clamp(1.44rem, 1.31rem + 0.62vw, 1.8rem);
-  --step-3:  clamp(1.73rem, 1.51rem + 1.05vw, 2.34rem);
-  --step-4:  clamp(2.07rem, 1.72rem + 1.68vw, 3.03rem);
-  --step-5:  clamp(2.49rem, 1.94rem + 2.6vw, 3.94rem);
-  --step-6:  clamp(2.99rem, 2.15rem + 3.98vw, 5.12rem);
+  /* The foundry point series, not a modular scale. No type shop ever cast
+     20.8pt. The gaps are irregular because the metal was irregular:
+     6 7 8 9 10 11 12 14 18 24 36 48 72. At a 16px root, 12pt = 1rem. */
+  --pt-6:  0.5rem;
+  --pt-7:  0.583rem;
+  --pt-8:  0.667rem;
+  --pt-9:  0.75rem;
+  --pt-10: 0.833rem;
+  --pt-11: 0.917rem;
+  --pt-12: 1rem;
+  --pt-14: 1.167rem;
+  --pt-18: 1.5rem;
+  --pt-24: 2rem;
+  --pt-36: 3rem;
+  --pt-48: 4rem;
+  --pt-72: 6rem;
+
+  /* Fluid only between two cast sizes, never to an arbitrary value. */
+  --step--2: var(--pt-9);
+  --step--1: var(--pt-10);
+  --step-0:  clamp(var(--pt-11), 0.88rem + 0.18vw, var(--pt-12));
+  --step-1:  clamp(var(--pt-12), 0.94rem + 0.28vw, var(--pt-14));
+  --step-2:  clamp(var(--pt-14), 1.05rem + 0.6vw, var(--pt-18));
+  --step-3:  clamp(var(--pt-18), 1.22rem + 1.4vw, var(--pt-24));
+  --step-4:  clamp(var(--pt-24), 1.36rem + 3.2vw, var(--pt-36));
+  --step-5:  clamp(var(--pt-24), 0.9rem + 5.5vw, var(--pt-48));
+  --step-6:  clamp(var(--pt-36), 1.1rem + 8vw, var(--pt-72));
 
   /* Measure and rhythm */
   --measure: 34rem;
   --measure-wide: 46rem;
   --page-max: 68rem;
   --gutter: clamp(1rem, 0.6rem + 2vw, 2.75rem);
-  --leading: 1.62;
+  --leading: 1.46;
 
   /* Letterspacing conventions of the period: caps are ALWAYS tracked out. */
   --track-caps: 0.14em;
@@ -118,7 +137,7 @@
   --ink:          #d9d3c2;
   --ink-2:        #b3ac9a;
   --ink-3:        #8b8574;
-  --ink-faint:    #6a6555;
+  --ink-faint:    #7d7765;
   --ink-ghost:    #4c4839;
 
   --rule:         #b9b2a0;
@@ -131,6 +150,7 @@
   --spot-green:   #86ad8c;
   --spot-mustard: #d8b458;
   --spot-teal:    #6fada9;
+  --spot-bronze:  #cba76a;
 
   --portal-blue:   #7ec4f0;
   --portal-orange: #f0a656;
@@ -143,6 +163,24 @@
   --stamp-blend: screen;
   --figure-blend: screen;
 }
+
+/* -------------------------------------------------------------------------
+   THE PRESS RUN
+   A 1950s job was black plus ONE spot colour. Four spot inks on one sheet is
+   a Pinterest board, not a printing bill. Each department therefore gets one
+   ink, set on the root element by the section the reader is standing in, and
+   every accent on the page resolves through --accent to that one ink.
+   ------------------------------------------------------------------------- */
+
+:root[data-dept="the-company"]       { --accent: var(--spot-blue); }
+:root[data-dept="products"]          { --accent: var(--spot-orange); }
+:root[data-dept="enrichment-center"] { --accent: var(--spot-red); }
+:root[data-dept="science"]           { --accent: var(--spot-teal); }
+:root[data-dept="careers"]           { --accent: var(--spot-green); }
+:root[data-dept="investors"]         { --accent: var(--spot-bronze); }
+:root[data-dept="bulletin"]          { --accent: var(--spot-blue); }
+:root[data-dept="vault"]             { --accent: var(--spot-red); }
+:root[data-dept="office-of-the-president"] { --accent: var(--spot-blue); }
 
 /* -------------------------------------------------------------------------
    3. RESET / BASE
@@ -179,7 +217,7 @@ body {
 ::selection { background: var(--select-bg); color: var(--ink); }
 
 :focus-visible {
-  outline: 3px solid var(--spot-orange);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
@@ -189,27 +227,39 @@ img, svg { max-width: 100%; }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-grot);
   font-weight: 600;
-  line-height: 1.12;
+  line-height: 0.98;
   letter-spacing: var(--track-display);
   margin: 0 0 0.5em;
   text-wrap: balance;
 }
 
-h1 { font-size: var(--step-5); }
-h2 { font-size: var(--step-3); }
+h1 { font-size: var(--step-5); line-height: 0.94; }
+h2 { font-size: var(--step-3); line-height: 0.98; }
 h3 { font-size: var(--step-2); }
-h4 { font-size: var(--step-1); }
-h5 { font-size: var(--step-0); text-transform: uppercase; letter-spacing: var(--track-caps); }
-h6 { font-size: var(--step--1); text-transform: uppercase; letter-spacing: var(--track-caps); }
+h4 { font-size: var(--step-1); line-height: 1.15; }
+h5 { font-size: var(--step-0); line-height: 1.2; text-transform: uppercase; letter-spacing: var(--track-caps); }
+h6 { font-size: var(--step--1); line-height: 1.2; text-transform: uppercase; letter-spacing: var(--track-caps); }
 
 p { margin: 0 0 1.05em; }
 p:last-child { margin-bottom: 0; }
 
-/* Print convention: paragraphs after the first are indented, not spaced.
-   Applied only inside prose bodies so component internals stay tidy. */
+/* Period body setting. Paragraphs after the first are separated by a
+   first-line indent and nothing else — no blank line, which is web default
+   styling and reads as a website the moment you see it. */
 .ap-prose > p + p {
-  margin-top: -0.35em;
-  text-indent: 1.6em;
+  margin-top: -0.55em;
+  text-indent: 1.5em;
+}
+
+/* Justified and hyphenated, as a company report was set. Ragged-right only
+   where the measure is too narrow to justify without rivers. */
+@media (min-width: 46rem) {
+  .ap-prose > p,
+  .ap-cols p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
 }
 
 a {

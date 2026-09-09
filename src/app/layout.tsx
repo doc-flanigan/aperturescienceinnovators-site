@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { LAMP_BOOT_SCRIPT } from "@/components/client/Lamp";
 import { SecretListener } from "@/components/client/SecretListener";
+import { SectionInk } from "@/components/client/SectionInk";
 import { ConsoleGreeting } from "@/components/client/ConsoleGreeting";
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SiteFooter />
         </div>
         <div className="ap-tooth" aria-hidden="true" />
+        <SectionInk />
         <SecretListener />
         <ConsoleGreeting />
       </body>
