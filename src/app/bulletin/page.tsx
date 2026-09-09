@@ -29,7 +29,7 @@ export default function Page() {
         </>
       }
       icons={{
-        "/bulletin/spring-1957": "clipboard",
+        "/bulletin/spring-1959": "clipboard",
         "/bulletin/winter-1956": "clipboard",
         "/bulletin/memoranda": "timer",
       }}

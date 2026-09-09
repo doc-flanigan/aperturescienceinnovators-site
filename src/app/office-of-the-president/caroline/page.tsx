@@ -89,11 +89,11 @@ export default function Page() {
                 rows={[
                   { k: "Position", v: "Personal Secretary to the President" },
                   { k: "Engaged", v: "1946" },
-                  { k: "Surname", v: <Redacted reason="Not recorded. Not once. In eleven years.">Not on file</Redacted> },
+                  { k: "Surname", v: <Redacted reason="Not recorded. Not once. In thirteen years.">Not on file</Redacted> },
                   { k: "Departments", v: "All of them, in practice" },
                   { k: "Authority", v: "Whatever she says it is" },
                   { k: "Signature required on", v: "Everything above four hundred dollars" },
-                  { k: "Days absent, 1946–1957", v: "One" },
+                  { k: "Days absent, 1946–1959", v: "One" },
                   { k: "Nominated for", v: <Redacted reason="She has not been told">Project 9</Redacted> },
                 ]}
               />
@@ -136,12 +136,12 @@ export default function Page() {
               { t: "16:14", e: "President telephones Caroline at home." },
               { t: "17:00", e: "President goes home." },
             ]}
-            foot="Cost of the Tuesday, as finally reconciled: $19,400 and one duplicate order of relay stock which is still, in 1957, in the Sub-Level 4 machine room and which is what the thinking machine is built out of."
+            foot="Cost of the Tuesday, as finally reconciled: $19,400 and one duplicate order of relay stock which is still, in 1959, in the Sub-Level 4 machine room and which is what the thinking machine is built out of."
           />
 
           <Aside>
             The eleven tons of relays that the Computation Department is presently using to attempt Project
-            9 exist because Caroline took one day off in eleven years and the President signed the same
+            9 exist because Caroline took one day off in thirteen years and the President signed the same
             purchase order twice.
           </Aside>
 
@@ -158,7 +158,7 @@ export default function Page() {
             to="The Records Department"
             from="Caroline"
             re="My file"
-            date="4 February 1957"
+            date="4 February 1959"
             sign={false}
           >
             <p>

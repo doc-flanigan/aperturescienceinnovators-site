@@ -51,7 +51,7 @@ export default function CaveJohnsonPage() {
           deck={
             <>
               He founded the company at twenty-six with four hundred dollars and a bolt of vinyl. He is
-              presently fourteen years, nine test shafts and one hole in the fabric of space further along.
+              presently sixteen years, nine test shafts and one hole in the fabric of space further along.
               Here he is, at length, unedited, as he prefers.
             </>
           }
@@ -128,7 +128,7 @@ export default function CaveJohnsonPage() {
           <p>
             We pay sixty dollars. Cash. Same day. No forms beyond the one, no waiting, no next of kin
             notified unless the volunteer specifically requests it, and I will tell you honestly that in
-            fourteen years exactly four have requested it, and I remember all four of their names, and that
+            sixteen years exactly four have requested it, and I remember all four of their names, and that
             is more than the outfit in New Mexico can say about anybody.
           </p>
 
@@ -142,7 +142,7 @@ export default function CaveJohnsonPage() {
           <p>
             You will read, in the pages that follow, about curtains and gels and holes and a cake we have
             been promising since 1953. All of it is true. Some of it is under review.{" "}
-            <Redacted reason="Struck by Medical, March 1957">
+            <Redacted reason="Struck by Medical, March 1959">
               None of it is going anywhere just because one man&rsquo;s lungs have opinions.
             </Redacted>
           </p>
@@ -190,7 +190,7 @@ export default function CaveJohnsonPage() {
 
       {/* ------------------------------------------------------------- */}
 
-      <Section title="Fourteen Years, In The President's Own Accounting">
+      <Section title="Sixteen Years, In The President's Own Accounting">
         <FigureTable
           caption="Principal events, as dictated. Dates as remembered."
           columns={[
@@ -215,8 +215,8 @@ export default function CaveJohnsonPage() {
               note: "'Fixtures' was small thinking. I have never been accused of it since.",
             },
             {
-              year: "1949",
-              event: "Purchase of the Upper Michigan salt mine.",
+              year: "1944",
+              event: "Purchase of the Upper Michigan salt mine, four kilometres deep.",
               note: "They were selling a hole. I like a hole.",
             },
             {
@@ -260,7 +260,7 @@ export default function CaveJohnsonPage() {
         <Memo
           to="All Department Heads"
           re="The word 'impossible', use of"
-          date="9 January 1957"
+          date="9 January 1959"
           cc="Legal (for information only; no action required or invited)"
           stamp={<Stamp tone="black" angle="right" size="normal">File Copy</Stamp>}
         >
@@ -329,7 +329,7 @@ export default function CaveJohnsonPage() {
 
       <Rule variant="ornament" ornament="◆ ◆ ◆" />
 
-      <Signature note="Dictated 14 March 1957. Transcribed, filed, and printed as received." />
+      <Signature note="Dictated 14 March 1959. Transcribed, filed, and printed as received." />
 
       <Flourish style={{ width: 200, color: "var(--ink-faint)", margin: "1.6rem 0" }} />
 

@@ -23,7 +23,7 @@ export default function Page() {
       <DocHead
         doc="ASI-Ω-01"
         department="Materials — Combustible Programmes"
-        date="Undated. Filed 1957. Dated later."
+        date="Undated. Filed 1959. Dated later."
         classification="Sealed — Not To Be Opened Before 1981"
         revision="Opened anyway"
       />

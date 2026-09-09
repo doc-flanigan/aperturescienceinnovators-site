@@ -111,7 +111,7 @@ export default function VaultPage() {
             </li>
             <li>
               One (1) architectural drawing of a chamber that does not appear on any shaft plan, initialled{" "}
-              <Redacted reason="The initials are not on the 1957 payroll">D.R.</Redacted>
+              <Redacted reason="The initials are not on the 1959 payroll">D.R.</Redacted>
             </li>
             <li>
               A cake tin. Empty. Clean. Dated 1953. Nobody in the commissary will discuss it.
@@ -135,7 +135,7 @@ export default function VaultPage() {
       </Row>
 
       <FinePrint tiny>
-        Form ASI-Ω-00. Not listed in Form ASI-000. Not printed in the Spring 1957 edition. Not, strictly
+        Form ASI-Ω-00. Not listed in Form ASI-000. Not printed in the Spring 1959 edition. Not, strictly
         speaking, printed at all.
       </FinePrint>
 

@@ -24,7 +24,7 @@ export default function Page() {
       <DocHead
         doc="ASI-Ω-05"
         department="Medical"
-        date="14 March 1957"
+        date="14 March 1959"
         classification="Sealed — Medical, Not For Circulation"
         revision="Suppressed on the day of issue"
       />
@@ -78,7 +78,7 @@ export default function Page() {
           </PullQuote>
 
           <FigureTable
-            caption="Recorded exposures, November 1956 – March 1957"
+            caption="Recorded exposures, November 1956 – March 1959"
             columns={[
               { key: "m", head: "Month" },
               { key: "n", head: "Exposures", numeric: true },
@@ -104,7 +104,7 @@ export default function Page() {
             to="Medical"
             from={COMPANY.founder}
             re="Your memorandum of the fourteenth"
-            date="14 March 1957"
+            date="14 March 1959"
             sign
             stamp={<Stamp tone="black" angle="right">Returned</Stamp>}
           >
@@ -131,7 +131,7 @@ export default function Page() {
                 { k: "Subject", v: "The President" },
                 { k: "Agent", v: "Lunar substrate, finely ground, unshielded" },
                 { k: "Route", v: "Inhalation. Also ingestion. Also, on one occasion, neither." },
-                { k: "Onset", v: "January 1957" },
+                { k: "Onset", v: "January 1959" },
                 { k: "Prognosis", v: <Redacted reason="Medical has not been permitted to write this down">Poor. Measured in years, not decades.</Redacted> },
                 { k: "Advised", v: "Eleven times" },
                 { k: "Complied", v: "Nine minutes" },

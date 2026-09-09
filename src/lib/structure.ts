@@ -371,18 +371,18 @@ export const SECTIONS: SectionEntry[] = [
       "The house organ. Published whenever there is news, and on several occasions when there was not.",
     pages: [
       {
-        path: "/bulletin/spring-1957",
-        title: "The Aperture Bulletin — Spring 1957",
-        nav: "Spring 1957",
+        path: "/bulletin/spring-1959",
+        title: "The Aperture Bulletin — Spring 1959",
+        nav: "Spring 1959",
         form: "ASI-701",
-        blurb: "Shaft 09 opens, the commissary reopens, and a word about the noise from Sub-Level 4.",
+        blurb: "The Mercury Seven are named, the commissary reopens, and a word about the noise from Sub-Level 4.",
       },
       {
-        path: "/bulletin/winter-1956",
-        title: "The Aperture Bulletin — Winter 1956",
-        nav: "Winter 1956",
+        path: "/bulletin/winter-1958",
+        title: "The Aperture Bulletin — Winter 1958",
+        nav: "Winter 1958",
         form: "ASI-702",
-        blurb: "The lunar procurement, the bowling league, and nine paragraphs about a missing elevator.",
+        blurb: "The substrate procurement, the bowling league, and nine paragraphs about a missing elevator.",
       },
       {
         path: "/bulletin/memoranda",

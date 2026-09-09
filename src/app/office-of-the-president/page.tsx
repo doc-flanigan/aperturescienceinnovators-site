@@ -55,7 +55,7 @@ export default function Page() {
         <Lede>
           The door of the President&rsquo;s office is always open. This is a matter of policy and the policy
           is not a metaphor. The door is physically open, at all hours, held by a brass wedge that has been
-          in place since 1949, because the President holds that a closed door is a committee waiting to
+          in place since 1947, because the President holds that a closed door is a committee waiting to
           happen.
         </Lede>
         <p>

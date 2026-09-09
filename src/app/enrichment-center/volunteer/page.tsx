@@ -114,7 +114,7 @@ export default function Page() {
               (if known &mdash; if not known, the gate will find out)
             </Field>
             <Field label="Next of kin" filled>
-              (optional; four volunteers in fourteen years have completed this line)
+              (optional; four volunteers in sixteen years have completed this line)
             </Field>
             <Field label="Distinguishing marks" filled>
               (for the file. There is a reason for this line and it is not a good one.)
@@ -218,7 +218,7 @@ export default function Page() {
         <Panel head="Operations Figures Not Printed On The Public Form" tone="red">
           <SpecList
             rows={[
-              { k: "Volunteers engaged, 1954–1957", v: "4,118" },
+              { k: "Volunteers engaged, 1954–1959", v: "4,118" },
               { k: "Volunteers who completed the afternoon", v: "1,306" },
               { k: "Volunteers who withdrew before descent", v: "2,801" },
               {

@@ -12,7 +12,13 @@ export const COMPANY = {
   founderTitle: "President & Founder",
   founded: 1943,
   renamed: 1947,
-  year: 1957,
+  /** January 1944. Cave bought the hole, not the salt. */
+  mineAcquired: 1944,
+  /** The Eisenhower administration contract: every branch except the Navy. */
+  militaryContract: 1956,
+  /** Test Shaft 09's foyer carries a painted construction date of 1952. */
+  shaftBuilt: 1952,
+  year: 1959,
   publicationSeason: "Spring",
   domain: "www.aperturescienceinnovators.com",
   address: {

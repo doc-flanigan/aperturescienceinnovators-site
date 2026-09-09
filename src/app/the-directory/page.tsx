@@ -10,7 +10,7 @@ import { Scrawl } from "@/components/Secret";
 
 export const metadata: Metadata = {
   title: "The Directory",
-  description: "Every sheet in the Spring 1957 edition, filed by department.",
+  description: "Every sheet in the Spring 1959 edition, filed by department.",
 };
 
 function DeptList({

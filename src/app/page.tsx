@@ -42,10 +42,10 @@ export default function FrontPage() {
           title={<>We Do What We Must Because We Can</>}
           deck={
             <>
-              Fourteen years ago this company sold shower curtains to the United States Army. Today it
-              punches holes in the fabric of space for a living and it still sells the curtains, because a
-              man does not walk away from a good curtain. This is the {COMPANY.year} edition of our public
-              record. Read all of it. Especially the small type.
+              Sixteen years ago this company sold shower curtains to every branch of the United States
+              military except the Navy. Today it punches holes in the fabric of space for a living and it
+              still sells the curtains, because a man does not walk away from a good curtain. This is the{" "}
+              {COMPANY.year} edition of our public record. Read all of it. Especially the small type.
             </>
           }
           byline={

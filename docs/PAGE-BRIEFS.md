@@ -4,9 +4,27 @@ One entry per unwritten sheet. Find yours, read the whole entry, then read
 `docs/HOUSE-STYLE.md` and the exemplar at
 `src/app/the-company/cave-johnson/page.tsx` before writing.
 
-Every brief assumes: Spring 1957, written by Cave Johnson, 700–1400 words of
-body copy, five or more distinct components, three or four easter eggs, one
+Every brief assumes: **Spring 1959**, written by Cave Johnson, 700–1400 words
+of body copy, five or more distinct components, three or four easter eggs, one
 `Scrawl` at the foot linking somewhere real.
+
+**Figures that are already established across the site. Reuse them exactly.**
+1,247 employees · 4,000 feet (the mine's tunnels run four kilometres down) ·
+nine test shafts · $60 cash to volunteers · a contract "the size of a phone
+book" · 4,118 volunteers since 1954, of whom 1,306 completed · founded 1943 as
+Aperture Fixtures · Cave named 1943 Shower Curtain Salesman of the Year · the
+salt mine bought January 1944 · renamed Aperture Science Innovators 1947 · the
+1956 Eisenhower contract supplying every branch of the military **except the
+Navy** · Test Shaft 09's foyer painted 1952 · Caroline engaged 1946.
+**1943 to 1959 is sixteen years. 1946 to 1959 is thirteen.** Check any "N
+years" you write.
+
+**Ornament budget.** A real 1950s publication used one or two ornamental
+devices per spread, not a theme park. **At most one `Stamp` and one
+`Starburst` per page**, and plenty of pages should have neither. `Placard`s
+are wall signage rather than ornament, but two or three is a plenty. The
+comedy is in the deadpan: set the appalling sentence in exactly the same sober
+type as the dull one, under the same form number.
 
 Real routes you may link to (do not invent others): `/`, `/the-directory`,
 `/legal`, `/terminal`, `/the-company` (+ `/cave-johnson`), `/products`,
@@ -20,13 +38,17 @@ Real routes you may link to (do not invent others): `/`, `/the-directory`,
 ## THE COMPANY
 
 ### `/the-company/history` — "Our Story So Far" · ASI-102 · Records & Filing
-The founding narrative. 1943 Aperture Fixtures in a rented garage, four
-hundred dollars and a bolt of vinyl. 1944 the first Army shower-curtain
-contract, two hundred thousand units. 1947 renamed Aperture Science
-Innovators because "Fixtures was small thinking." 1949 the purchase of a
-worked-out salt mine in the Upper Peninsula. 1951 Test Shafts 1–4. 1953 the
-first quantum tunnelling event. 1954 the volunteer programme opens. 1956 the
-lunar procurement. 1957 Shaft 09.
+The founding narrative, and the dates are canon — get them right. 1943:
+Aperture Fixtures founded in a rented garage on four hundred dollars and a
+bolt of vinyl; Cave named Shower Curtain Salesman of the Year. **January
+1944: the purchase of a decommissioned salt mine in upper Michigan whose
+tunnels run four kilometres down** — he bought the hole, not the salt. 1947:
+renamed Aperture Science Innovators, on his stated reasoning that a shower
+curtain is a low-tech portal between the inside and the outside of a shower.
+1951–52: the first test shafts sunk; Shaft 09's foyer is painted 1952. 1953:
+the first quantum tunnelling event. 1954: the volunteer programme opens.
+**1956: the Eisenhower contract, curtains to every branch of the military
+except the Navy.** 1959: Shaft 09's deepest spheres in full operation.
 Lead with a `FigureTable` timeline; carry the narrative in `Prose` around it.
 Include a `Memo` from 1947 arguing about the new name. Eggs: one year in the
 timeline whose "event" column is entirely redacted; a `Marginalia` noting
@@ -110,7 +132,7 @@ employed here.
 All product pages: `advertising` headline, a `SpecList` of specifications, an
 `Advert` block, a `Plate` with the relevant `Pictogram`, a `FigureTable` of
 some measured data, `FinePrint` with a horrifying disclaimer, and a
-`Placard` or two. Prices in 1957 dollars.
+`Placard` or two. Prices in 1959 dollars.
 
 ### `/products/shower-curtains` — ASI-201 · Sales & Manufacturing
 The founding product, still in the catalogue, still the best. Vinyl, weighted
@@ -225,7 +247,7 @@ not to be spoken to after hours.
 The order form for everything. A big `FigureTable` price list covering every
 product on the site with catalogue numbers, a `Coupon` order form using
 `Field`s, shipping terms, and a delivery-territory clause that excludes New
-Mexico. This page should read as the back pages of a 1957 trade catalogue.
+Mexico. This page should read as the back pages of a 1959 trade catalogue.
 Eggs: one catalogue number that does not correspond to any product on the
 site; the "quantity available" column for conversion gel; a line item for
 "cake, celebration, per unit — n/a, see Form ASI-307".
@@ -235,7 +257,7 @@ site; the "quantity available" column for conversion gel; a line item for
 ## THE ENRICHMENT CENTER
 
 ### `/enrichment-center/test-shaft-09` — ASI-301 · Operations
-The newest and deepest shaft, opened 11 March 1957, four months early. The
+The newest and deepest shaft, opened 11 March 1959, four months early. The
 descent, the eleven-minute elevator, the enrichment spheres, the chambers, the
 observation rooms. Proud, boosterish, specific. Use `ShaftSection` in a
 `Plate`, `FigureTable` of the chambers with status columns, `SpecList` of the
@@ -421,19 +443,21 @@ Caroline is mentioned and he stops talking.
 
 ## THE BULLETIN
 
-### `/bulletin/spring-1957` — ASI-701 · Corporate Communications
+### `/bulletin/spring-1959` — ASI-701 · Corporate Communications
 The house organ for this quarter. Write it as an actual newsletter: three or
 four news items with datelines, a bowling league table, a commissary notice, a
 personals column, a safety reminder, and a "welcome to the company" list of new
-hires. Shaft 09 opening is the lead. The noise from Sub-Level 4 is item four.
+hires. The lead is that NASA has named its seven astronauts and the President
+has cabled all seven personally, unprompted, offering sixty dollars and an
+afternoon. The noise from Sub-Level 4 is item four.
 Use `Columns count={2}`, small headings, `IndexCard`, `Stub`.
 Eggs: a personals ad seeking the return of a storage cube; a new hire whose
 department is blank; the bowling league's Marine Division team, which has one
 player.
 
-### `/bulletin/winter-1956` — ASI-702 · Corporate Communications
-Last winter's issue, same format, different news: the lunar procurement, the
-bowling league finals, nine paragraphs about a missing elevator, and a
+### `/bulletin/winter-1958` — ASI-702 · Corporate Communications
+Last winter's issue, same format, different news: the substrate procurement,
+the bowling league finals, nine paragraphs about a missing elevator, and a
 correction to the previous issue. Reference the fact that the Winter issue
 reported no volunteer lost in the fourth quarter, which was correct at the
 time of setting and remained correct for eleven days.

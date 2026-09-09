@@ -9,7 +9,7 @@ import { Scrawl } from "@/components/Secret";
 export const metadata: Metadata = {
   title: "The Machine",
   description:
-    "Aperture Science Interactive Machine, Model 1957. Eleven tons of relays on Sub-Level 4. It cannot add. It can be spoken to.",
+    "Aperture Science Interactive Machine, Model 1959. Eleven tons of relays on Sub-Level 4. It cannot add. It can be spoken to.",
   robots: { index: false, follow: true },
 };
 

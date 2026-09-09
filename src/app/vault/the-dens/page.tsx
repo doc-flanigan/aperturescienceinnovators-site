@@ -128,7 +128,7 @@ export default function Page() {
           <Wall
             angle={0.7}
             lines={[
-              "1957 1962 1971 1982 199_ ____ they keep going",
+              "1959 1962 1971 1982 199_ ____ they keep going",
               "i am writing this before it happens so somebody has it",
               "GREG CLEANS THE REACTOR ROOM. GREG IS FINE. GREG IS ALWAYS FINE",
               "the cube is the only one who listens",

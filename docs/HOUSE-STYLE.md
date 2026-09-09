@@ -8,7 +8,7 @@ Everything a page author needs. Read all of it before writing a page.
 
 This is `www.aperturescienceinnovators.com`: a Portal / Portal 2 **fan site**
 presented as the **actual corporate website of Aperture Science Innovators,
-published in Spring 1957**, and **written throughout by Cave Johnson**.
+published in Spring 1959**, and **written throughout by Cave Johnson**.
 
 It is not a modern site with a retro filter. It is a 1950s industrial firm's
 printed identity — annual report, product catalogue, employee handbook,
@@ -70,35 +70,81 @@ company outright, he dictates everything personally, and nobody edits him.
 
 ## 3. HARD CANON RULES
 
-The site is published in **Spring 1957**. Everything must be consistent with
+The site is published in **Spring 1959**. Everything must be consistent with
 that date.
 
-| Fact | Status in 1957 |
-|---|---|
-| Aperture Fixtures, shower curtains, the military contract | Founding history, freely discussed |
-| Cave Johnson, President & Founder | Alive, in charge, loud |
-| Caroline, his secretary | At her desk, running everything |
-| The Enrichment Center, Test Shafts 1–9, the salt mine | Current, boasted about |
-| Portable Quantum Tunnelling Device | Current flagship product |
-| Repulsion / Propulsion Gel | Current products |
-| Conversion Gel, lunar substrate | Current, and quietly poisoning the President |
-| Weighted Storage Cube, Faith Plates, Emancipation Grill | Current |
-| Sentry Turret, thinking machines | **"In development"** only |
-| Cave's illness | Never admitted on a public page. Vault material only |
-| GLaDOS, brain-mapping, Project 9 | **Vault only**, as a sealed proposal |
-| The combustible-lemon rant | **Vault only**, as a future-dated sealed document |
-| Chell, Doug Rattmann, the 1980s employee testing | **Never** as present fact. Scrawls and vault hints only |
-| Black Mesa | Named rival, sneered at, no details of their work |
+**Why 1959 and not some other year.** It is the last clean year of Aperture's
+peak. The 1956 Eisenhower contract is recent enough to boast about; Test Shaft
+09 (its foyer carries a painted 1952) is built and running; NASA exists and the
+Mercury Seven were named in April 1959, so Cave's canonical boast about testing
+on *astronauts* is literally true rather than two years early. And everything a
+Portal player knows is coming — the shaft's condemnation on 15 June 1961, the
+Senate hearings, the bankruptcy, the moon rocks, Caroline, GLaDOS — is still
+ahead. Every piece of dramatic irony on this site comes free.
 
-**Anachronism policy:** later-era lore never appears as 1957 fact. It appears
+### Established facts. Use these exact figures.
+
+| Fact | Value |
+|---|---|
+| Founded | 1943, as **Aperture Fixtures**, shower curtains |
+| Why "aperture" | Cave thought it made the curtains sound more hygienic |
+| 1943 honour | Cave was named **Shower Curtain Salesman of the Year** |
+| The mine | Bought **January 1944** — a decommissioned salt mine in upper Michigan, tunnels running four kilometres down. It is the entire physical plant. |
+| Renamed | **1947**, to *Aperture Science Innovators*. Cave's stated reasoning: a shower curtain is a low-tech portal between the inside and the outside of a shower. |
+| Military contract | **1956**, Eisenhower administration — curtains to **every branch of the U.S. military except the Navy** |
+| Test Shaft 09 | Foyer painted 1952. Enrichment **Spheres** ascend chronologically; the deepest are the oldest. |
+| Volunteers | Elite: astronauts, war heroes, Olympians. **Sixty dollars, cash.** They sign a contract *"the size of a phone book."* |
+| Caroline | Cave's assistant since 1946. The other voice on the announcement system. Runs the place. |
+| Trading name | *Aperture Science Innovators* is correct for 1947–1970s. **Never** "Aperture Laboratories" or the later "Aperture Science" — those are later brands. |
+| Arithmetic | 1943 → 1959 is **sixteen years**. 1946 → 1959 is **thirteen**. Check every "N years" you write. |
+
+### Canonical Cave-isms worth using
+
+- **"The lab boys"** — his standing term for research staff. Authoritative and
+  faintly insubordinate, both at once.
+- **Throwing science at the wall to see what sticks.** No idea what a given
+  test will do: best case superpowers, worst case tumours, *"which we'll cut
+  out."*
+- **Asbestos.** The latency period is long enough not to matter — if you are
+  thirty or over you are *laughing*, and the worst case is missing a few rounds
+  of canasta while advancing science by three centuries.
+- **Repulsion Gel** was developed as a **diet aid** before the bounce was
+  discovered. Nobody has established what element it is, only that it is lively
+  and *"does not like the human skeleton."*
+- He offers the Nobel Prize and mentions the fatal side effect **in the same
+  sentence**, in the same tone.
+
+### What may and may not appear
+
+| Subject | Status in 1959 |
+|---|---|
+| Aperture Fixtures, the curtains, the 1956 contract | Founding history, boasted about constantly |
+| Cave Johnson, President & Founder | Alive, in charge, loud, healthy |
+| Caroline | At her desk, running everything |
+| The mine, Test Shaft 09, the Enrichment Spheres | Current, boasted about |
+| Repulsion Gel | Current, and still half a diet product |
+| The tunnelling device, the gels, the cubes, the plates | Current — see the note on deliberate liberties below |
+| Sentry turret, thinking machines | **"In development" only** |
+| Cave's illness | **Never** on a public page. Vault only. |
+| GLaDOS, brain-mapping, Project 9 | **Vault only**, as a sealed proposal |
+| The combustible-lemon rant | **Vault only**, future-dated and sealed |
+| Chell, Doug Rattmann, 1980s employee testing | **Never** as fact. Scrawls and vault hints only. |
+| Black Mesa | Named rival, sneered at, no detail of their work |
+| Bring Your Daughter To Work Day | Runs as a science fair. Do **not** tie it to any later event. |
+
+**Anachronism policy:** later-era lore never appears as 1959 fact. It appears
 as (a) a sealed, future-dated document in `/vault/*`, (b) redacted text, (c) a
 scrawl on the wall, or (d) something the machine on Sub-Level 4 says it should
 not know yet. That tension *is* the site.
 
+**Deliberate liberties, taken knowingly.** Strict canon puts portals in the
+1970s. This site puts the Portable Quantum Tunnelling Device, the gels and the
+cubes in 1959 anyway, because a loving tribute to Portal that contains no
+portals is a worse thing than a slightly early one. That is the one liberty.
+Everything else stays honest, and the genuinely later material stays sealed.
+
 **Legal:** this is a fan work. Never imply endorsement by Valve. The footer
 disclaimer is global — don't repeat it on pages.
-
----
 
 ## 4. HOW A PAGE IS BUILT
 
@@ -251,7 +297,7 @@ page, the Konami sequence, clicking the masthead mark nine times, the
 print stylesheet.
 
 **Rules for eggs:** never break the page for someone who misses them. Never
-use a modal. Never use `alert()`. Keep them in character — a 1957 corporate
+use a modal. Never use `alert()`. Keep them in character — a 1959 corporate
 document would not say "easter egg".
 
 ---
@@ -284,6 +330,6 @@ document would not say "easter egg".
 
 ## 9. THE TEST
 
-Read the page back and ask: *could this have been set in metal type in 1957
+Read the page back and ask: *could this have been set in metal type in 1959
 by a company that sells shower curtains and punches holes in space?* If any
 sentence sounds like it was written after 1960, cut it.
