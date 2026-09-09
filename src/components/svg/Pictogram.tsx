@@ -59,7 +59,8 @@ const GLYPHS: Record<string, React.ReactNode> = {
   companion: (
     <>
       <path {...S} d="M50 12 86 30v40L50 88 14 70V30z" />
-      <path {...SF} d="M50 68c-9-7-16-12-16-19a7.6 7.6 0 0 1 13.2-5.1L50 46.6l2.8-2.7A7.6 7.6 0 0 1 66 49c0 7-7 12-16 19z" />
+      <path {...S} d="M50 12v76M14 30l36 18 36-18" opacity={0.35} strokeWidth={2.5} />
+      <path {...SF} d="M50 74c-11-8-19-14-19-22a9 9 0 0 1 15.6-6L50 49.2l3.4-3.2A9 9 0 0 1 69 52c0 8-8 14-19 22z" />
     </>
   ),
   button: (
