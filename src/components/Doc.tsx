@@ -27,7 +27,12 @@ export function DocHead({
   revision,
   extra = [],
 }: DocHeadProps) {
-  const restricted = /classified|restricted|secret|eyes only|sealed/i.test(classification);
+  /* Word boundaries matter here: "Unrestricted" contains "restricted", and
+     without \b every unrestricted sheet on the site prints its classification
+     in the red reserved for the ones that are not. */
+  const restricted = /\b(classified|restricted|secret|eyes only|sealed|not for circulation)\b/i.test(
+    classification
+  );
   const cells: { label: string; value: React.ReactNode; flag?: boolean }[] = [
     { label: "Form No.", value: doc },
     { label: "Department", value: department },
