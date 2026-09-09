@@ -238,8 +238,9 @@ export default function Page() {
       <Notice head="The Enrichment Center Reminds You">
         The fire doors are not doors made of fire, nor, strictly, doors that resist it. They are the doors
         the Enrichment Center closes in the event of a fire. They close from the corridor side, whether or
-        not the corridor is empty, at a speed determined by the fire. In sixteen years not one has failed to
-        close, and the Enrichment Center regards that as much the more important of the two figures.
+        not the corridor is empty, at a speed determined by the fire. In the eight years since the first
+        shaft was sunk not one has failed to close, and the Enrichment Center regards that as much the more
+        important of the two figures.
       </Notice>
 
       {/* ------------------------------------------------------------- */}
