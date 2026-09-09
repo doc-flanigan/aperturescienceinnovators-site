@@ -68,7 +68,12 @@ npm run build    # every route prerenders to static HTML
 ```
 
 Next.js App Router, TypeScript, no CSS framework, no runtime dependencies
-beyond React. Deploys to Vercel with no configuration.
+beyond React. Every route prerenders to static HTML. Deployed on Vercel from
+this repository with no configuration; every push to the production branch
+goes live.
+
+`docs/QUOTE-BANK.md` holds verbatim Aperture copy and the lines fandom most
+often gets wrong — check it before setting a quotation in type.
 
 ## Legal
 
