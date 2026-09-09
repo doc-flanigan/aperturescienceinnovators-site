@@ -5,6 +5,7 @@ import { SECTIONS, UTILITY_PAGES } from "@/lib/structure";
 import { Lamp } from "@/components/client/Lamp";
 import { ClearanceBadge } from "@/components/client/ClearanceGate";
 import { ApertureMark } from "@/components/svg/ApertureMark";
+import { PrintSecret } from "@/components/PrintSecret";
 
 export function SiteFooter() {
   const cols = SECTIONS.slice(0, 4);
@@ -72,6 +73,8 @@ export function SiteFooter() {
             </span>
           </div>
         </div>
+
+        <PrintSecret />
       </div>
     </footer>
   );

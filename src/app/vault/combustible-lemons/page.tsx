@@ -65,24 +65,24 @@ TRANSCRIBED FROM A RECORDING THAT SHOULD NOT EXIST.
   "All right, I've been thinking. When life gives you lemons?
    Don't make lemonade.
 
-   Make life take the lemons back. GET MAD.
+   Make life take the lemons back! Get mad!
 
-   I don't want your damn lemons, what am I supposed to do with
-   these? Demand to see life's manager. Make life RUE the day it
-   thought it could give Cave Johnson lemons.
+   'I don't want your damn lemons! What am I supposed to do with
+   these?' Demand to see life's manager! Make life RUE the day it
+   thought it could give Cave Johnson lemons!
 
-   Do you know who I am? I'm the man who's gonna burn your house
-   down. WITH THE LEMONS.
+   Do you know who I am? I'm the man who's going to burn your
+   house down! WITH THE LEMONS!
 
-   I'm gonna get my engineers to invent a combustible lemon that
-   burns your house down."
+   I'm going to get my engineers to invent a combustible lemon
+   that burns your house down!"
 
 END OF TRANSCRIPT. THE MACHINE HAS PLAYED THIS ELEVEN TIMES.
 THE MACHINE HAS BEEN ASKED TO STOP PLAYING THIS.`}
           </Terminal>
 
           <PullQuote big attribution={`${COMPANY.founder}, on a spool that has no business existing`}>
-            I&rsquo;m gonna get my engineers to invent a combustible lemon that burns your house down.
+            I&rsquo;m going to get my engineers to invent a combustible lemon that burns your house down!
           </PullQuote>
 
           <Prose>

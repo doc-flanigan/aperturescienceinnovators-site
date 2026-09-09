@@ -185,7 +185,7 @@ export default function CaveJohnsonPage() {
       </Split>
 
       <PullQuote big attribution={`${COMPANY.founder}, to the Materials Department, 1954`}>
-        Science isn&rsquo;t about why. It&rsquo;s about why not.
+        Science isn&rsquo;t about WHY. It&rsquo;s about WHY NOT.
       </PullQuote>
 
       {/* ------------------------------------------------------------- */}

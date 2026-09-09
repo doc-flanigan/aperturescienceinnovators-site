@@ -101,12 +101,12 @@ export default function Page() {
       </Section>
 
       <PullQuote big attribution="Enrichment Center announcement, played in every chamber, every test, since 1953">
-        Cake and grief counselling will be available at the conclusion of the test.
+        Cake and Grief Counseling will be available at the conclusion of the test.
       </PullQuote>
 
       <Notice head="The Enrichment Center Reminds You">
-        Grief counselling is also available at the conclusion of the test. The Enrichment Center has never
-        been asked why grief counselling would be required at the conclusion of a test, and has therefore
+        Grief Counseling is also available at the conclusion of the test. The Enrichment Center has never
+        been asked why grief counseling would be required at the conclusion of a test, and has therefore
         never had to answer.
       </Notice>
 

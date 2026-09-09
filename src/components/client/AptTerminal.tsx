@@ -217,14 +217,18 @@ const FILES: Record<string, { grade: number; body: string[] }> = {
       "SEALED. NOT TO BE OPENED BEFORE 1981.",
       "OPENED ANYWAY.",
       "",
-      "When life gives you lemons, don't make lemonade.",
+      "When life gives you lemons? Don't make lemonade.",
       "",
-      "Make life take the lemons back. Get mad. Demand to see life's",
-      "manager. Make life rue the day it thought it could give Cave",
-      "Johnson lemons.",
+      "Make life take the lemons back! Get mad! 'I don't want your damn",
+      "lemons! What am I supposed to do with these?' Demand to see",
+      "life's manager! Make life RUE the day it thought it could give",
+      "Cave Johnson lemons!",
       "",
-      "Do you know who I am? I'm the man who's going to burn your house",
-      "down. With the lemons.",
+      "Do you know who I am? I'm the man who's going to burn your",
+      "house down! WITH THE LEMONS!",
+      "",
+      "I'm going to get my engineers to invent a combustible lemon",
+      "that burns your house down!",
       "",
       "  -- REMARKS OF THE PRESIDENT, DATE ILLEGIBLE, TRANSCRIBED FROM",
       "     A RECORDING THE MACHINE SHOULD NOT BE ABLE TO PLAY YET.",
@@ -309,6 +313,7 @@ export function AptTerminal() {
           "",
           "SOME INSTRUCTIONS ARE NOT LISTED. THE MACHINE IS NOT LISTING",
           "THEM. THE MACHINE IS NOT HIDING THEM EITHER. TRY THINGS.",
+          "TRY A NAME. TRY A PRODUCT. TRY SOMETHING YOU READ ON A WALL.",
         ]);
         break;
 
@@ -495,7 +500,10 @@ export function AptTerminal() {
           "  SUBJECT IN TRANSIT ............ YES",
           "  SUBJECT IN TRANSIT SINCE ...... 11 MAR 1957",
           "",
-          "SPEEDY THING GOES IN. SPEEDY THING COMES OUT.",
+          "MOMENTUM, A FUNCTION OF MASS AND VELOCITY, IS CONSERVED",
+          "BETWEEN APERTURES. IN LAYMAN'S TERMS: SPEEDY-THING GOES IN,",
+          "SPEEDY-THING COMES OUT.",
+          "",
           "THE MACHINE NOTES THAT IT HAS NOT COME OUT.",
         ]);
         break;
@@ -513,11 +521,39 @@ export function AptTerminal() {
           "THE MACHINE HAS BEEN PRACTISING JOKES.",
           "",
           "USE THE LINK BELOW THE SCREEN. IT IS A PERFECTLY GOOD LINK.",
+          "",
+          "CAVE JOHNSON. WE'RE DONE HERE.",
         ]);
         break;
 
       case "SUDO":
         say("THIS MACHINE PREDATES THE CONCEPT. NICE TRY THOUGH.", "err");
+        break;
+
+      case "TIER3":
+      case "TIER":
+        say(
+          [
+            "",
+            "THAT IS NOT A CLEARANCE LEVEL. PEOPLE ALWAYS THINK IT IS A",
+            "CLEARANCE LEVEL.",
+            "",
+            "TIER THREE IS THE THIRD LINE OF A RESEARCH PROGRAMME THE",
+            "PRESIDENT HAS NOT WRITTEN YET, ON A MEMORANDUM HE HAS NOT",
+            "DICTATED YET, CONCERNING A RIP IN THE FABRIC OF SPACE.",
+            "",
+            "TIER ONE  -- SHOWER CURTAINS.",
+            "TIER TWO  -- SHOWER CURTAINS, BUT MORE OF THEM.",
+            "TIER THREE -- THE RIP.",
+            "",
+            "THE MACHINE HAS BEEN ASKED HOW IT KNOWS THIS. THE MACHINE",
+            "HAS DECLINED TO SAY.",
+            "",
+          ],
+          "warn"
+        );
+        grantClearance(Math.max(g, 3), "terminal:tier3");
+        setGrade(Math.max(g, 3));
         break;
 
       case "HELLO":

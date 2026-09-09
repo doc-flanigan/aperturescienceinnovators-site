@@ -40,7 +40,7 @@ export default function Page() {
       after={
         <>
           <PullQuote big attribution="Cave Johnson, opening address, Test Shaft 09">
-            Who&rsquo;s ready to make some science?
+            Who is ready to make some science?
           </PullQuote>
           <Row>
             <Placard>Enrichment Center — Sub-Level 1</Placard>

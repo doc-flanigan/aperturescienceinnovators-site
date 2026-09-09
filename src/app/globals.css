@@ -409,7 +409,14 @@ body::before {
   :root { --paper: #fff; --desk: #fff; --ink: #000; --tooth-opacity: 0; }
   body { background: #fff; font-size: 11pt; }
   body::before, .ap-tooth { display: none; }
-  .ap-noprint { display: none !important; }
+  .ap-noprint,
+  .ap-nav,
+  .ap-subnav,
+  .ap-crumbs,
+  .ap-nextprev,
+  .ap-foot__cols,
+  .ap-lamp,
+  .ap-slips { display: none !important; }
   .ap-printonly { display: block !important; }
   a { color: #000; text-decoration: none; }
   .ap-prose a::after { content: " [" attr(href) "]"; font-size: 8pt; color: #555; }

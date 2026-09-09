@@ -42,7 +42,8 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: SITE.title, description: SITE.description },
   other: {
     "aperture-clearance": "VISITOR",
-    "aperture-notice": "The Enrichment Center reminds you that the Weighted Companion Cube cannot speak.",
+    "aperture-notice":
+      "The Enrichment Center reminds you that the Weighted Companion Cube will never threaten to stab you and, in fact, cannot speak.",
   },
 };
 
