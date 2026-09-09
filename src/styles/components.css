@@ -1412,3 +1412,23 @@ a.ap-card:hover .ap-card__title { color: var(--spot-orange); }
 @media (prefers-reduced-motion: reduce) {
   .ap-crt__caret { animation: none; opacity: 1; }
 }
+
+/* -------------------------------------------------------------------------
+   NARROW COLUMNS
+   A specification run set in a sidebar is still a specification run, but it
+   is not going to get two columns out of nineteen picas.
+   ------------------------------------------------------------------------- */
+
+.ap-panel,
+.ap-split > *,
+.ap-coupon,
+.ap-card {
+  container-type: inline-size;
+}
+
+@container (max-width: 26rem) {
+  .ap-spec__row { grid-template-columns: 1fr; gap: 0.1rem; }
+  .ap-field { grid-template-columns: 1fr; gap: 0.15rem; }
+  .ap-memo__fields { grid-template-columns: 1fr; gap: 0.05rem 0; }
+  .ap-memo__key { margin-top: 0.4rem; }
+}
