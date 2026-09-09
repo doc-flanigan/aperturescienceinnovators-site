@@ -81,7 +81,7 @@ export default function Page() {
             Every company likes to tell you it started small. Most of them are lying, because most of them
             started with a bank, a brother-in-law and a going concern. This one started with four hundred
             dollars, a rented garage with a dirt floor, a bolt of vinyl forty yards long, and a
-            twenty-six-year-old man who had correctly worked out that the United States of America was about
+            thirty-four-year-old man who had correctly worked out that the United States of America was about
             to build a great many bathrooms and had not yet decided who was going to hang anything in them.
           </Lede>
           <p>

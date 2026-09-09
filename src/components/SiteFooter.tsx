@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { COMPANY } from "@/lib/site";
-import { SECTIONS, UTILITY_PAGES } from "@/lib/structure";
+import { SECTIONS, UTILITY_PAGES, ARCHIVE_INDEX, ARCHIVE_SECTIONS } from "@/lib/structure";
 import { Lamp } from "@/components/client/Lamp";
 import { ClearanceBadge } from "@/components/client/ClearanceGate";
 import { ApertureMark } from "@/components/svg/ApertureMark";
@@ -38,6 +38,19 @@ export function SiteFooter() {
               {UTILITY_PAGES.map((p) => (
                 <li key={p.path}>
                   <Link href={p.path}>{p.nav ?? p.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="ap-foot__head">{ARCHIVE_INDEX.nav}</p>
+            <ul className="ap-foot__list">
+              <li>
+                <Link href={ARCHIVE_INDEX.path}>Later printings</Link>
+              </li>
+              {ARCHIVE_SECTIONS.map((s) => (
+                <li key={s.path}>
+                  <Link href={s.path}>{s.nav}</Link>
                 </li>
               ))}
             </ul>

@@ -118,6 +118,90 @@
 }
 
 /* -------------------------------------------------------------------------
+   THE LATER PRINTINGS
+   Same press, same mark, stock that aged the way the company did. Each
+   printing is set on the root element by the path the reader is standing
+   in; microfilm mode, declared below, still wins on paper and ink.
+   ------------------------------------------------------------------------- */
+
+/* 1976. The money is gone and the stock has yellowed. Burnt-orange spot. */
+:root[data-era="1970s"] {
+  --paper:        #e9dcb4;
+  --paper-warm:   #e4d3a3;
+  --paper-cool:   #e7ddbd;
+  --paper-deep:   #d8c48c;
+  --paper-edge:   #bfa96f;
+  --desk:         #8f7f5a;
+  --ink:          #231d12;
+  --ink-2:        #47392a;
+  --ink-3:        #6a5a3a;
+  --ink-faint:    #6a5a3a;
+  --ink-ghost:    #8d7c57;
+  --rule:         #2c2416;
+  --rule-soft:    #8a7754;
+  --rule-faint:   #bfab7c;
+  --spot-orange:  #8a4413;
+  --spot-mustard: #9a7a1c;
+  --link:         #6d3a10;
+  --focus:        #8a4413;
+  --tooth-opacity: 0.09;
+}
+:root[data-era="1970s"][data-dept] { --accent: #8a4413; }
+
+/* 1982. Photocopied, tractor-fed, one muddy process teal. */
+:root[data-era="1980s"] {
+  --paper:        #e4e2dc;
+  --paper-warm:   #dedbd3;
+  --paper-cool:   #e8e7e2;
+  --paper-deep:   #d2cfc6;
+  --paper-edge:   #b5b2aa;
+  --desk:         #6f6e69;
+  --ink:          #1a1a1a;
+  --ink-2:        #3b3b39;
+  --ink-3:        #5f5f5a;
+  --ink-faint:    #5f5f5a;
+  --ink-ghost:    #8a8a84;
+  --rule:         #222;
+  --rule-soft:    #7d7d78;
+  --rule-faint:   #b9b8b1;
+  --spot-orange:  #2b5a68;
+  --spot-blue:    #2b5a68;
+  --link:         #24505c;
+  --focus:        #2b5a68;
+  --tooth-opacity: 0.12;
+}
+:root[data-era="1980s"][data-dept] { --accent: #2b5a68; }
+
+/* The Enrichment Center. Clinical white, and the only two inks are the
+   two the facility has ever cared about. */
+:root[data-era="glados"] {
+  --paper:        #f4f3ef;
+  --paper-warm:   #f0eee8;
+  --paper-cool:   #eeeeea;
+  --paper-deep:   #e2e1dc;
+  --paper-edge:   #c9c8c2;
+  --desk:         #2a2d30;
+  --ink:          #1c1e21;
+  --ink-2:        #3a3d41;
+  --ink-3:        #5f6367;
+  --ink-faint:    #5f6367;
+  --ink-ghost:    #8b8f93;
+  --rule:         #1c1e21;
+  --rule-soft:    #8b8f93;
+  --rule-faint:   #cfd1d3;
+  --spot-orange:  #a4560a;
+  --spot-blue:    #1f6f9f;
+  --spot-red:     #8d2f21;
+  --portal-orange: #a4560a;
+  --portal-blue:   #1f6f9f;
+  --link:         #1f6f9f;
+  --focus:        #a4560a;
+  --select-bg:    #cfe3ef;
+  --tooth-opacity: 0.02;
+}
+:root[data-era="glados"][data-dept] { --accent: #a4560a; }
+
+/* -------------------------------------------------------------------------
    MICROFILM MODE
    The reading room after hours. Archival negative on a fiche reader:
    the stock goes to smoked glass, the ink burns through as bone white.
@@ -163,6 +247,10 @@
   --stamp-blend: screen;
   --figure-blend: screen;
 }
+
+:root[data-theme="microfilm"][data-era="1970s"][data-dept] { --accent: #e0a05a; }
+:root[data-theme="microfilm"][data-era="1980s"][data-dept] { --accent: #7fbfd2; }
+:root[data-theme="microfilm"][data-era="glados"][data-dept] { --accent: #f0a656; --link: #7ec4f0; }
 
 /* -------------------------------------------------------------------------
    THE PRESS RUN

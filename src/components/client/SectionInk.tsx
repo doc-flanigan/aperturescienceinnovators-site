@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { usePathname } from "next/navigation";
+import { eraForPath } from "@/lib/eras";
 
 /**
  * THE PRESS RUN
@@ -16,8 +17,12 @@ export function SectionInk() {
   const pathname = usePathname() ?? "/";
 
   React.useEffect(() => {
-    const dept = pathname.split("/")[1] ?? "";
     const root = document.documentElement;
+    const era = eraForPath(pathname);
+    /* The printing first: it decides the stock. Then the department's ink. */
+    if (era.key === "1959") root.removeAttribute("data-era");
+    else root.setAttribute("data-era", era.key);
+    const dept = pathname.split("/")[1] ?? "";
     if (dept) root.setAttribute("data-dept", dept);
     else root.removeAttribute("data-dept");
   }, [pathname]);

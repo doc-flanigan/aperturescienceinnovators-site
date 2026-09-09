@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SECTIONS, UTILITY_PAGES, sectionForPath } from "@/lib/structure";
+import { SECTIONS, UTILITY_PAGES, ARCHIVE_INDEX, ARCHIVE_SECTIONS, sectionForPath } from "@/lib/structure";
 
 export function PrimaryNav() {
   const pathname = usePathname() ?? "/";
@@ -29,6 +29,19 @@ export function PrimaryNav() {
             </Link>
           </li>
         ))}
+        <li className="ap-nav__item">
+          <Link
+            className="ap-nav__link"
+            href={ARCHIVE_INDEX.path}
+            aria-current={
+              pathname === ARCHIVE_INDEX.path || ARCHIVE_SECTIONS.some((s) => active?.path === s.path)
+                ? "true"
+                : undefined
+            }
+          >
+            {ARCHIVE_INDEX.nav}
+          </Link>
+        </li>
         <li className="ap-nav__item">
           <Link
             className="ap-nav__link"

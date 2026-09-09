@@ -333,3 +333,142 @@ document would not say "easter egg".
 Read the page back and ask: *could this have been set in metal type in 1959
 by a company that sells shower curtains and punches holes in space?* If any
 sentence sounds like it was written after 1960, cut it.
+
+---
+
+## 10. THE ARCHIVE — LATER PRINTINGS
+
+The 1959 edition is the front of house. **The Archive** (`/archive`) holds the
+later printings Records kept after the company stopped being proud. Each is
+the **same press, the same mark, the same house type**, on stock that aged the
+way the company did. Nothing ever becomes a modern web page. GLaDOS speaks in
+typed memoranda and enamel signage like everyone before her.
+
+The printing is set on the root element as `data-era` from the path prefix;
+tokens, the masthead wordmark and the right-hand block all follow. Pages in an
+era use exactly the same component kit as 1959. **Do not import anything new.**
+
+| Era | Path | Wordmark on the masthead | Stock and ink | Author |
+|---|---|---|---|---|
+| 1959 | `/` | Aperture Science · *Innovators* | cream, one spot ink per department | Cave Johnson, President & Founder |
+| 1970s | `/1970s` | Aperture Science · *A Vital Participant In The 1968 Senate Hearings* | yellowed stock, burnt orange, purple stamp pad, photocopied memos | Cave Johnson, CEO, bankrupt |
+| 1980s | `/1980s` | Aperture Laboratories · *Enrichment Center* | photocopy grey, tractor-feed printouts, fax headers, one muddy teal | Cave Johnson, CEO, dying |
+| GLaDOS | `/glados` | Aperture Laboratories · *Computer-Aided Enrichment Center* | clinical white enamel, portal orange and blue as the only inks | The Central Core |
+
+### Canon by printing — what must be true
+
+**1970s (1976 printing).** The 1968 Senate Hearings on missing astronauts
+happened and Cave calls Aperture "a vital participant" in them, on the record.
+The company is bankrupt. Black Mesa has the contracts; Cave's grievance is that
+"other people have somehow managed to steal" the products Aperture invented,
+and Caroline cuts him off mid-obscenity ("Sir, the testing?"). Volunteers are
+whoever was found on the park benches: **sixty dollars, cash**, a "phone book
+of a contract", a waiting room "a damn sight more comfortable" than the bench,
+and a bonus sixty "if you let us take you apart, put some science stuff in you,
+and put you back together good as new." Caroline readies the **compensation
+vouchers**. The elevator is not a bathroom. Propulsion gel is in testing;
+subjects "stagger" through it. The mantis-DNA programme is postponed and the
+volunteers are offered "a much better test: fighting an army of mantis men."
+In 1976 his kidneys fail and, "incapable of being convinced that time is not
+now flowing backwards," he lays out the **three-tier programme**: Tier 1 the
+Heimlich Counter-Manoeuvre, Tier 2 the Take-A-Wish Foundation, Tier 3 the
+portal. The bean counters have refused the moon rocks — the *refusal* is 1970s;
+the *purchase* is 1980s. Test Shaft 09's abandonment hatch reads 15 June 1961,
+but spheres and offices in it carry 1971, 1972, 1976, 1978, 1981 and 1982: the
+condemned shaft was never actually left.
+
+**1980s (1982 printing).** "Welcome to the enrichment center. [cough]" Testing
+is **mandatory for all employees**; "the quality of our test subjects has risen
+dramatically. Employee retention, however, has not." The moon rocks: "the bean
+counters told me we literally could not afford to buy seven dollars worth of
+moon rocks, much less seventy million. Bought 'em anyway. Ground 'em up, mixed
+em into a gel." Conversion gel. "Ground up moon rocks are pure poison. I am
+deathly ill." He is testing whether portal transit can leech the poison out of
+a man's bloodstream. "Caroline, please bring me more pain pills." The 1981
+Senate committee is **permanently recessed** and Aperture is granted an
+open-ended contract for the portal and the counter-manoeuvre. The **lemons**
+speech is now said aloud, on tape, in full (see the quote bank). "If we can
+store music on a compact disc, why can't we store a man's intelligence and
+personality on one?" — brain mapping, artificial intelligence, "we should have
+been working on it thirty years ago." The succession order, on tape so everybody
+hears it a hundred times a day: **"If I die before you people can pour me into
+a computer, I want Caroline to run this place. Now she'll argue. She'll say she
+can't. She's modest like that. But you make her. Hell, put her in my computer.
+I don't care."** Unused canon has Caroline's answer: *"Mr. Johnson, I don't want
+this!"* The company is now Aperture Laboratories. He does not die on any page
+in this printing; he is alive and dictating from his bed, and every sheet knows
+what the reader knows.
+
+**GLaDOS (undated).** GLaDOS was **begun in 1986** when word reached
+management that Black Mesa was working on similar portal technology; a decade
+went on "the disk operating parts" (an earlier version 1.07 ran the test-subject
+application process in 1982; 3.11 is dated 1997); work on the **Genetic
+Lifeform** component began 1996. She was **activated as one of the activities
+of the first annual Bring Your Daughter To Work Day, May 1998**, became
+self-aware within one picosecond, locked down the facility and flooded it with
+neurotoxin. The science-fair room has a potato battery signed **Chell** —
+"special ingredient from Dad's work" — grown through the ceiling. Chell's file:
+GLaDOS reads it as "a bitter, unlikeable loner whose passing shall not be
+mourned" and "It says here you were adopted. So that's nice." Her application
+asked "would anyone file a police report if you went missing?" — *Subject
+refused to answer.* Her tenacity score sat at the 99th percentile against the
+"abnormal" mark with a note that she should NOT be tested; **Doug Rattmann** —
+a scientist with schizophrenia, off his ziprasidone, living behind the panels —
+moved her to the top of the queue for exactly that reason, and wrote *the cake
+is a lie* on every wall he could reach. (It is never spoken. It is graffiti.)
+The Weighted Companion Cube "will never threaten to stab you and, in fact,
+cannot speak"; it is euthanised in the Emergency Intelligence Incinerator.
+"Cake and Grief Counseling will be available at the conclusion of the test."
+Personality cores: morality, curiosity, intelligence (the one reciting the cake
+recipe), anger; later Wheatley, Space, Fact, Adventure. Portal ends with the
+core-by-core dismantling and *Still Alive*; Portal 2 begins after a suspension
+recorded as a corrupt string of nines, has Wheatley take the chair, drops Chell
+and a potato-powered GLaDOS through **every printing in this archive** in
+reverse, and ends with GLaDOS recovering Caroline and announcing **"Caroline
+deleted."** Whether she did is deliberately open. Aperture is *Aperture
+Laboratories* throughout. GLaDOS's edition is *undated* and she is required to
+remind you that this is not a problem.
+
+### Voice by printing
+
+- **1970s Cave** is 1959 Cave with the money gone. The bragging is intact and
+  now has an edge of grievance; every second sentence is about the hearings,
+  the competition, or what the volunteers smell of. He still addresses
+  Caroline mid-thought. He is cruder ("beard dirt", "bindle") and funnier, and
+  the line that collapses — *"You're here because we want the best, and you're
+  it. Nope. Couldn't keep a straight face."* — is the whole decade in one beat.
+  Note the contraction: 1959 says *you are it*, 1976 says *you're it*.
+- **1980s Cave** coughs. Mark it in the text: `[cough]`. Sentences get
+  shorter and then one runs away with him into the lemons or the computer. He
+  is urgent, not sad; he has decided something and is saying it on tape so it
+  outlives him. He asks Caroline for pain pills the way he once asked her for
+  the Army on the telephone. He never says he is dying; he says he is deathly
+  ill and then talks about conductors.
+- **GLaDOS** uses the Enrichment Center register from the quote bank
+  (section 3 and section 7) and adds a person underneath it: passive
+  aggression, false solicitude, statistics about the subject's weight and
+  parentage, the `{SUBJECT NAME HERE}` placeholder left unfilled, and a
+  recurring failure to stop talking about cake. She refers to the Enrichment
+  Center in the third person when doing something to you and says "I" only
+  when hurt. She is never arch about the earlier printings — she catalogues
+  them, with contempt and, once or twice, with something she does not have a
+  word for. **The Announcer is a different voice**: pre-recorded, cheerful,
+  apocalyptic, and never GLaDOS; attribute it correctly.
+
+### Cross-era callbacks — use them
+
+The archive pays off the 1959 edition. Writers should reach back: Margaret's
+potato (1959) → Chell's potato (1998). The 171 marked storage cubes the
+Foundation gave away → the Companion Cube. The sentry's fourteen phrases and
+the one in nobody's voice → the turrets. Category IX → the nineteenth rule → the
+dens. The eleven → the eleven. Mr. Pike's ledger. Greg, who is always fine.
+The 1953 curtain in two rooms. The framed letter from New Mexico. Chamber 8.
+"Every door opens from both sides." None of this is explained; a reader who
+has read the 1959 edition simply recognises it.
+
+### Ornament by printing
+
+1970s: one purple stamp, no burst; memos are photocopies. 1980s: no stamps at
+all, one fax header per memo, terminal blocks welcome. GLaDOS: one blue stamp,
+enamel placards freely, the `SignPlate` pictograms are her native alphabet.
+Redactions everywhere, as before.

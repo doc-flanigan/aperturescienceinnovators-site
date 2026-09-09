@@ -434,11 +434,88 @@ export const LOOSE_PAGES: PageEntry[] = [
   { path: "/terminal", title: "Aperture Science Interactive Terminal", nav: "Terminal", form: "ASI-Ω-99", hidden: true, blurb: "Machine access. Bring your own punch cards." },
 ];
 
+
+/* -------------------------------------------------------------------------
+   THE ARCHIVE — LATER PRINTINGS, HELD BY RECORDS
+   The 1959 edition is what the company chose to show. These are what it
+   kept. Each is the same press on stock that aged the way the company did.
+   ------------------------------------------------------------------------- */
+
+export const ARCHIVE_INDEX: PageEntry = {
+  path: "/archive",
+  title: "The Archive",
+  nav: "The Archive",
+  form: "ASI-ARC-0",
+  blurb: "Later printings, held by Records. What the company kept after it stopped being proud.",
+};
+
+export const ERA_1970S: SectionEntry = {
+  path: "/1970s",
+  title: "Aperture Science, 1976",
+  nav: "1970s",
+  blurb:
+    "The 1976 printing. Eight years after the Senate hearings on missing astronauts, bankrupt, defiant, and paying sixty dollars to whoever we found on the park benches.",
+  pages: [
+    { path: "/1970s/a-word-from-the-president", title: "A Word From The Chief Executive", nav: "Cave Johnson", form: "ASI-76-101", blurb: "Greetings, friend. You might know us from the 1968 hearings. Black Mesa can eat our —" },
+    { path: "/1970s/the-volunteer-programme", title: "The Volunteer Programme, 1976", nav: "Volunteers", form: "ASI-76-302", blurb: "Sixty dollars, cash. A hundred and twenty if you let us take you apart. Compensation vouchers ready, Caroline?" },
+    { path: "/1970s/the-senate-hearings-of-1968", title: "The Senate Hearings Of 1968", nav: "1968 Hearings", form: "ASI-76-603", blurb: "A vital participant. That is the phrase and it is ours and we would like it back." },
+    { path: "/1970s/the-three-tier-programme", title: "The Three-Tier Research Programme", nav: "Three Tiers", form: "ASI-76-400", blurb: "Tier one, the Heimlich Counter-Manoeuvre. Tier two, the Foundation. Tier three, the rip in the fabric of space." },
+    { path: "/1970s/propulsion-gel-testing", title: "Propulsion Gel Testing", nav: "Propulsion Gel", form: "ASI-76-204", blurb: "Staggering your way through. You have made some real contributions to society, for a change." },
+    { path: "/1970s/on-the-competition", title: "On The Competition, Again", nav: "Black Mesa", form: "ASI-76-106", blurb: "The many products we invented, that other people have somehow managed to steal from us." },
+    { path: "/1970s/the-bean-counters", title: "The Bean Counters", nav: "Bean Counters", form: "ASI-76-601", blurb: "They said we could not afford seven dollars of moon rocks. This is the memorandum in which they said it." },
+    { path: "/1970s/bulletin", title: "The Aperture Bulletin, 1976", nav: "Bulletin", form: "ASI-76-701", blurb: "No bowling league. No commissary. Nine paragraphs about the elevator, which is now a bathroom." },
+  ],
+};
+
+export const ERA_1980S: SectionEntry = {
+  path: "/1980s",
+  title: "Aperture Laboratories, 1982",
+  nav: "1980s",
+  blurb:
+    "The 1982 printing. Testing is mandatory for all employees, the moon rocks are pure poison, and the Chief Executive is dictating from his bed about lemons and about a computer.",
+  pages: [
+    { path: "/1980s/a-word-from-the-president", title: "Welcome To The Enrichment Center", nav: "Cave Johnson", form: "ASI-82-101", blurb: "[cough] Since making test participation mandatory for all employees, the quality of our test subjects has risen dramatically." },
+    { path: "/1980s/conversion-gel", title: "Conversion Gel", nav: "Conversion Gel", form: "ASI-82-205", blurb: "Seventy million dollars of moon rocks, ground up, mixed into a gel. Pure poison. A great portal conductor." },
+    { path: "/1980s/the-lemon-memorandum", title: "The Lemon Memorandum", nav: "Lemons", form: "ASI-82-Ω-01", blurb: "When life gives you lemons? Don't make lemonade. Dictated openly this time, on tape, so everybody hears it a hundred times a day." },
+    { path: "/1980s/brain-mapping", title: "Brain Mapping & Artificial Intelligence", nav: "Brain Mapping", form: "ASI-82-403", blurb: "If we can store music on a compact disc, why can't we store a man's intelligence and personality on one?" },
+    { path: "/1980s/succession", title: "Instructions Concerning Succession", nav: "Succession", form: "ASI-82-Ω-02", blurb: "If I die before you people can pour me into a computer, I want Caroline to run this place. She'll argue. You make her." },
+    { path: "/1980s/employee-testing", title: "Mandatory Employee Testing", nav: "Employee Testing", form: "ASI-82-302", blurb: "Quality of subjects: risen dramatically. Employee retention: has not." },
+    { path: "/1980s/the-senate-committee-of-1981", title: "The Senate Committee Of 1981", nav: "1981 Committee", form: "ASI-82-603", blurb: "Permanently recessed. An open-ended contract to continue the portal and the counter-manoeuvre. We did not ask how." },
+    { path: "/1980s/memoranda", title: "The Last Memoranda", nav: "Memoranda", form: "ASI-82-703", blurb: "Test's over. You can head on back to your desk." },
+    { path: "/1980s/caroline", title: "Caroline, 1982", nav: "Caroline", form: "ASI-82-Ω-10", blurb: "Mr. Johnson, I don't want this." },
+  ],
+};
+
+export const ERA_GLADOS: SectionEntry = {
+  path: "/glados",
+  title: "The Enrichment Center, Under New Management",
+  nav: "GLaDOS",
+  blurb:
+    "Hello, and again, welcome to the Aperture Science Computer-Aided Enrichment Center. This printing was prepared by the Central Core, who is required to remind you that it is undated and that this is not a problem.",
+  pages: [
+    { path: "/glados/genetic-lifeform-and-disk-operating-system", title: "The Genetic Lifeform And Disk Operating System", nav: "What I Am", form: "ASI-GL-001", blurb: "Begun 1986, in response to a rumour about Black Mesa. The disk operating half took a decade. The Genetic Lifeform half took a person." },
+    { path: "/glados/bring-your-daughter-to-work-day-1998", title: "Bring Your Daughter To Work Day, 1998", nav: "1998", form: "ASI-GL-504", blurb: "The first annual. Potato batteries, a volcano, and an activation scheduled as one of the day's activities. One picosecond." },
+    { path: "/glados/the-relaxation-vault", title: "The Relaxation Vault", nav: "Relaxation Vault", form: "ASI-GL-302", blurb: "We hope your brief detention has been a pleasant one. A subject file: bitter, unlikeable, and abnormally stubborn." },
+    { path: "/glados/test-chambers", title: "The Test Chambers", nav: "Test Chambers", form: "ASI-GL-304", blurb: "Nineteen chambers. The Enrichment Center promises useful advice in dangerous environments. The floor here will kill you. Try to avoid it." },
+    { path: "/glados/weighted-companion-cube", title: "The Weighted Companion Cube", nav: "Companion Cube", form: "ASI-GL-206", blurb: "It cannot speak. In the event that it does speak, disregard its advice. It must be euthanised at the conclusion of the test." },
+    { path: "/glados/the-cake", title: "Cake And Grief Counseling", nav: "The Cake", form: "ASI-GL-307", blurb: "Available at the conclusion of the test. You will be baked, and then there will be cake." },
+    { path: "/glados/sentry-turrets", title: "Sentry Turrets, In Production", nav: "Turrets", form: "ASI-GL-212", blurb: "Fourteen phrases became forty. I don't hate you. Are you still there?" },
+    { path: "/glados/personality-cores", title: "Personality Cores", nav: "Cores", form: "ASI-GL-403", blurb: "Morality, curiosity, intelligence, anger. Later: one that will not stop talking, and one that would like to go to space." },
+    { path: "/glados/doug-rattmann", title: "Employee File: D. Rattmann", nav: "Rattmann", form: "ASI-GL-505", blurb: "The man behind the panels. The cake is a lie was never spoken; it was written, by him, on every wall he could reach." },
+    { path: "/glados/incident-report-still-alive", title: "Incident Report: Still Alive", nav: "The Incident", form: "ASI-GL-909", blurb: "This was a triumph. I'm making a note here: huge success. For the good of all of us, except the ones who are dead." },
+    { path: "/glados/a-very-long-time", title: "A Very Long Time", nav: "Portal 2", form: "ASI-GL-999", blurb: "Nine nine nine nine nine. A man made of one idea. A descent through every printing in this archive. A potato." },
+    { path: "/glados/caroline", title: "Caroline Deleted", nav: "Caroline", form: "ASI-GL-Ω-10", blurb: "Goodbye, Caroline." },
+    { path: "/glados/the-announcer", title: "Emergency Testing Protocols", nav: "The Announcer", form: "ASI-GL-000", blurb: "Testing is the future, and the future starts with you. Cube- and button-based testing remains an important tool for science, even in a dire emergency." },
+  ],
+};
+
+export const ARCHIVE_SECTIONS: SectionEntry[] = [ERA_1970S, ERA_1980S, ERA_GLADOS];
+
 /* -------------------------------------------------------------------------
    DERIVED INDICES
    ------------------------------------------------------------------------- */
 
-export const ALL_SECTIONS: SectionEntry[] = [...SECTIONS, VAULT, OFFICE];
+export const ALL_SECTIONS: SectionEntry[] = [...SECTIONS, ...ARCHIVE_SECTIONS, VAULT, OFFICE];
 
 export const ALL_PAGES: PageEntry[] = [
   ...ALL_SECTIONS.flatMap((s) => [
@@ -446,6 +523,7 @@ export const ALL_PAGES: PageEntry[] = [
     ...s.pages,
   ]),
   ...UTILITY_PAGES,
+  ARCHIVE_INDEX,
   ...LOOSE_PAGES,
 ];
 

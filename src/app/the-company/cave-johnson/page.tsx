@@ -50,7 +50,7 @@ export default function CaveJohnsonPage() {
           title="A Word From The President"
           deck={
             <>
-              He founded the company at twenty-six with four hundred dollars and a bolt of vinyl. He is
+              He founded the company at thirty-four with four hundred dollars and a bolt of vinyl. He is
               presently sixteen years, nine test shafts and one hole in the fabric of space further along.
               Here he is, at length, unedited, as he prefers.
             </>

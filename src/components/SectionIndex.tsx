@@ -17,6 +17,9 @@ export function SectionIndex({
   title,
   deck,
   classification,
+  date,
+  revision,
+  byline,
   icons = {},
   children,
   after,
@@ -28,17 +31,22 @@ export function SectionIndex({
   title?: React.ReactNode;
   deck?: React.ReactNode;
   classification?: string;
+  /** Later printings must say when they were struck; the 1959 default is not theirs. */
+  date?: string;
+  revision?: string;
+  byline?: React.ReactNode;
   icons?: Partial<Record<string, PictogramName>>;
   children?: React.ReactNode;
   after?: React.ReactNode;
 }) {
   return (
     <Stack size="large">
-      <DocHead doc={doc} department={department} classification={classification} />
+      <DocHead doc={doc} department={department} classification={classification} date={date} revision={revision} />
       <PageTitle
         kicker={kicker ?? department}
         title={title ?? section.title}
         deck={deck ?? section.blurb}
+        byline={byline}
       />
       {children ? <Prose>{children}</Prose> : null}
       <Grid size="two">

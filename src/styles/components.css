@@ -90,6 +90,12 @@
   text-indent: 0.42em;
   white-space: nowrap;
 }
+:root[data-era] .ap-masthead__sub {
+  letter-spacing: 0.22em;
+  text-indent: 0.22em;
+  font-size: clamp(0.56rem, 0.2rem + 0.9vw, 0.8rem);
+  white-space: normal;
+}
 
 .ap-masthead__motto {
   display: block;
@@ -1440,3 +1446,88 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   .ap-memo__fields { grid-template-columns: 1fr; gap: 0.05rem 0; }
   .ap-memo__key { margin-top: 0.4rem; }
 }
+
+/* -------------------------------------------------------------------------
+   DEVICES OF THE LATER PRINTINGS
+   A photocopier, a tractor-feed printer, a fax header, and an enamel plate
+   that has been wiped down with something that is not water.
+   ------------------------------------------------------------------------- */
+
+/* 1970s: the memorandum is a fourth-generation photocopy. */
+:root[data-era="1970s"] .ap-memo {
+  background: var(--paper-cool);
+  box-shadow: none;
+  filter: contrast(1.08);
+}
+:root[data-era="1970s"] .ap-memo__body,
+:root[data-era="1970s"] .ap-memo__fields { opacity: 0.92; }
+:root[data-era="1970s"] .ap-stamp { color: #5b2f6e; }   /* the purple pad every office had by then */
+:root[data-era="1970s"] .ap-dochead { background: var(--paper-deep); }
+
+/* 1980s: printouts on fanfold. The green bar is a lie told in grey. */
+:root[data-era="1980s"] .ap-memo {
+  background:
+    repeating-linear-gradient(var(--paper-cool) 0 1.66rem, rgba(0,0,0,0.045) 1.66rem 3.32rem);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-image: repeating-linear-gradient(to bottom, transparent 0 0.5rem, var(--rule-faint) 0.5rem 0.62rem, transparent 0.62rem 1.1rem) 10;
+  box-shadow: none;
+  font-size: var(--step--1);
+  line-height: 1.66rem;
+}
+:root[data-era="1980s"] .ap-memo__title::before {
+  content: "FAX · APERTURE LABORATORIES · 906 555 0943 · P.01 / 01 · ";
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+:root[data-era="1980s"] .ap-stamp { opacity: 0.7; }
+:root[data-era="1980s"] .ap-terminal { border-color: #444; }
+
+/* The Enrichment Center: the sign is enamel and it has been cleaned. */
+:root[data-era="glados"] .ap-placard {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 2px var(--paper), inset 0 0 0 3px var(--ink);
+}
+:root[data-era="glados"] .ap-placard--warn { background: #f0b34a; color: #1c1e21; }
+:root[data-era="glados"] .ap-placard--danger { background: var(--spot-blue); color: #fff; border-color: var(--spot-blue); box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 3px var(--spot-blue); }
+:root[data-era="glados"] .ap-stamp { color: var(--spot-blue); }
+:root[data-era="glados"] .ap-notice { border-color: var(--spot-blue); }
+:root[data-era="glados"] .ap-notice__head { color: var(--spot-blue); }
+:root[data-era="glados"] .ap-memo {
+  background: var(--paper-cool);
+  border-color: var(--rule-faint);
+  box-shadow: none;
+}
+:root[data-era="glados"] .ap-memo__title { letter-spacing: 0.32em; }
+:root[data-era="glados"] .ap-pullquote__q { font-family: var(--font-grot); font-weight: 400; letter-spacing: 0.01em; }
+:root[data-era="glados"] .ap-scrawl { color: var(--spot-red); opacity: 0.5; }
+
+/* The archive's own index cards, on every printing. */
+.ap-era-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid var(--rule);
+  margin: 1.4rem 0 0;
+}
+.ap-era-strip__item {
+  flex: 1 1 8rem;
+  padding: 0.55rem 0.9rem 0.6rem;
+  border-right: 1px solid var(--rule-faint);
+  text-decoration: none;
+  color: var(--ink-2);
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  letter-spacing: var(--track-caps-tight);
+  text-transform: uppercase;
+}
+.ap-era-strip__item:last-child { border-right: 0; }
+.ap-era-strip__item:hover { background: var(--paper-deep); color: var(--ink); }
+.ap-era-strip__item[aria-current="true"] { background: var(--ink); color: var(--paper); }
+.ap-era-strip__item b { display: block; font-weight: 600; font-size: var(--step--1); letter-spacing: 0.06em; }
