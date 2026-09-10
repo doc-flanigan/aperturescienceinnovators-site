@@ -525,7 +525,7 @@ export default function Page() {
         cube being lifted, dropped, carried, thrown, stood upon, slept beside, spoken to, or addressed by
         name. Personnel who have formed an attachment to a unit should consult{" "}
         <Link href="/enrichment-center/safety">Form ASI-305</Link> and should not consult Medical. Prices are
-        1959 prices. Form ASI-206. See also <Link href="/legal">Form ASI-900</Link>. Retain until superseded.
+        1959 prices. Form ASI-206. See also <Link href="/legal" style={{ whiteSpace: "nowrap" }}>Form ASI-900</Link>. Retain until superseded.
       </FinePrint>
 
       {/* Trial 11 was conducted on the night of 3 October 1957 by an observer named on no other sheet. */}

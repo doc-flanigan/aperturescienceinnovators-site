@@ -646,9 +646,9 @@
    TABLES OF FIGURES
    ------------------------------------------------------------------------- */
 
-.ap-table-outer { clear: both; position: relative; margin: 1.8rem 0; timeline-scope: --ap-table-scroll; }
-.ap-table-wrap { overflow-x: auto; margin: 0; scroll-timeline: --ap-table-scroll x; }
-.ap-table-outer::after {
+.ap-table-outer { clear: both; margin: 1.8rem 0; }
+.ap-table-wrap { position: relative; overflow-x: auto; margin: 0; scroll-timeline: --ap-table-scroll x; }
+.ap-table-wrap::after {
   content: "";
   position: absolute;
   top: 0; right: 0; bottom: 0;
@@ -1037,6 +1037,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 }
 .ap-crumbs a { color: var(--ink-3); text-decoration: none; }
 .ap-crumbs a:hover { color: var(--accent); text-decoration: underline; }
+.ap-crumbs [aria-current="page"] { white-space: nowrap; }
 .ap-crumbs__sep { padding: 0 0.5em; color: var(--ink-ghost); }
 
 .ap-nextprev {
@@ -1198,6 +1199,13 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   white-space: nowrap;
   user-select: all;
 }
+/* A page's dot-run is a fixed character count; at phone width the longest
+   patterns on the site run past the column and silently lose their back
+   half with no ellipsis or scroll cue. Shrink the rhythm enough that even
+   the longest run in use fits, rather than tuning per page. */
+@media (max-width: 30rem) {
+  .ap-punch { font-size: 0.34rem; letter-spacing: 0.1em; }
+}
 
 /* -------------------------------------------------------------------------
    SCRAWL — somebody has been living down here
@@ -1258,9 +1266,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-panel__head + .ap-spec { margin-top: 0; border-top: 0; }
 .ap-indexcard:has(.ap-spec) { background: var(--paper-cool); }
 .ap-table td .ap-redact { white-space: nowrap; }
-@media (max-width: 46rem) {
-  .ap-table td:last-child { white-space: nowrap; }
-}
+.ap-table td:last-child { white-space: nowrap; }
 .ap-spec {
   margin: 1.4rem 0;
   border-top: 1px solid var(--rule);
@@ -1498,7 +1504,10 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-panel,
 .ap-split > *,
 .ap-coupon,
-.ap-card {
+.ap-card,
+.ap-spec,
+.ap-form,
+.ap-memo {
   container-type: inline-size;
 }
 
