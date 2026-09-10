@@ -72,7 +72,7 @@ export default function Page() {
 
       <Memo
         to="All Department Heads"
-        re="The phrase 'we can't', use of"
+        re="The phrase ‘we can’t’, use of"
         date="14 February 1957"
         stamp={<Stamp tone="black" angle="right">File Copy</Stamp>}
       >
@@ -129,7 +129,7 @@ export default function Page() {
       <Memo
         to="The Steno Pool"
         re="Eleven at night"
-        date="Undated. The steno pool has dated it 'eleven at night'."
+        date="Undated. The steno pool has dated it ‘eleven at night’."
       >
         <p>
           I am aware it is eleven at night. I am aware you have a bus. I want you to know that I have never

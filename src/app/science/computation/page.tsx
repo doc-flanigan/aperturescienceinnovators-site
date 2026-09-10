@@ -69,7 +69,7 @@ export default function Page() {
           { value: "11", label: "Tons of relays", note: "Ordered twice" },
           { value: "1", label: "Punch-card reader", note: "Second-hand" },
           { value: "1", label: "Teletype", note: "So he can argue with it" },
-          { value: "900°", label: "Fahrenheit at bank four", note: "Greg's problem" },
+          { value: "900°", label: "Fahrenheit at bank four", note: "Greg’s problem" },
           { value: "0", label: "Sums correctly performed", note: "To date" },
         ]}
       />

@@ -103,7 +103,7 @@ export default function Page() {
           <Row style={{ gap: "2rem", alignItems: "flex-start" }}>
             <Plate
               number="9"
-              caption="Computation's own diagram. The outer ring is the disk. The centre is the person. Computation has been asked repeatedly what the arrows are and has not answered."
+              caption="Computation’s own diagram. The outer ring is the disk. The centre is the person. Computation has been asked repeatedly what the arrows are and has not answered."
               tint
             >
               <AtomicOrbit rings={4} style={{ width: "100%", maxWidth: 200, color: "var(--spot-blue)" }} />
@@ -114,13 +114,13 @@ export default function Page() {
                   { k: "Programme", v: "Project 9" },
                   { k: "Requested by", v: "The Office of the President, verbally, on the stairs" },
                   { k: "Estimated duration", v: "Years. Computation will not be more precise." },
-                  { k: "President's response", v: "He does not have years." },
-                  { k: "Computation's response", v: "It is aware of that." },
+                  { k: "President’s response", v: "He does not have years." },
+                  { k: "Computation’s response", v: "It is aware of that." },
                   { k: "Storage medium", v: "Magnetic disk. Quantity unknown." },
                   { k: "Subject required", v: "One (1). Willing." },
                   {
                     k: "Subject nominated",
-                    v: <Redacted reason="She has not been told">The President's personal secretary</Redacted>,
+                    v: <Redacted reason="She has not been told">The President’s personal secretary</Redacted>,
                   },
                 ]}
               />

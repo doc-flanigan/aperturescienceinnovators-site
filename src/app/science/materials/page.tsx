@@ -111,7 +111,7 @@ export default function Page() {
             { no: "M-19", desc: "Self-extinguishing bench coating", status: "Suspended", note: "Ignited during trial" },
             { no: "M-22", desc: "Emulsion, adhesive, reversible", status: "Active", note: "Reversal not yet achieved" },
             { no: "M-27", desc: "Citrus-derived oxidiser", status: <Redacted reason="Not a programme. Materials has been told this three times.">Not a programme</Redacted>, note: "See the requisition below" },
-            { no: "M-31", desc: "Emulsion, purpose unrecorded", status: "Active", note: "The bench note reads 'why not'" },
+            { no: "M-31", desc: "Emulsion, purpose unrecorded", status: "Active", note: "The bench note reads ‘why not’" },
           ]}
           foot="Lines M-2 through M-6, M-8, M-10 through M-13 and M-15 through M-18 were abandoned, absorbed, or lost in one of the fires. Materials keeps no record of which."
         />

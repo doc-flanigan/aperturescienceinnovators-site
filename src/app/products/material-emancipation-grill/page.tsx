@@ -225,7 +225,7 @@ export default function Page() {
             {
               cls: "IV",
               added: "1957",
-              what: "Dental. Amalgam fillings, gold inlays, bridgework, plates, pins, and one crown of the volunteer's own manufacture.",
+              what: "Dental. Amalgam fillings, gold inlays, bridgework, plates, pins, and one crown of the volunteer’s own manufacture.",
               note: (
                 <>
                   Added by Medical over the objection of Applied Sciences, who held that a filling is part of
@@ -237,7 +237,7 @@ export default function Page() {
               cls: "V",
               added: "1959",
               what: (
-                <Redacted reason="Class V withheld from the printed sheet pending the department's definition of 'carrying'">
+                <Redacted reason="Class V withheld from the printed sheet pending the department’s definition of ‘carrying’">
                   Matter which Applied Sciences classes as carried and which Medical classes as the
                   volunteer. Four instances since January. Three of the four men completed the afternoon and
                   went home and could not afterwards say what had been taken, only that something had, and
@@ -399,7 +399,7 @@ export default function Page() {
 
       <ClearanceGate
         level={3}
-        hint="Associate grade or above. The following paragraph is not in the customer's copy of this sheet."
+        hint="Associate grade or above. The following paragraph is not in the customer’s copy of this sheet."
       >
         <Panel head="Applied Sciences — Working Note, Not For The Trade Copy" tone="red">
           <Prose>

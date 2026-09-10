@@ -100,7 +100,7 @@ export default function Page() {
             { seg: "Aperture apparatus, sold or leased", rev: "$2,900,000", pct: "7.0%", chg: "+80%", note: "Eleven units. Not doors." },
             { seg: "Substrate preparation", rev: "$1,300,000", pct: "3.2%", chg: "New", note: "Price per pound withheld" },
             { seg: "Storage cubes, plates, grills", rev: "$1,100,000", pct: "2.7%", chg: "+22%", note: "The cube stores nothing and sells anyway" },
-            { seg: "Other", rev: "$800,000", pct: "1.9%", chg: "—", note: <Redacted reason="Accounting has been asked three times what 'Other' is">Larger than three named segments.</Redacted> },
+            { seg: "Other", rev: "$800,000", pct: "1.9%", chg: "—", note: <Redacted reason="Accounting has been asked three times what ‘Other’ is">Larger than three named segments.</Redacted> },
           ]}
           foot="Total gross receipts $41,200,000. The curtain, in both segments, accounts for seventy-four cents of every dollar this company took in, and the Materials Department has been informed."
         />
@@ -154,7 +154,7 @@ export default function Page() {
         It is my money. I bought a moon with it. Next question.
       </PullQuote>
 
-      <Section title="The President's Statement">
+      <Section title="The President’s Statement">
         <Prose>
           <p>
             Forty-one million dollars in, thirty-nine million out, and the difference spent by March on a
@@ -188,8 +188,8 @@ export default function Page() {
         meetings.
       </Notice>
 
-      <ClearanceGate level={4} hint="Senior Associate grade or above. 'Other' is not itemised in the public sheet.">
-        <Panel head="Accounting — The 'Other' Line, Itemised" tone="red">
+      <ClearanceGate level={4} hint="Senior Associate grade or above. ‘Other’ is not itemised in the public sheet.">
+        <Panel head="Accounting — The ‘Other’ Line, Itemised" tone="red">
           <SpecList
             rows={[
               { k: "Registered packets, cash, posted to home addresses", v: "$660" },

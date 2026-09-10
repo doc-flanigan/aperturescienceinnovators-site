@@ -145,9 +145,9 @@ export default function Page() {
             { s: "Employee, Materials", t: "12", b: "Low", a: "Low", r: "No change. Subject asked to stop. Subject reminded testing is mandatory." },
             { s: "Employee, Print Shop", t: "20", b: "Low", a: "Moderate", r: "The line went the other way. Medical has the chart. Medical has the subject." },
             { s: "Greg", t: "9", b: "Nil", a: "Nil", r: "Fine." },
-            { s: "Chief Executive", t: "11 (he insists)", b: "High", a: <Redacted reason="Struck by Medical. Reinstated by the Chief Executive as 'a start'.">Higher</Redacted>, r: "A start." },
+            { s: "Chief Executive", t: "11 (he insists)", b: "High", a: <Redacted reason="Struck by Medical. Reinstated by the Chief Executive as ‘a start’.">Higher</Redacted>, r: "A start." },
           ]}
-          foot="Medical notes that in no subject did the load decrease, that in one it increased, and that the Chief Executive has described this as informative. Medical has asked that the word 'informative' be attributed."
+          foot="Medical notes that in no subject did the load decrease, that in one it increased, and that the Chief Executive has described this as informative. Medical has asked that the word ‘informative’ be attributed."
         />
       </Section>
 

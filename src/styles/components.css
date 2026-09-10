@@ -141,6 +141,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0;
+  overflow: hidden;
 }
 
 .ap-nav__item { display: block; }
@@ -155,10 +156,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--ink-2);
-  border-right: 1px solid var(--rule-faint);
+  border-left: 1px solid var(--rule-faint);
+  margin-left: -1px;
   white-space: nowrap;
 }
-.ap-nav__item:first-child .ap-nav__link { border-left: 1px solid var(--rule-faint); }
 .ap-nav__link:hover { background: var(--paper-deep); color: var(--ink); }
 .ap-nav__link[aria-current="true"] {
   background: var(--ink);
@@ -172,6 +173,7 @@
 .ap-subnav__list {
   list-style: none; margin: 0; padding: 0;
   display: flex; flex-wrap: wrap; gap: 0.1rem 0;
+  overflow: hidden;
 }
 .ap-subnav__link {
   display: block;
@@ -182,7 +184,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--ink-3);
-  border-right: 1px solid var(--rule-faint);
+  border-left: 1px solid var(--rule-faint);
+  margin-left: -1px;
 }
 .ap-subnav__item:last-child .ap-subnav__link { border-right: 0; }
 .ap-subnav__link:hover { color: var(--accent); }
@@ -235,6 +238,7 @@
 .ap-title { margin: 2.2rem 0 1.6rem; }
 
 .ap-kicker {
+  text-wrap: balance;
   font-family: var(--font-grot);
   font-size: var(--step--2);
   font-weight: 600;
@@ -381,6 +385,7 @@
    ------------------------------------------------------------------------- */
 
 .ap-panel {
+  clear: both;
   border: 1px solid var(--rule);
   background: var(--paper-cool);
   padding: 1.1rem 1.25rem 1.25rem;
@@ -407,6 +412,7 @@
 .ap-panel--red .ap-panel__head { color: var(--classified); }
 
 .ap-notice {
+  clear: both;
   border-top: 3px solid var(--rule);
   border-bottom: 3px solid var(--rule);
   padding: 1rem 0 1.05rem;
@@ -519,9 +525,12 @@
 .ap-stamp--tilt-r { transform: rotate(3.5deg); }
 .ap-stamp--big { font-size: var(--step-1); border-width: 4px; padding: 0.2em 0.55em 0.26em; }
 .ap-stamp--float { position: absolute; top: 1.4rem; right: 1.2rem; z-index: 2; }
+@media (min-width: 46.01rem) {
+  .ap-rel > .ap-panel { padding-right: clamp(11rem, 24vw, 15rem); }
+}
 .ap-stamp__sub {
   display: block;
-  font-size: 0.56em;
+  font-size: max(0.56em, 0.54rem);
   letter-spacing: 0.12em;
   font-weight: 500;
   margin-top: 0.2em;
@@ -535,6 +544,7 @@
 
 .ap-placard {
   display: inline-block;
+  text-wrap: balance;
   background: var(--ink);
   color: var(--paper);
   padding: 0.5rem 1.1rem 0.55rem;
@@ -554,8 +564,13 @@
    MEMORANDUM — typed, carbon-copied, initialled
    ------------------------------------------------------------------------- */
 
+.ap-memo__stamp { position: absolute; top: 1rem; right: 1rem; }
+@media (max-width: 46rem) {
+  .ap-memo__stamp { position: static; text-align: right; margin: -0.3rem 0 0.5rem; }
+}
 .ap-memo {
   position: relative;
+  clear: both;
   border: 1px solid var(--rule-soft);
   background: var(--paper-warm);
   padding: 1.4rem clamp(1rem, 3vw, 2rem) 1.5rem;
@@ -630,7 +645,20 @@
    TABLES OF FIGURES
    ------------------------------------------------------------------------- */
 
-.ap-table-wrap { overflow-x: auto; margin: 1.8rem 0; }
+.ap-table-outer { clear: both; position: relative; margin: 1.8rem 0; timeline-scope: --ap-table-scroll; }
+.ap-table-wrap { overflow-x: auto; margin: 0; scroll-timeline: --ap-table-scroll x; }
+.ap-table-outer::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 3rem;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(to left, var(--paper) 15%, rgba(0, 0, 0, 0));
+  animation: ap-table-scroll-cue linear both;
+  animation-timeline: --ap-table-scroll;
+}
+@keyframes ap-table-scroll-cue { from { opacity: 1; } 85% { opacity: 0; } to { opacity: 0; } }
 
 .ap-table {
   font-family: var(--font-grot);
@@ -638,6 +666,16 @@
   border-top: 3px solid var(--rule);
   border-bottom: 3px solid var(--rule);
   min-width: 30rem;
+}
+.ap-table__caption {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-grot);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--ink-2);
+  text-wrap: balance;
 }
 .ap-table caption {
   caption-side: top;
@@ -676,6 +714,7 @@
    ------------------------------------------------------------------------- */
 
 .ap-figure {
+  clear: both;
   margin: 2rem 0;
   border: 1px solid var(--rule-faint);
   background: var(--paper-cool);
@@ -712,10 +751,10 @@
 
 .ap-grid {
   display: grid;
-  gap: 1px;
-  background: var(--rule-faint);
-  border: 1px solid var(--rule-faint);
+  gap: 0;
+  padding: 1px 0 0 1px;
   margin: 1.8rem 0;
+  clear: both;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 .ap-grid--2 { grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); }
@@ -730,6 +769,9 @@
   text-decoration: none;
   color: inherit;
   position: relative;
+  border: 1px solid var(--rule-faint);
+  margin: -1px 0 0 -1px;
+  min-width: 0;
 }
 a.ap-card:hover { background: var(--paper-deep); color: inherit; }
 a.ap-card:hover .ap-card__title { color: var(--accent); }
@@ -811,13 +853,14 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   color: var(--accent);
   pointer-events: none;
 }
-@media (max-width: 40rem) { .ap-ad__burst { opacity: 0.3; } }
+@media (max-width: 40rem) { .ap-ad__burst { opacity: 0.3; width: 5.2rem; top: -0.35rem; right: -0.35rem; } }
 
 /* -------------------------------------------------------------------------
    COUPON / CUT-OUT
    ------------------------------------------------------------------------- */
 
 .ap-coupon {
+  clear: both;
   border: 2px dashed var(--rule-soft);
   padding: 1.15rem 1.3rem 1.3rem;
   margin: 2rem 0;
@@ -840,7 +883,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
    FORM FIELDS AND CHECKLISTS — for the volunteer application
    ------------------------------------------------------------------------- */
 
-.ap-form { margin: 1.6rem 0; font-family: var(--font-type); font-size: var(--step--1); }
+.ap-form { clear: both; margin: 1.6rem 0; font-family: var(--font-type); font-size: var(--step--1); }
 
 .ap-field {
   display: grid;
@@ -898,6 +941,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
    REDACTION
    ------------------------------------------------------------------------- */
 
+.ap-card .ap-redact { padding: 0 0.1em; }
 .ap-redact {
   background: var(--ink);
   color: transparent;
@@ -936,6 +980,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-stub b { display: block; font-size: var(--step--1); letter-spacing: 0.06em; }
 
 .ap-indexcard {
+  clear: both;
   background:
     repeating-linear-gradient(var(--paper-cool) 0 1.55rem, var(--rule-faint) 1.55rem 1.6rem);
   border: 1px solid var(--rule-soft);
@@ -1038,7 +1083,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-foot__cols {
   display: grid;
   gap: 1.6rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
   margin-bottom: 1.8rem;
 }
 .ap-foot__head {
@@ -1113,6 +1158,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
    ------------------------------------------------------------------------- */
 
 .ap-terminal {
+  clear: both;
   background: #0b1410;
   color: #8fe08a;
   border: 1px solid #2c3b31;
@@ -1199,6 +1245,9 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
    SPECIMEN LISTS — key/value runs used all over the catalogue
    ------------------------------------------------------------------------- */
 
+.ap-panel__head + .ap-spec { margin-top: 0; border-top: 0; }
+.ap-indexcard:has(.ap-spec) { background: var(--paper-cool); }
+.ap-table td .ap-redact { white-space: nowrap; }
 .ap-spec {
   margin: 1.4rem 0;
   border-top: 1px solid var(--rule);
@@ -1531,3 +1580,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-era-strip__item:hover { background: var(--paper-deep); color: var(--ink); }
 .ap-era-strip__item[aria-current="true"] { background: var(--ink); color: var(--paper); }
 .ap-era-strip__item b { display: block; font-weight: 600; font-size: var(--step--1); letter-spacing: 0.06em; }
+
+/* Microfilm: the colophon's small print must survive the film. */
+:root[data-theme="microfilm"] .ap-colophon,
+:root[data-theme="microfilm"] .ap-colophon p { color: var(--ink-3); opacity: 1; }

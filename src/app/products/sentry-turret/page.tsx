@@ -130,20 +130,20 @@ export default function Page() {
             { key: "when", head: "Used when" },
           ]}
           rows={[
-            { n: "1", p: "Hello.", when: "A man enters the eye's range" },
-            { n: "2", p: "Who's there?", when: "A man enters and stops" },
+            { n: "1", p: "Hello.", when: "A man enters the eye’s range" },
+            { n: "2", p: "Who’s there?", when: "A man enters and stops" },
             { n: "3", p: "There you are.", when: "A man is found after being lost" },
             { n: "4", p: "I see you.", when: "A man attempts concealment" },
             { n: "5", p: "Could you come over here?", when: "A man is at the edge of range" },
             { n: "6", p: "Excuse me.", when: "A man turns away" },
             { n: "7", p: "Sorry.", when: "The sentry has done something" },
-            { n: "8", p: "I don't hate you.", when: "The sentry has done something to a man" },
+            { n: "8", p: "I don’t hate you.", when: "The sentry has done something to a man" },
             { n: "9", p: "Are you still there?", when: "A man has stopped moving" },
             { n: "10", p: "Please put me down.", when: "The sentry is lifted" },
-            { n: "11", p: "I don't blame you.", when: "The sentry is knocked over" },
+            { n: "11", p: "I don’t blame you.", when: "The sentry is knocked over" },
             { n: "12", p: "Goodnight.", when: "The sentry is switched off by hand" },
-            { n: "13", p: "Don't be sad.", when: <Redacted reason="Applied Sciences will not state the condition">Condition withheld.</Redacted> },
-            { n: "14", p: "I'm different.", when: <Redacted reason="One unit only. Not the same recording. Not the same voice.">One unit. Not the same voice.</Redacted> },
+            { n: "13", p: "Don’t be sad.", when: <Redacted reason="Applied Sciences will not state the condition">Condition withheld.</Redacted> },
+            { n: "14", p: "I’m different.", when: <Redacted reason="One unit only. Not the same recording. Not the same voice.">One unit. Not the same voice.</Redacted> },
           ]}
           foot="Phrase fourteen was not recorded by the steno pool, is on one unit only, and Applied Sciences has been unable to establish who recorded it or when."
         />

@@ -10,7 +10,7 @@ const section = SECTIONS.find((s) => s.path === "/investors")!;
 export const metadata: Metadata = {
   title: "Investor Relations",
   description:
-    "The Aperture Science Innovators annual report, prospectus, and the President's complete testimony before the United States Senate.",
+    "The Aperture Science Innovators annual report, prospectus, and the President’s complete testimony before the United States Senate.",
 };
 
 export default function Page() {

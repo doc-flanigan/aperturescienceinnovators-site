@@ -137,7 +137,7 @@ export default function Page() {
             { n: "06", w: "A high-energy pellet.", r: "Can and has caused permanent disabilities, such as vapourisation. Please be careful." },
             { n: "07", w: "Momentum.", r: "Speedy-thing goes in, Speedy-thing comes out." },
             { n: "08", w: "The pellet, again, over an acid floor.", r: "Excluded from every warranty since 1959. The Enrichment Center concurs with the exclusion and has improved the floor." },
-            { n: "09", w: "Consequence for failure.", r: "Any contact with the chamber floor will result in an 'unsatisfactory' mark on your official testing record followed by death. Good luck!" },
+            { n: "09", w: "Consequence for failure.", r: "Any contact with the chamber floor will result in an ‘unsatisfactory’ mark on your official testing record followed by death. Good luck!" },
             { n: "10", w: "Momentum, applied.", r: "Very impressive." },
             { n: "11", w: "Control of both portals.", r: "This next test could take a very, very long time. If you become lightheaded from thirst, feel free to pass out." },
             { n: "12", w: "Height. Platforms.", r: "Bold, persistent experimentation is the hallmark of good science." },

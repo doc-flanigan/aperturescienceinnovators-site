@@ -115,7 +115,7 @@ export default function Page() {
             { m: "Mar 1959", who: "—", dept: "—", cite: "—", st: <Redacted reason="Records declines to say whether the month was unfilled or the recipient was">No recipient.</Redacted> },
             { m: "Apr 1959", who: "Margaret, age 11", dept: "Science fair", cite: "The potato", st: "Still functioning" },
           ]}
-          foot="Greg's citation is the same every time because Greg's work is the same every time and it is the only work in this building that has never once failed."
+          foot="Greg’s citation is the same every time because Greg’s work is the same every time and it is the only work in this building that has never once failed."
         />
       </Section>
 
@@ -152,7 +152,7 @@ export default function Page() {
         </Prose>
       </Section>
 
-      <ClearanceGate level={3} hint="Test Associate grade or above. Personnel does not print the drawer's contents.">
+      <ClearanceGate level={3} hint="Test Associate grade or above. Personnel does not print the drawer’s contents.">
         <Panel head="Personnel — The Drawer" tone="red">
           <SpecList
             rows={[

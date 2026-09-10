@@ -151,7 +151,7 @@ export default function Page() {
             { k: "Target", v: "Life’s house. Address unknown. Caroline is looking." },
             { k: "Colour", v: "Lemon. Materials has asked whether it could be orange, since they have the orange. It cannot be orange." },
             { k: "Predecessor", v: <><Link href="/vault/combustible-lemons">1959 sheet</Link>, twenty years, optimistic</> },
-            { k: "Priority", v: <Redacted reason="Struck by C. He said 'above the computer.' He did not mean it. He said it again.">Above the computer</Redacted> },
+            { k: "Priority", v: <Redacted reason="Struck by C. He said ‘above the computer.’ He did not mean it. He said it again.">Above the computer</Redacted> },
           ]}
         />
       </Section>

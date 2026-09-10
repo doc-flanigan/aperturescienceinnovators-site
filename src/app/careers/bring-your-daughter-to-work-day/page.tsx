@@ -19,7 +19,7 @@ import { ClearanceGate } from "@/components/client/ClearanceGate";
 export const metadata: Metadata = {
   title: "Bring Your Daughter To Work Day",
   description:
-    "The Enrichment Center's beloved annual science fair, and this year's prize-winning entries — potato batteries, volcanoes, a rock collection, and one title the judges will not print.",
+    "The Enrichment Center’s beloved annual science fair, and this year’s prize-winning entries — potato batteries, volcanoes, a rock collection, and one title the judges will not print.",
 };
 
 export default function Page() {
@@ -88,30 +88,30 @@ export default function Page() {
         ]}
       />
 
-      <Section title="This Year's Prize-Winners">
+      <Section title="This Year’s Prize-Winners">
         <FigureTable
           caption="Sixth annual science fair, Sub-Level 1 commissary floor, April 1959"
           columns={[
             { key: "place", head: "Place" },
             { key: "name", head: "Entrant" },
             { key: "title", head: "Project" },
-            { key: "note", head: "Judge's note" },
+            { key: "note", head: "Judge’s note" },
           ]}
           rows={[
             { place: "First", name: "Margaret, age 11", title: "A Potato Battery That Runs A Bulb", note: "The potato is still functioning. It has been on my desk since April. It is still functioning." },
             { place: "Second", name: "Ruth, age 9", title: "Volcano (Baking Soda)", note: "Erupted eleven times. Three were scheduled." },
             { place: "Third", name: "Dolores, age 12", title: "Rocks Of The Upper Peninsula, Labelled", note: "One rock is not from the Upper Peninsula. She knows which. She would not say." },
             { place: "Honourable", name: "Joan, age 10", title: "How A Shower Curtain Works", note: "Correct in every particular. I have hired her for 1966." },
-            { place: "Honourable", name: "Anne, age 8", title: "My Father's Job", note: "A drawing of the gate house. Mr. Pike is in it. Mr. Pike wept." },
+            { place: "Honourable", name: "Anne, age 8", title: "My Father’s Job", note: "A drawing of the gate house. Mr. Pike is in it. Mr. Pike wept." },
             { place: "Honourable", name: "Patricia, age 11", title: "Why Momentum Is Conserved", note: "She derived it. On a card. With a crayon." },
             {
               place: "Not placed",
-              name: <Redacted reason="Entrant's name withheld at the parent's request">Withheld</Redacted>,
+              name: <Redacted reason="Entrant’s name withheld at the parent’s request">Withheld</Redacted>,
               title: <Redacted reason="The judges will not print the title. The President has read it twice.">Withheld</Redacted>,
               note: "See below.",
             },
           ]}
-          foot="First prize is sixty dollars, cash, from the same tin as the volunteer programme, because the President holds that a child who has built a working thing has done an afternoon's work."
+          foot="First prize is sixty dollars, cash, from the same tin as the volunteer programme, because the President holds that a child who has built a working thing has done an afternoon’s work."
         />
       </Section>
 
@@ -194,7 +194,7 @@ export default function Page() {
               { k: "Medium", v: "Crayon on card. A floor plan." },
               { k: "Level shown", v: "Six" },
               { k: "Drawing on file for level six", v: "Does not agree" },
-              { k: "The child's drawing", v: "Agrees with the fourth survey" },
+              { k: "The child’s drawing", v: "Agrees with the fourth survey" },
               { k: "The child has been below Sub-Level 1", v: "Never. Personnel has checked the ledger for six years." },
             ]}
           />

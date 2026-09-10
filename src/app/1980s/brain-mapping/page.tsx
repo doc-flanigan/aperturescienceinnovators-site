@@ -149,7 +149,7 @@ export default function Page() {
             { w: "2", r: "Version 1.07 will run the building. It will not run a man.", c: "Then it will run the building for the man. Get on." },
             { w: "4", r: "The disk operating half will take a decade.", c: "[cough]" },
             { w: "6", r: "We can map the brain. We cannot yet map the man.", c: "Map the brain. The man will follow. He always has." },
-            { w: "9", r: "We need a subject who can sit for long sessions and answer questions about himself without embellishment.", c: "You have him. Strike 'without embellishment.'" },
+            { w: "9", r: "We need a subject who can sit for long sessions and answer questions about himself without embellishment.", c: "You have him. Strike ‘without embellishment.’" },
             { w: "11", r: <Redacted reason="Struck by C.">We need a second subject, in case.</Redacted>, c: "See the instructions concerning succession." },
           ]}
           foot="Computation notes that eleven weeks is the longest continuous period in the company’s history in which the Chief Executive has not changed the priority, and asks that this be regarded as data."

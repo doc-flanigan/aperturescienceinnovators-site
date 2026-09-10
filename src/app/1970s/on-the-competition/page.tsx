@@ -153,7 +153,7 @@ export default function Page() {
             { p: "The emulsions", y: "1955–61", w: "New Mexico, in three colours", r: "Ours are in two colours this year. See the memorandum about the paint." },
             { p: "The Heimlich Counter-Manoeuvre", y: "1959", w: "Nobody", r: "Nobody has stolen this. The Chief Executive would like it noted that this is not for want of it being available." },
             { p: "The sentry", y: "1958", w: <Redacted reason="Struck by Applied Sciences. The unit in question has not been stolen. It has been mislaid.">One unit unaccounted for</Redacted>, r: "Fourteen phrases. Thirteen of them ours." },
-            { p: "The word 'enrichment'", y: "1952", w: "The federal government", r: "Used in a different sense. We regard the sense as ours." },
+            { p: "The word ‘enrichment’", y: "1952", w: "The federal government", r: "Used in a different sense. We regard the sense as ours." },
             { p: "Two physicists", y: "—", w: "New Mexico", r: "One fired. One not fired fast enough." },
           ]}
           foot="Compiled by the Office of the Chief Executive from catalogues, transcripts and one framed letter. Not audited. There is no longer anybody to audit it."

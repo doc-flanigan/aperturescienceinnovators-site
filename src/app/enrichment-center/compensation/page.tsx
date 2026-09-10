@@ -100,7 +100,7 @@ export default function Page() {
           ]}
           rows={[
             { cat: "I", desc: "Standard afternoon, one to eight chambers", rate: "$60.00", note: "The ordinary engagement" },
-            { cat: "II", desc: "Extended afternoon, nine chambers or more", rate: "$75.00", note: "By the volunteer's request only" },
+            { cat: "II", desc: "Extended afternoon, nine chambers or more", rate: "$75.00", note: "By the volunteer’s request only" },
             { cat: "III", desc: "Gel exposure, any quantity", rate: "$60.00 + $5.00", note: "The five is for the laundry" },
             { cat: "IV", desc: "Emancipation grill, repeat traversal", rate: "$60.00 + $12.00", note: "See the dental plan" },
             { cat: "V", desc: "Aperture transit, recorded", rate: "$60.00 + $15.00", note: "Most requested" },
@@ -144,8 +144,8 @@ export default function Page() {
               { text: "The volunteer was found to be an employee of a competing research facility." },
               { text: "The volunteer was found to be an employee of this company." },
               { text: "The engagement was interrupted by an act of God, the State of Michigan, or the reactor." },
-              { text: "The volunteer's afternoon was not, in the judgement of Operations, an afternoon." },
-              { text: "The tin was empty. (This has occurred once. The man was paid from the President's pocket.)" },
+              { text: "The volunteer’s afternoon was not, in the judgement of Operations, an afternoon." },
+              { text: "The tin was empty. (This has occurred once. The man was paid from the President’s pocket.)" },
               {
                 text: (
                   <>

@@ -475,10 +475,10 @@ export default function Page() {
           </p>
           <Checklist
             items={[
-              { text: "Enrichment Grey, plain &mdash; ships from stock", checked: true },
-              { text: "Enrichment Grey, with corner bands &mdash; four weeks" },
-              { text: "Unpainted, mill finish &mdash; six weeks, and it will mark your floor" },
-              { text: "Marked faces &mdash; not offered. Do not enter this line." },
+              { text: "Enrichment Grey, plain — ships from stock", checked: true },
+              { text: "Enrichment Grey, with corner bands — four weeks" },
+              { text: "Unpainted, mill finish — six weeks, and it will mark your floor" },
+              { text: "Marked faces — not offered. Do not enter this line." },
             ]}
           />
 

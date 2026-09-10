@@ -278,7 +278,7 @@ export default function Page() {
             { item: "Wire terminus guard", n: "1", date: "June 1957", cond: "Sub-Level 6. Bolts still in it. Wall not still in it." },
             { item: "Bowling ball, league", n: "1", date: "March 1958", cond: "Excellent. Returned to the league. Retired from play." },
             { item: "Weighted Storage Cube", n: "1", date: "August 1958", cond: <>Unmarked faces. Undamaged. The cube is <i>always</i> undamaged.</> },
-            { item: "Hat, homburg, grey", n: "3", date: "1956–1958", cond: "One is the President's. He has not asked for it back." },
+            { item: "Hat, homburg, grey", n: "3", date: "1956–1958", cond: "One is the President’s. He has not asked for it back." },
             { item: "Personnel, one, initials H.M.K.", n: "1", date: "12 October 1958", cond: "Ambulatory. Talkative. Paid $60 from the tin and sent home in a company car." },
             { item: "Personnel, one, initials H.M.K.", n: "1", date: "3 December 1958", cond: "Ambulatory. Not talkative. Not scheduled. Not sent for." },
             {

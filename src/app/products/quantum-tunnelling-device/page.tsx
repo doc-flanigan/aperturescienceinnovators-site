@@ -184,7 +184,7 @@ export default function Page() {
           { value: "89 lb", label: "Emitter mass", note: "Two men" },
           { value: "$14,750", label: "Complete unit", note: "Tether included" },
           {
-            value: <Redacted reason="Applied Sciences declines to define the term 'returned'">1,306</Redacted>,
+            value: <Redacted reason="Applied Sciences declines to define the term ‘returned’">1,306</Redacted>,
             label: "Subjects returned",
             note: "Of those entered",
           },
@@ -312,7 +312,7 @@ export default function Page() {
             },
             { trial: "59-022", sep: "60 ft", in: "0.0", out: "0.0", note: "Weighted storage cube. The cube has no observations to offer." },
           ]}
-          foot="Compiled by Applied Sciences from the chamber logs. Trial 59-006 is retained in the record at the President's insistence and against the recommendation of the department."
+          foot="Compiled by Applied Sciences from the chamber logs. Trial 59-006 is retained in the record at the President’s insistence and against the recommendation of the department."
         />
 
         <Aside>

@@ -12,7 +12,7 @@ import { ClearanceGate } from "@/components/client/ClearanceGate";
 export const metadata: Metadata = {
   title: "The Lunar Memorandum",
   description:
-    "On the President's health, which is excellent, and which is not to be discussed. Medical Department, not for circulation.",
+    "On the President’s health, which is excellent, and which is not to be discussed. Medical Department, not for circulation.",
   robots: { index: false, follow: false },
 };
 
@@ -94,7 +94,7 @@ export default function Page() {
                 m: "March",
                 n: "11",
                 mask: "0",
-                note: <Redacted reason="Medical's own note, struck by the President">Deterioration is now visible to laymen.</Redacted>,
+                note: <Redacted reason="Medical’s own note, struck by the President">Deterioration is now visible to laymen.</Redacted>,
               },
             ]}
             foot="Ninety-one recorded exposures. Medical estimates the true figure at twice that. Medical is not permitted on the third floor without an appointment."

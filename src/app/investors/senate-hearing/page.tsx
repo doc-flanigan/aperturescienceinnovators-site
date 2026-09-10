@@ -18,10 +18,10 @@ import { ClearanceGate } from "@/components/client/ClearanceGate";
 export const metadata: Metadata = {
   title: "Testimony Before The Senate",
   description:
-    "The President's complete and unedited remarks to a subcommittee on defence procurement that did not enjoy them, reproduced from the stenographer's record.",
+    "The President’s complete and unedited remarks to a subcommittee on defence procurement that did not enjoy them, reproduced from the stenographer’s record.",
 };
 
-/* The stenographer's record, set as the stenographer set it. */
+/* The stenographer’s record, set as the stenographer set it. */
 function Line({ who, children, struck }: { who: string; children: React.ReactNode; struck?: boolean }) {
   return (
     <div
@@ -80,7 +80,7 @@ export default function Page() {
         doc="ASI-603"
         department="Legal"
         classification="Unrestricted — Public Record"
-        revision="Stenographer's record, unedited, at the President's insistence"
+        revision="Stenographer’s record, unedited, at the President’s insistence"
         extra={[{ label: "Heard", value: "Washington, February 1959" }]}
       />
 
@@ -226,8 +226,8 @@ export default function Page() {
         />
       </Section>
 
-      <ClearanceGate level={4} hint="Senior Associate grade or above. The stenographer's private note is on Sub-Level 7.">
-        <Panel head="Note From The Stenographer, Appended To The Company's Copy" tone="red">
+      <ClearanceGate level={4} hint="Senior Associate grade or above. The stenographer’s private note is on Sub-Level 7.">
+        <Panel head="Note From The Stenographer, Appended To The Company’s Copy" tone="red">
           <p style={{ fontFamily: "var(--font-type)", fontSize: "var(--step--1)", margin: 0 }}>
             I took down eleven passages the chair struck and I have given them all to your Mr. Johnson
             because he asked and because, in nineteen years in that room, he is the first witness who

@@ -37,7 +37,7 @@ export default function Page() {
         doc="ASI-404"
         department="Materials — Substrate Division"
         classification="Unrestricted"
-        revision="Second printing. Handling section expanded at Medical's request."
+        revision="Second printing. Handling section expanded at Medical’s request."
       />
 
       <div className="ap-rel">

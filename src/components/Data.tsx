@@ -25,9 +25,11 @@ export function FigureTable({
   foot?: React.ReactNode;
 }) {
   return (
+    <div className="ap-table-outer">
+      {caption ? <p className="ap-table__caption">{caption}</p> : null}
     <div className="ap-table-wrap">
       <table className="ap-table">
-        {caption ? <caption>{caption}</caption> : null}
+        {caption ? <caption className="ap-visually-hidden">{caption}</caption> : null}
         <thead>
           <tr>
             {columns.map((c) => (
@@ -49,6 +51,7 @@ export function FigureTable({
           ))}
         </tbody>
       </table>
+    </div>
       {foot ? (
         <p className="ap-fineprint" style={{ marginTop: "0.6rem" }}>
           {foot}
@@ -103,7 +106,7 @@ export function KeyFigures({ items }: { items: { value: React.ReactNode; label: 
   return (
     <div
       className="ap-grid"
-      style={{ gridTemplateColumns: `repeat(auto-fit, minmax(9rem, 1fr))` }}
+      style={{ gridTemplateColumns: `repeat(auto-fit, minmax(10rem, 1fr))` }}
     >
       {items.map((it, i) => (
         <div className="ap-card" key={i} style={{ gap: "0.2rem" }}>
@@ -113,8 +116,9 @@ export function KeyFigures({ items }: { items: { value: React.ReactNode; label: 
               fontFamily: "var(--font-ad)",
               fontSize: "var(--step-3)",
               fontWeight: 700,
-              lineHeight: 1,
+              lineHeight: 1.25,
               color: "var(--ink)",
+              minWidth: 0,
             }}
           >
             {it.value}

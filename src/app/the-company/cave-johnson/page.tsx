@@ -168,7 +168,7 @@ export default function CaveJohnsonPage() {
             />
           </Panel>
 
-          <Plate number="1" caption="The President's own diagram of the quantum tunnelling principle, reproduced exactly, including the part where he stopped drawing.">
+          <Plate number="1" caption="The President’s own diagram of the quantum tunnelling principle, reproduced exactly, including the part where he stopped drawing.">
             <AtomicOrbit style={{ width: "100%", maxWidth: 180, color: "var(--spot-blue)" }} />
           </Plate>
 
@@ -190,13 +190,13 @@ export default function CaveJohnsonPage() {
 
       {/* ------------------------------------------------------------- */}
 
-      <Section title="Sixteen Years, In The President's Own Accounting">
+      <Section title="Sixteen Years, In The President’s Own Accounting">
         <FigureTable
           caption="Principal events, as dictated. Dates as remembered."
           columns={[
             { key: "year", head: "Year", numeric: true, width: "5rem" },
             { key: "event", head: "Event" },
-            { key: "note", head: "The President's Note" },
+            { key: "note", head: "The President’s Note" },
           ]}
           rows={[
             {
@@ -212,7 +212,7 @@ export default function CaveJohnsonPage() {
             {
               year: COMPANY.renamed,
               event: `Renamed ${COMPANY.name}.`,
-              note: "'Fixtures' was small thinking. I have never been accused of it since.",
+              note: "‘Fixtures’ was small thinking. I have never been accused of it since.",
             },
             {
               year: "1944",
@@ -245,7 +245,7 @@ export default function CaveJohnsonPage() {
               note: "By not asking the engineers how long it would take.",
             },
           ]}
-          foot="Compiled by Records from the President's dictation. Records notes that three of these dates are disputed by Records."
+          foot="Compiled by Records from the President’s dictation. Records notes that three of these dates are disputed by Records."
         />
       </Section>
 
@@ -259,7 +259,7 @@ export default function CaveJohnsonPage() {
       <Section title="A Memorandum, Reproduced Without Editing">
         <Memo
           to="All Department Heads"
-          re="The word 'impossible', use of"
+          re="The word ‘impossible’, use of"
           date="9 January 1959"
           cc="Legal (for information only; no action required or invited)"
           stamp={<Stamp tone="black" angle="right" size="normal">File Copy</Stamp>}

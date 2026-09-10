@@ -145,18 +145,18 @@ export default function Page() {
             items={[
               { text: "The company is wholly dependent on the health, judgement and temper of one man.", checked: true },
               { text: "That man handles unshielded lunar substrate without a mask on ninety-one recorded occasions.", checked: true },
-              { text: "The company's largest expenditure in its history has not been explained to the auditors.", checked: true },
-              { text: "The company's principal facility is a hole, and the depth of the hole is disputed.", checked: true },
+              { text: "The company’s largest expenditure in its history has not been explained to the auditors.", checked: true },
+              { text: "The company’s principal facility is a hole, and the depth of the hole is disputed.", checked: true },
               { text: "Two chambers, two levels and 2,500 feet of tunnel appear on no drawing before 1957.", checked: true },
               { text: "The company owns a vessel in a dry dock it cannot locate.", checked: true },
               { text: "The Materials Department has set fire to its own floor nine times.", checked: true },
               { text: "Eleven volunteers have not returned, and the inquiries into nine of them closed the day they opened.", checked: true },
               { text: "Something is writing on the walls of the service corridors, and it is writing dates.", checked: true },
-              { text: "The company's only competitor has a federal budget and publishes four times a year.", checked: true },
+              { text: "The company’s only competitor has a federal budget and publishes four times a year.", checked: true },
               {
                 text: (
                   <Redacted reason="Legal wrote this one. Legal asked for it back. Legal did not get it back.">
-                    The company's succession plan is a proposal with a number, and the successor has not been told.
+                    The company’s succession plan is a proposal with a number, and the successor has not been told.
                   </Redacted>
                 ),
                 checked: true,

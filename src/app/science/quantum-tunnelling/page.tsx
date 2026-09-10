@@ -38,7 +38,7 @@ export default function Page() {
         doc="ASI-401"
         department="Applied Sciences"
         classification="Unrestricted"
-        revision="Third printing. Department's section unaltered at its insistence."
+        revision="Third printing. Department’s section unaltered at its insistence."
       />
 
       <div className="ap-rel">
@@ -71,7 +71,7 @@ export default function Page() {
         </Lede>
       </Prose>
 
-      <Section title="One. The President's Explanation" number="I">
+      <Section title="One. The President’s Explanation" number="I">
         <Columns count={2}>
           <p>
             Space is a fabric. Everybody says that and everybody says it as though it were a figure of
@@ -101,7 +101,7 @@ export default function Page() {
       <Row style={{ gap: "2rem", alignItems: "flex-start" }}>
         <Plate
           number="4"
-          caption="The President's diagram, reproduced from the back of an envelope. The two circles are the apertures. The line between them is described in his hand as 'the curtain'. Applied Sciences has asked that the caption record that there is no curtain."
+          caption="The President’s diagram, reproduced from the back of an envelope. The two circles are the apertures. The line between them is described in his hand as ‘the curtain’. Applied Sciences has asked that the caption record that there is no curtain."
           tint
         >
           <AtomicOrbit rings={2} style={{ width: "100%", maxWidth: 180, color: "var(--accent)" }} />
@@ -126,7 +126,7 @@ export default function Page() {
         Speedy-thing comes out.
       </PullQuote>
 
-      <Section title="Two. The Department's Explanation" number="II">
+      <Section title="Two. The Department’s Explanation" number="II">
         <Prose>
           <p>
             Applied Sciences wishes to record, before anything else, that the third-floor curtain of 1953

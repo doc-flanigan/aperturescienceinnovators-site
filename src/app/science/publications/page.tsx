@@ -112,7 +112,7 @@ export default function Page() {
             { y: "1958", t: "Storage of a personality: a proposal", a: "Computation", s: <Redacted reason="Circulation: one">Not for publication</Redacted> },
             { y: "1959", t: "The Enrichment Sphere as an instrument", a: "Operations", s: "Published" },
           ]}
-          foot="'Suppressed' is a Records classification meaning the paper exists, was set in type, and was ordered off the press by the Office of the President on the day of printing. There has been one."
+          foot="‘Suppressed’ is a Records classification meaning the paper exists, was set in type, and was ordered off the press by the Office of the President on the day of printing. There has been one."
         />
       </Section>
 

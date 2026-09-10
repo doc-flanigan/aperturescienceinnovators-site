@@ -131,7 +131,7 @@ export default function Page() {
           { cat: "To keep going", n: "94", g: "0", c: "94", to: <Redacted reason="Converted to a programme with a number">Computation.</Redacted> },
           { cat: "Other", n: "11", g: "0", c: "7", to: "Four not converted. Four not grantable. Four in my desk." },
         ]}
-        foot="Every wish, granted or converted, is retained on file in the Foundation's cabinet on the second floor, in the child's own hand, and the cabinet is the only one in this building the President has never once asked Records to reorganise."
+        foot="Every wish, granted or converted, is retained on file in the Foundation’s cabinet on the second floor, in the child’s own hand, and the cabinet is the only one in this building the President has never once asked Records to reorganise."
       />
 
       <Marginalia>
@@ -177,7 +177,7 @@ export default function Page() {
       <Memo
         to="Applied Biology"
         from="The Foundation"
-        re="Files TW-0,911 through TW-1,004 — 'to keep going'"
+        re="Files TW-0,911 through TW-1,004 — ‘to keep going’"
         date="2 February 1959"
         cc="Computation"
       >
@@ -216,13 +216,13 @@ export default function Page() {
       </Coupon>
 
       <ClearanceGate level={3} hint="Test Associate grade or above. The four in the desk are not in the cabinet.">
-        <Panel head="The Four In The President's Desk" tone="red">
+        <Panel head="The Four In The President’s Desk" tone="red">
           <SpecList
             rows={[
-              { k: "TW-0,001", v: "The first wish received. 1956. A boy. 'For my father to come back up.' His father was on the payroll. His father was one of the eleven." },
-              { k: "TW-0,412", v: "'To be in two places so I can be home and at the hospital.' Converted, once, on the third floor, in 1953, by accident, with a curtain. Not repeatable." },
-              { k: "TW-1,700", v: "'For Mr. Johnson to not be sick.' Received January 1959. The President has not been told this one is in his own desk." },
-              { k: "TW-2,206", v: <Redacted reason="The most recent. Received March. In the President's hand. Addressed to himself.">The most recent.</Redacted> },
+              { k: "TW-0,001", v: "The first wish received. 1956. A boy. ‘For my father to come back up.’ His father was on the payroll. His father was one of the eleven." },
+              { k: "TW-0,412", v: "‘To be in two places so I can be home and at the hospital.’ Converted, once, on the third floor, in 1953, by accident, with a curtain. Not repeatable." },
+              { k: "TW-1,700", v: "‘For Mr. Johnson to not be sick.’ Received January 1959. The President has not been told this one is in his own desk." },
+              { k: "TW-2,206", v: <Redacted reason="The most recent. Received March. In the President’s hand. Addressed to himself.">The most recent.</Redacted> },
             ]}
           />
         </Panel>

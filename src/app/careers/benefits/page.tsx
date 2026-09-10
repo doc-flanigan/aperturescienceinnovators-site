@@ -102,14 +102,14 @@ export default function Page() {
             { b: "Housing, surface", d: "Four rooms, Ishpeming road", c: "$31 / month", n: "For families and the claustrophobic" },
             { b: "Commissary", d: "All hours, Sub-Level 1", c: "See menu", n: "Coffee 5¢. Pie Thursdays." },
             { b: "Company store", d: "Credit against wages, no interest", c: "Nil", n: "Everything but lemons" },
-            { b: "Medical", d: "Second floor, all hours", c: "Nil", n: "Medical has asked us to print 'all hours' in bold" },
+            { b: "Medical", d: "Second floor, all hours", c: "Nil", n: "Medical has asked us to print ‘all hours’ in bold" },
             { b: "Dental", d: "Every procedure, every filling, no limit", c: "Nil", n: "See the next section. Please." },
             { b: "Bowling league", d: "Fourteen teams, Tuesdays", c: "Nil", n: "Marine Division fields one man" },
             { b: "Laundry", d: "Gel-grade, industrial", c: "Nil", n: "Gel does not come out. Laundry keeps trying." },
             { b: "Rail spur", d: "2.6 miles to the DSS&A", c: "Nil", n: "Freight only. Personnel have ridden it anyway." },
             { b: "Bomb shelter", d: "The whole facility", c: "Nil", n: "We are the bomb shelter" },
           ]}
-          foot="No benefit on this schedule is contingent on length of service, grade, or department. The President's position is that a man on his first day needs a roof exactly as much as a man on his last."
+          foot="No benefit on this schedule is contingent on length of service, grade, or department. The President’s position is that a man on his first day needs a roof exactly as much as a man on his last."
         />
       </Section>
 

@@ -189,7 +189,7 @@ export default function Page() {
               status: "Not in service",
             },
           ]}
-          foot="Chambers are numbered continuously across spheres rather than restarting at each, so that a volunteer's record reads as one afternoon rather than fourteen."
+          foot="Chambers are numbered continuously across spheres rather than restarting at each, so that a volunteer’s record reads as one afternoon rather than fourteen."
         />
       </Section>
 

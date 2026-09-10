@@ -150,7 +150,7 @@ export default function Page() {
           rows={[
             { n: "L-7", i: "Lunar material, to see", s: "$7.00", r: "On the wall. Underlined." },
             { n: "P-2", i: "Blue paint, one line, floor", s: "$41.00", r: "Repulsion gel not tested this year. Follow the orange line." },
-            { n: "E-1", i: "Sign for the elevator, reading 'ELEVATOR'", s: "$12.50", r: "Addressed the lower levels personally instead. See the Bulletin." },
+            { n: "E-1", i: "Sign for the elevator, reading ‘ELEVATOR’", s: "$12.50", r: "Addressed the lower levels personally instead. See the Bulletin." },
             { n: "C-3", i: "Commissary, reopening of", s: "—", r: "The blancmange is remembered." },
             { n: "B-1", i: "Bowling league, lanes, two", s: "—", r: "Mr. Pike bowled alone on both. Mr. Pike has been asked. The lanes are gone." },
             { n: "LG-1", i: "Legal Department, retention of", s: "—", r: "Legal has left. Legal was right to." },

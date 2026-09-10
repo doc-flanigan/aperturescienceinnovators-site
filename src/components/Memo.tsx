@@ -27,7 +27,7 @@ export function Memo({
 }) {
   return (
     <div className="ap-memo">
-      {stamp ? <div style={{ position: "absolute", top: "1rem", right: "1rem" }}>{stamp}</div> : null}
+      {stamp ? <div className="ap-memo__stamp">{stamp}</div> : null}
       <p className="ap-memo__title">Interoffice Memorandum</p>
       <div className="ap-memo__fields">
         <span className="ap-memo__key">To</span>

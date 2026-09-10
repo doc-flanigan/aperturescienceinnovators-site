@@ -23,7 +23,7 @@ export default function Page() {
     <Stack size="large">
       <Breadcrumbs
         trail={[
-          { href: "/office-of-the-president", label: "The President's Office" },
+          { href: "/office-of-the-president", label: "The President’s Office" },
           { label: "Caroline" },
         ]}
       />
@@ -130,7 +130,7 @@ export default function Page() {
               { t: "09:20", e: "Same purchase order signed again, by the President, who had forgotten." },
               { t: "11:02", e: "Machine shop begins work on both orders." },
               { t: "13:30", e: "Commissary closes. Nobody has ordered bread since Friday." },
-              { t: "15:45", e: "Test Shaft 4 stood down; the day's volunteers were never told to come." },
+              { t: "15:45", e: "Test Shaft 4 stood down; the day’s volunteers were never told to come." },
               { t: "16:10", e: "President telephones Caroline at home. Caroline does not answer." },
               { t: "16:11", e: "President telephones Caroline at home." },
               { t: "16:14", e: "President telephones Caroline at home." },

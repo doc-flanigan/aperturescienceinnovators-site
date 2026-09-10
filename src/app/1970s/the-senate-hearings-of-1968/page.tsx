@@ -180,7 +180,7 @@ export default function Page() {
             { k: "Number of men", v: <><Redacted reason="The Chief Executive said he would have to check. He has not checked.">Would have to check</Redacted></> },
             { k: "Duration of testimony", v: "Four hours, eleven minutes. Eleven. He noted it." },
             { k: "Finding", v: <><Redacted reason="Not ours. Not printed.">The subcommittee’s finding</Redacted>, and a paragraph about New Mexico.</> },
-            { k: "Consequence", v: "Withdrawal of federal contracts. Award of same to a facility in New Mexico. Bankruptcy, which the Chief Executive asks be spelled 'receivership' and which C. has spelled as he asked, once." },
+            { k: "Consequence", v: "Withdrawal of federal contracts. Award of same to a facility in New Mexico. Bankruptcy, which the Chief Executive asks be spelled ‘receivership’ and which C. has spelled as he asked, once." },
             { k: "Phrase retained", v: "Vital participant. Ours. On the masthead." },
             { k: "Phrase not retained", v: "The other one." },
           ]}

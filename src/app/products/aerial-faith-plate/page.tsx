@@ -19,7 +19,7 @@ import { ClearanceGate } from "@/components/client/ClearanceGate";
 export const metadata: Metadata = {
   title: "The Aerial Faith Plate",
   description:
-    "Throws a man across a room. The faith is required on the part of the man. Trajectory by mass, and a section on landing, which is the customer's responsibility.",
+    "Throws a man across a room. The faith is required on the part of the man. Trajectory by mass, and a section on landing, which is the customer’s responsibility.",
 };
 
 export default function Page() {
@@ -38,7 +38,7 @@ export default function Page() {
         doc="ASI-207"
         department="Applied Sciences"
         classification="Unrestricted"
-        revision="Third printing. Landing section added at Legal's request."
+        revision="Third printing. Landing section added at Legal’s request."
         extra={[{ label: "Model", value: "ASI-207/A" }]}
       />
 

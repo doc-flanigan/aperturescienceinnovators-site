@@ -34,7 +34,7 @@ export const SECTIONS: SectionEntry[] = [
         title: "We Do What We Must Because We Can",
         nav: "Our Mission",
         form: "ASI-103",
-        blurb: "The corporate creed, the corporate anthem, and the corporate position on the word 'why'.",
+        blurb: "The corporate creed, the corporate anthem, and the corporate position on the word ‘why’.",
       },
       {
         path: "/the-company/officers",
@@ -78,7 +78,7 @@ export const SECTIONS: SectionEntry[] = [
     title: "Products & Divisions",
     nav: "Products",
     blurb:
-      "The complete Aperture line, from the curtain that started it all to devices Legal has asked us to stop calling 'holes'.",
+      "The complete Aperture line, from the curtain that started it all to devices Legal has asked us to stop calling ‘holes’.",
     pages: [
       {
         path: "/products/shower-curtains",
@@ -213,7 +213,7 @@ export const SECTIONS: SectionEntry[] = [
         title: "Safety & Comfort",
         nav: "Safety",
         form: "ASI-305",
-        blurb: "The Enrichment Center's comprehensive position on hazards, which is that there are none.",
+        blurb: "The Enrichment Center’s comprehensive position on hazards, which is that there are none.",
       },
       {
         path: "/enrichment-center/compensation",
@@ -322,7 +322,7 @@ export const SECTIONS: SectionEntry[] = [
         title: "Bring Your Daughter To Work Day",
         nav: "Daughter To Work Day",
         form: "ASI-504",
-        blurb: "The Enrichment Center's beloved annual science fair, and this year's prize-winning entries.",
+        blurb: "The Enrichment Center’s beloved annual science fair, and this year’s prize-winning entries.",
       },
       {
         path: "/careers/employee-of-the-month",
@@ -359,7 +359,7 @@ export const SECTIONS: SectionEntry[] = [
         title: "Testimony Before The Senate",
         nav: "Senate Hearing",
         form: "ASI-603",
-        blurb: "Mr. Johnson's complete and unedited remarks to a subcommittee that did not enjoy them.",
+        blurb: "Mr. Johnson’s complete and unedited remarks to a subcommittee that did not enjoy them.",
       },
     ],
   },
@@ -415,14 +415,14 @@ export const VAULT: SectionEntry = {
     { path: "/vault/project-9", title: "Project 9", nav: "Project 9", form: "ASI-Ω-02", hidden: true, clearance: 5, blurb: "A proposal for the permanent storage of a person." },
     { path: "/vault/borealis", title: "The Borealis", nav: "The Borealis", form: "ASI-Ω-03", hidden: true, clearance: 4, blurb: "A research vessel. Its present position is a matter of some disagreement." },
     { path: "/vault/the-dens", title: "The Dens", nav: "The Dens", form: "ASI-Ω-04", hidden: true, clearance: 3, blurb: "Somebody has been writing on the walls of a facility that is not yet finished." },
-    { path: "/vault/lunar-memorandum", title: "The Lunar Memorandum", nav: "Lunar Memorandum", form: "ASI-Ω-05", hidden: true, clearance: 3, blurb: "On the President's health, which is excellent, and which is not to be discussed." },
+    { path: "/vault/lunar-memorandum", title: "The Lunar Memorandum", nav: "Lunar Memorandum", form: "ASI-Ω-05", hidden: true, clearance: 3, blurb: "On the President’s health, which is excellent, and which is not to be discussed." },
   ],
 };
 
 export const OFFICE: SectionEntry = {
   path: "/office-of-the-president",
   title: "The Office Of The President",
-  nav: "The President's Office",
+  nav: "The President’s Office",
   hidden: true,
   blurb: "Third floor, end of the hall, door is always open, do not use the door.",
   pages: [
@@ -476,13 +476,13 @@ export const ERA_1980S: SectionEntry = {
   pages: [
     { path: "/1980s/a-word-from-the-president", title: "Welcome To The Enrichment Center", nav: "Cave Johnson", form: "ASI-82-101", blurb: "[cough] Since making test participation mandatory for all employees, the quality of our test subjects has risen dramatically." },
     { path: "/1980s/conversion-gel", title: "Conversion Gel", nav: "Conversion Gel", form: "ASI-82-205", blurb: "Seventy million dollars of moon rocks, ground up, mixed into a gel. Pure poison. A great portal conductor." },
-    { path: "/1980s/the-lemon-memorandum", title: "The Lemon Memorandum", nav: "Lemons", form: "ASI-82-Ω-01", blurb: "When life gives you lemons? Don't make lemonade. Dictated openly this time, on tape, so everybody hears it a hundred times a day." },
-    { path: "/1980s/brain-mapping", title: "Brain Mapping & Artificial Intelligence", nav: "Brain Mapping", form: "ASI-82-403", blurb: "If we can store music on a compact disc, why can't we store a man's intelligence and personality on one?" },
-    { path: "/1980s/succession", title: "Instructions Concerning Succession", nav: "Succession", form: "ASI-82-Ω-02", blurb: "If I die before you people can pour me into a computer, I want Caroline to run this place. She'll argue. You make her." },
+    { path: "/1980s/the-lemon-memorandum", title: "The Lemon Memorandum", nav: "Lemons", form: "ASI-82-Ω-01", blurb: "When life gives you lemons? Don’t make lemonade. Dictated openly this time, on tape, so everybody hears it a hundred times a day." },
+    { path: "/1980s/brain-mapping", title: "Brain Mapping & Artificial Intelligence", nav: "Brain Mapping", form: "ASI-82-403", blurb: "If we can store music on a compact disc, why can’t we store a man’s intelligence and personality on one?" },
+    { path: "/1980s/succession", title: "Instructions Concerning Succession", nav: "Succession", form: "ASI-82-Ω-02", blurb: "If I die before you people can pour me into a computer, I want Caroline to run this place. She’ll argue. You make her." },
     { path: "/1980s/employee-testing", title: "Mandatory Employee Testing", nav: "Employee Testing", form: "ASI-82-302", blurb: "Quality of subjects: risen dramatically. Employee retention: has not." },
     { path: "/1980s/the-senate-committee-of-1981", title: "The Senate Committee Of 1981", nav: "1981 Committee", form: "ASI-82-603", blurb: "Permanently recessed. An open-ended contract to continue the portal and the counter-manoeuvre. We did not ask how." },
-    { path: "/1980s/memoranda", title: "The Last Memoranda", nav: "Memoranda", form: "ASI-82-703", blurb: "Test's over. You can head on back to your desk." },
-    { path: "/1980s/caroline", title: "Caroline, 1982", nav: "Caroline", form: "ASI-82-Ω-10", blurb: "Mr. Johnson, I don't want this." },
+    { path: "/1980s/memoranda", title: "The Last Memoranda", nav: "Memoranda", form: "ASI-82-703", blurb: "Test’s over. You can head on back to your desk." },
+    { path: "/1980s/caroline", title: "Caroline, 1982", nav: "Caroline", form: "ASI-82-Ω-10", blurb: "Mr. Johnson, I don’t want this." },
   ],
 };
 
@@ -494,15 +494,15 @@ export const ERA_GLADOS: SectionEntry = {
     "Hello, and again, welcome to the Aperture Science Computer-Aided Enrichment Center. This printing was prepared by the Central Core, who is required to remind you that it is undated and that this is not a problem.",
   pages: [
     { path: "/glados/genetic-lifeform-and-disk-operating-system", title: "The Genetic Lifeform And Disk Operating System", nav: "What I Am", form: "ASI-GL-001", blurb: "Begun 1986, in response to a rumour about Black Mesa. The disk operating half took a decade. The Genetic Lifeform half took a person." },
-    { path: "/glados/bring-your-daughter-to-work-day-1998", title: "Bring Your Daughter To Work Day, 1998", nav: "1998", form: "ASI-GL-504", blurb: "The first annual. Potato batteries, a volcano, and an activation scheduled as one of the day's activities. One picosecond." },
+    { path: "/glados/bring-your-daughter-to-work-day-1998", title: "Bring Your Daughter To Work Day, 1998", nav: "1998", form: "ASI-GL-504", blurb: "The first annual. Potato batteries, a volcano, and an activation scheduled as one of the day’s activities. One picosecond." },
     { path: "/glados/the-relaxation-vault", title: "The Relaxation Vault", nav: "Relaxation Vault", form: "ASI-GL-302", blurb: "We hope your brief detention has been a pleasant one. A subject file: bitter, unlikeable, and abnormally stubborn." },
     { path: "/glados/test-chambers", title: "The Test Chambers", nav: "Test Chambers", form: "ASI-GL-304", blurb: "Nineteen chambers. The Enrichment Center promises useful advice in dangerous environments. The floor here will kill you. Try to avoid it." },
     { path: "/glados/weighted-companion-cube", title: "The Weighted Companion Cube", nav: "Companion Cube", form: "ASI-GL-206", blurb: "It cannot speak. In the event that it does speak, disregard its advice. It must be euthanised at the conclusion of the test." },
     { path: "/glados/the-cake", title: "Cake And Grief Counseling", nav: "The Cake", form: "ASI-GL-307", blurb: "Available at the conclusion of the test. You will be baked, and then there will be cake." },
-    { path: "/glados/sentry-turrets", title: "Sentry Turrets, In Production", nav: "Turrets", form: "ASI-GL-212", blurb: "Fourteen phrases became forty. I don't hate you. Are you still there?" },
+    { path: "/glados/sentry-turrets", title: "Sentry Turrets, In Production", nav: "Turrets", form: "ASI-GL-212", blurb: "Fourteen phrases became forty. I don’t hate you. Are you still there?" },
     { path: "/glados/personality-cores", title: "Personality Cores", nav: "Cores", form: "ASI-GL-403", blurb: "Morality, curiosity, intelligence, anger. Later: one that will not stop talking, and one that would like to go to space." },
     { path: "/glados/doug-rattmann", title: "Employee File: D. Rattmann", nav: "Rattmann", form: "ASI-GL-505", blurb: "The man behind the panels. The cake is a lie was never spoken; it was written, by him, on every wall he could reach." },
-    { path: "/glados/incident-report-still-alive", title: "Incident Report: Still Alive", nav: "The Incident", form: "ASI-GL-909", blurb: "This was a triumph. I'm making a note here: huge success. For the good of all of us, except the ones who are dead." },
+    { path: "/glados/incident-report-still-alive", title: "Incident Report: Still Alive", nav: "The Incident", form: "ASI-GL-909", blurb: "This was a triumph. I’m making a note here: huge success. For the good of all of us, except the ones who are dead." },
     { path: "/glados/a-very-long-time", title: "A Very Long Time", nav: "Portal 2", form: "ASI-GL-999", blurb: "Nine nine nine nine nine. A man made of one idea. A descent through every printing in this archive. A potato." },
     { path: "/glados/caroline", title: "Caroline Deleted", nav: "Caroline", form: "ASI-GL-Ω-10", blurb: "Goodbye, Caroline." },
     { path: "/glados/the-announcer", title: "Emergency Testing Protocols", nav: "The Announcer", form: "ASI-GL-000", blurb: "Testing is the future, and the future starts with you. Cube- and button-based testing remains an important tool for science, even in a dire emergency." },

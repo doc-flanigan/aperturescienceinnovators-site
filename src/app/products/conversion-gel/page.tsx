@@ -203,7 +203,7 @@ export default function ConversionGelPage() {
           ]}
           rows={[
             { prep: "Poured concrete, unprepared", sub: "nil", acc: "0 of 40", note: "Stubborn. Expected." },
-            { prep: "Lead-white house paint, two coats", sub: "nil", acc: "0 of 40", note: "Tried at the President's insistence." },
+            { prep: "Lead-white house paint, two coats", sub: "nil", acc: "0 of 40", note: "Tried at the President’s insistence." },
             { prep: "Salt face, native (mine wall, Sub-Level 5)", sub: "nil", acc: "0 of 40", note: "The mine will not take a hole. The mine is the one thing here that will not." },
             { prep: "Conversion Gel, thin (4 per cent)", sub: "4%", acc: "9 of 40", note: "Intermittent. Do not sell." },
             {

@@ -67,7 +67,7 @@ export default function Page() {
         items={[
           { value: "3", label: "Programmes", note: "Two described below" },
           { value: "14", label: "Technical staff", note: "Eleven hired since 1957" },
-          { value: "1", label: "Head of department", note: <Redacted reason="At the head's request">Name withheld</Redacted> },
+          { value: "1", label: "Head of department", note: <Redacted reason="At the head’s request">Name withheld</Redacted> },
           { value: "1", label: "Reactor room attendant", note: "Greg. Reassigned. See below." },
           { value: "0", label: "Publications", note: "By choice" },
         ]}
@@ -155,7 +155,7 @@ export default function Page() {
             { key: "n", head: "Note" },
           ]}
           rows={[
-            { k: "Authorised", v: "September 1957", n: "Against the department's advice, in writing" },
+            { k: "Authorised", v: "September 1957", n: "Against the department’s advice, in writing" },
             { k: "Staff assigned", v: "Four", n: "Three volunteers. One reassignment." },
             { k: "Mantids on hand", v: "1,400", n: "Sub-Level 5, north gallery, kept warm" },
             { k: "Subjects", v: "None", n: "The department has not asked and will not ask" },

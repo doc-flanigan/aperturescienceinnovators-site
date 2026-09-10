@@ -170,7 +170,7 @@ export default function OfficersPage() {
                 { k: "Chief Counsel", v: "Mr. A. Sedge. Basement, rear." },
                 { k: "Personal Secretary", v: "Caroline. Appointed 1946." },
                 {
-                  k: "Signs for the company in the President's absence",
+                  k: "Signs for the company in the President’s absence",
                   v: <Redacted reason="No instrument on file">There has never been an absence.</Redacted>,
                 },
               ]}
@@ -504,8 +504,8 @@ export default function OfficersPage() {
       </FinePrint>
 
       {/* Personnel Card 0000 is the first card in the drawer. */}
-      {/* Card 0001 is Caroline's. The President's is not in the drawer at all. */}
-      {/* Somebody has pencilled a second name on card 0000, underneath Greg's, and rubbed it out. */}
+      {/* Card 0001 is Caroline’s. The President’s is not in the drawer at all. */}
+      {/* Somebody has pencilled a second name on card 0000, underneath Greg’s, and rubbed it out. */}
 
       <Scrawl href="/office-of-the-president/caroline">
         there is a card in the drawer with no department on it and there is a door on the third floor with

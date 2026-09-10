@@ -124,7 +124,7 @@ export default function Page() {
         <Panel head="Terms">
           <Checklist
             items={[
-              { text: "Prices f.o.b. Upper Michigan. Freight by the DSS&A spur, 2.6 miles, to the buyer's carrier.", checked: true },
+              { text: "Prices f.o.b. Upper Michigan. Freight by the DSS&A spur, 2.6 miles, to the buyer’s carrier.", checked: true },
               { text: "Payment net thirty days. Cash on the curtain. The President prefers cash on everything and will say so.", checked: true },
               { text: "Delivery to any point in the continental United States and its territories, except as noted below.", checked: true },
               { text: "No delivery to New Mexico. Sales has been asked why and has referred the enquiry to the third floor, where it has been answered at length.", checked: true },
