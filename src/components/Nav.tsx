@@ -22,24 +22,21 @@ export function NextPrev({
   next?: { href: string; label: React.ReactNode };
 }) {
   if (!prev && !next) return null;
+  const single = !prev || !next;
   return (
-    <nav className="ap-nextprev ap-noprint" aria-label="Adjacent pages">
+    <nav className={`ap-nextprev ap-noprint${single ? " ap-nextprev--single" : ""}`} aria-label="Adjacent pages">
       {prev ? (
         <Link className="ap-nextprev__link" href={prev.href}>
           <span className="ap-nextprev__dir">← Preceding sheet</span>
           <span className="ap-nextprev__t">{prev.label}</span>
         </Link>
-      ) : (
-        <span />
-      )}
+      ) : null}
       {next ? (
         <Link className="ap-nextprev__link ap-nextprev__link--next" href={next.href}>
           <span className="ap-nextprev__dir">Following sheet →</span>
           <span className="ap-nextprev__t">{next.label}</span>
         </Link>
-      ) : (
-        <span />
-      )}
+      ) : null}
     </nav>
   );
 }

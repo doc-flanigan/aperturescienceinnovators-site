@@ -527,6 +527,7 @@
 .ap-stamp--float { position: absolute; top: 1.4rem; right: 1.2rem; z-index: 2; }
 @media (min-width: 46.01rem) {
   .ap-rel > .ap-panel { padding-right: clamp(11rem, 24vw, 15rem); }
+  .ap-rel > .ap-title { padding-right: clamp(9rem, 20vw, 13rem); }
 }
 .ap-stamp__sub {
   display: block;
@@ -853,7 +854,14 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   color: var(--accent);
   pointer-events: none;
 }
-@media (max-width: 40rem) { .ap-ad__burst { opacity: 0.3; width: 5.2rem; top: -0.35rem; right: -0.35rem; } }
+@media (max-width: 40rem) {
+  .ap-ad__burst {
+    position: static;
+    display: block;
+    width: 5.2rem;
+    margin: 0 0 0.7rem auto;
+  }
+}
 
 /* -------------------------------------------------------------------------
    COUPON / CUT-OUT
@@ -959,7 +967,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   user-select: text;
   outline-offset: 1px;
 }
-:root[data-theme="microfilm"] .ap-redact { background: var(--ink-2); }
+:root[data-theme="microfilm"] .ap-redact { background: #05070a; }
 
 /* -------------------------------------------------------------------------
    TICKET STUB / INDEX CARD
@@ -1040,6 +1048,8 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   margin: 3rem 0 0;
 }
 @media (min-width: 42rem) { .ap-nextprev { grid-template-columns: 1fr 1fr; } }
+.ap-nextprev--single { grid-template-columns: 1fr; }
+@media (min-width: 42rem) { .ap-nextprev--single { grid-template-columns: 1fr; } }
 .ap-nextprev__link {
   background: var(--paper);
   padding: 0.9rem 1.1rem 1rem;
@@ -1171,7 +1181,7 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
   box-shadow: inset 0 0 42px rgba(0,0,0,0.65);
   text-shadow: 0 0 4px rgba(120, 255, 140, 0.35);
 }
-.ap-terminal pre { margin: 0; white-space: pre-wrap; word-break: break-word; }
+.ap-terminal pre { margin: 0; white-space: pre; }
 .ap-terminal b { color: #d6ffcf; font-weight: 400; }
 .ap-terminal .ap-dim { color: #4f7a4c; }
 
@@ -1248,6 +1258,9 @@ a.ap-card:hover .ap-card__title { color: var(--accent); }
 .ap-panel__head + .ap-spec { margin-top: 0; border-top: 0; }
 .ap-indexcard:has(.ap-spec) { background: var(--paper-cool); }
 .ap-table td .ap-redact { white-space: nowrap; }
+@media (max-width: 46rem) {
+  .ap-table td:last-child { white-space: nowrap; }
+}
 .ap-spec {
   margin: 1.4rem 0;
   border-top: 1px solid var(--rule);
