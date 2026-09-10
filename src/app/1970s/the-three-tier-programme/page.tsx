@@ -15,7 +15,7 @@ const PATH = "/1970s/the-three-tier-programme";
 export const metadata: Metadata = {
   title: "The Three-Tier Research Programme (1976)",
   description:
-    "Tier one, the Heimlich Counter-Manoeuvre. Tier two, the Take-A-Wish Foundation. Tier three, a rip in the fabric of space. Cave Johnson's 1976 research programme, dictated with failing kidneys and time flowing backwards.",
+    "Tier one, the Heimlich Counter-Manoeuvre. Tier two, the Take-A-Wish Foundation. Tier three, a rip in the fabric of space. Cave Johnson’s 1976 research programme, dictated with failing kidneys and time flowing backwards.",
 };
 
 export default function Page() {
@@ -143,7 +143,7 @@ export default function Page() {
             { key: "st", head: "Status" },
           ]}
           rows={[
-            { t: "I", p: "Heimlich Counter-Manoeuvre", s: "4", b: "The subcommittee's, if they ask nicely", st: "Succeeding by failing" },
+            { t: "I", p: "Heimlich Counter-Manoeuvre", s: "4", b: "The subcommittee’s, if they ask nicely", st: "Succeeding by failing" },
             { t: "II", p: "Take-A-Wish Foundation", s: "6", b: "Self-funding; see the Foundation", st: "171 units marked by hand. Not in the catalogue." },
             { t: "III", p: "A rip in the fabric of space", s: <Redacted reason="Everybody. It has always been everybody.">Remainder</Redacted>, b: "Tiers I and II", st: "Open since 1953. Has not closed." },
           ]}

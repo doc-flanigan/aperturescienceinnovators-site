@@ -16,7 +16,7 @@ const PATH = "/1970s/propulsion-gel-testing";
 export const metadata: Metadata = {
   title: "Propulsion Gel Testing (1976)",
   description:
-    "The orange one. Aperture Science's 1976 propulsion gel testing programme: the orange line, the wall, staggering, and the Chief Executive's thanks, which he cannot believe he is giving.",
+    "The orange one. Aperture Science’s 1976 propulsion gel testing programme: the orange line, the wall, staggering, and the Chief Executive’s thanks, which he cannot believe he is giving.",
 };
 
 export default function Page() {

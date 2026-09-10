@@ -188,7 +188,7 @@ export default function Page() {
 
       <Rule variant="ornament" ornament="◆ ◆ ◆" />
 
-      <Signature name="Caroline" title="Assistant to the Chief Executive, since 1949" note="Typed 1982. Not dictated. Signed with her own hand, once, with nobody's over it." />
+      <Signature name="Caroline" title="Assistant to the Chief Executive, since 1949" note="Typed 1982. Not dictated. Signed with her own hand, once, with nobody’s over it." />
 
       <FinePrint tiny>
         Form ASI-82-Ω-10. This sheet was not dictated and is not the opinion of the company. It is the

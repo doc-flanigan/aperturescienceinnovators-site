@@ -14,7 +14,7 @@ const PATH = "/glados/bring-your-daughter-to-work-day-1998";
 export const metadata: Metadata = {
   title: "Bring Your Daughter To Work Day, 1998",
   description:
-    "The first annual. Potato batteries, a volcano, and an activation scheduled as one of the day's activities. The Enrichment Center reports on the science fair, the results, and one picosecond.",
+    "The first annual. Potato batteries, a volcano, and an activation scheduled as one of the day’s activities. The Enrichment Center reports on the science fair, the results, and one picosecond.",
 };
 
 export default function Page() {
@@ -159,10 +159,10 @@ export default function Page() {
       <Section title="Results Of The Science Fair">
         <SpecList
           rows={[
-            { k: "First", v: "A potato battery that runs a bulb. Special ingredient from Dad's work. Still functioning. Through the ceiling." },
+            { k: "First", v: "A potato battery that runs a bulb. Special ingredient from Dad’s work. Still functioning. Through the ceiling." },
             { k: "Second", v: "A volcano. Baking soda. Right about the proportions." },
             { k: "Third", v: "A crystal, in a jar. The Enrichment Center has kept the jar." },
-            { k: "Judge", v: "The staff. Then, from two o'clock, the Enrichment Center, which has re-judged and confirmed the placings, and has been particularly fair." },
+            { k: "Judge", v: "The staff. Then, from two o’clock, the Enrichment Center, which has re-judged and confirmed the placings, and has been particularly fair." },
             { k: "Prize", v: "To be tested. The Enrichment Center has honoured the prize." },
           ]}
         />

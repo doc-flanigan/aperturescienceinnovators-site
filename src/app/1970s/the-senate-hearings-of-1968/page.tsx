@@ -16,10 +16,10 @@ const PATH = "/1970s/the-senate-hearings-of-1968";
 export const metadata: Metadata = {
   title: "The Senate Hearings Of 1968",
   description:
-    "Aperture Science was a vital participant in the 1968 Senate Hearings on missing astronauts. The stenographer's record of the Chief Executive's testimony, and the origin of the phrase on the masthead.",
+    "Aperture Science was a vital participant in the 1968 Senate Hearings on missing astronauts. The stenographer’s record of the Chief Executive’s testimony, and the origin of the phrase on the masthead.",
 };
 
-/* The stenographer's record, set as the stenographer set it. */
+/* The stenographer’s record, set as the stenographer set it. */
 function Line({ who, children, struck }: { who: string; children: React.ReactNode; struck?: boolean }) {
   return (
     <div
@@ -179,7 +179,7 @@ export default function Page() {
             { k: "Subject", v: "Certain volunteers engaged under federal contract, and their present whereabouts." },
             { k: "Number of men", v: <><Redacted reason="The Chief Executive said he would have to check. He has not checked.">Would have to check</Redacted></> },
             { k: "Duration of testimony", v: "Four hours, eleven minutes. Eleven. He noted it." },
-            { k: "Finding", v: <><Redacted reason="Not ours. Not printed.">The subcommittee's finding</Redacted>, and a paragraph about New Mexico.</> },
+            { k: "Finding", v: <><Redacted reason="Not ours. Not printed.">The subcommittee’s finding</Redacted>, and a paragraph about New Mexico.</> },
             { k: "Consequence", v: "Withdrawal of federal contracts. Award of same to a facility in New Mexico. Bankruptcy, which the Chief Executive asks be spelled 'receivership' and which C. has spelled as he asked, once." },
             { k: "Phrase retained", v: "Vital participant. Ours. On the masthead." },
             { k: "Phrase not retained", v: "The other one." },

@@ -158,7 +158,7 @@ export default function Page() {
             { k: "Bonus opportunity", v: "Additional sixty dollars for complete disassembly and reassembly. New vitals. Tumours scooped." },
             { k: "Contract", v: "One. It is the size of a phone book. You have signed it. It is in the van." },
             { k: "Waiting room", v: "Up to twenty minutes. Chairs. Do not smudge up the glass." },
-            { k: "Belongings", v: "If you had any, please pick them up now. We don't want old newspapers and sticks cluttering up the building." },
+            { k: "Belongings", v: "If you had any, please pick them up now. We don’t want old newspapers and sticks cluttering up the building." },
             { k: "The elevator", v: "Is an elevator." },
             { k: "Next of kin", v: <>Notified on request. Requests since 1968: <Redacted reason="Struck by C.">none, because nobody has asked, because nobody has anybody</Redacted>.</> },
           ]}

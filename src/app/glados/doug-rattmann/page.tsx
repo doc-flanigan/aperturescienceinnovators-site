@@ -15,7 +15,7 @@ const PATH = "/glados/doug-rattmann";
 export const metadata: Metadata = {
   title: "Employee File: D. Rattmann",
   description:
-    "The man behind the panels. The Enrichment Center's file on the one employee it has not found, who moved a subject to the top of the queue and wrote on every wall he could reach.",
+    "The man behind the panels. The Enrichment Center’s file on the one employee it has not found, who moved a subject to the top of the queue and wrote on every wall he could reach.",
 };
 
 export default function Page() {

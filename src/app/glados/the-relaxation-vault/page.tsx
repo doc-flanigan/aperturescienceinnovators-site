@@ -130,7 +130,7 @@ export default function Page() {
             <em>Subject refused to answer.</em>
           </Field>
           <Field label="Tenacity" filled>99th percentile. Marked ABNORMAL. Note: subject should NOT be tested.</Field>
-          <Field label="Note, not in the Central Core's hand" filled>
+          <Field label="Note, not in the Central Core’s hand" filled>
             <Redacted reason="The Enrichment Center has read the note. It was written by somebody who was not supposed to be behind the panel.">Moved to top of queue. — D.R.</Redacted>
           </Field>
           <Field label="Family" filled>Adopted. So that&rsquo;s nice.</Field>

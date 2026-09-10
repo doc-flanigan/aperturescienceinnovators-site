@@ -14,7 +14,7 @@ const PATH = "/1980s/memoranda";
 export const metadata: Metadata = {
   title: "The Last Memoranda (1982)",
   description:
-    "Six short memoranda from the Chief Executive's bed, faxed to every department at once: the tape, the elevator, Greg, the potato, the wall, and the desk. Test's over.",
+    "Six short memoranda from the Chief Executive’s bed, faxed to every department at once: the tape, the elevator, Greg, the potato, the wall, and the desk. Test’s over.",
 };
 
 export default function Page() {
@@ -122,7 +122,7 @@ export default function Page() {
       </Section>
 
       <Section title="VI. Your Desk">
-        <Memo to="All Personnel" from="Cave Johnson, Chief Executive Officer" date="Saturday" re="Test's Over" sign={false}>
+        <Memo to="All Personnel" from="Cave Johnson, Chief Executive Officer" date="Saturday" re="Test’s Over" sign={false}>
           <p>Allright, test&rsquo;s over. You can head on back to your desk.</p>
         </Memo>
       </Section>
@@ -181,7 +181,7 @@ export default function Page() {
 
       <Rule variant="ornament" ornament="◆ ◆ ◆" />
 
-      <Signature title="Chief Executive Officer" note="Dictated over one week, autumn 1982. Six sent. One typed. Test's over." />
+      <Signature title="Chief Executive Officer" note="Dictated over one week, autumn 1982. Six sent. One typed. Test’s over." />
 
       <FinePrint tiny>
         Form ASI-82-703. These memoranda are the last on this sheet and not the last. The Records

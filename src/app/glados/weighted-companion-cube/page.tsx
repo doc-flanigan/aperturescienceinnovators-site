@@ -160,7 +160,7 @@ export default function Page() {
           rows={[
             { k: "Designation", v: "Weighted Companion Cube. Formerly a weighted storage cube, variant, not in the catalogue." },
             { k: "Mass", v: "Ninety-one pounds. Unchanged since 1954." },
-            { k: "Marking", v: "A heart, by hand. The hand was Manufacturing's. The Enrichment Center has compared it to the ledger." },
+            { k: "Marking", v: "A heart, by hand. The hand was Manufacturing’s. The Enrichment Center has compared it to the ledger." },
             { k: "Speech", v: "None. Cannot. In the event that it does: disregard." },
             { k: "Threats", v: "Will never threaten to stab you. The Enrichment Center has never made this guarantee about anything else." },
             { k: "Disposal", v: "Emergency Intelligence Incinerator. Painful. Ethically absolved." },
@@ -184,7 +184,7 @@ export default function Page() {
         <Placard tone="danger">Emergency Intelligence Incinerator</Placard>
       </p>
 
-      <Terminal label="Test Chamber 17, one session, the Enrichment Center's log">
+      <Terminal label="Test Chamber 17, one session, the Enrichment Center’s log">
 {`TEST CHAMBER 17  ·  WEIGHTED COMPANION CUBE  ·  ONE SUBJECT
 CUBE ISSUED ........... #0171   (HEART, BY HAND)
 CARRIED ............... YES

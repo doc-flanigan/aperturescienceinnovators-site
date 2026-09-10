@@ -15,7 +15,7 @@ const PATH = "/1980s/brain-mapping";
 export const metadata: Metadata = {
   title: "Brain Mapping & Artificial Intelligence (1982)",
   description:
-    "If we can store music on a compact disc, why can't we store a man's intelligence and personality on one? Cave Johnson's 1982 instruction to Computation, thirty years late, with the two halves of the machine.",
+    "If we can store music on a compact disc, why can’t we store a man’s intelligence and personality on one? Cave Johnson’s 1982 instruction to Computation, thirty years late, with the two halves of the machine.",
 };
 
 export default function Page() {
@@ -125,7 +125,7 @@ export default function Page() {
         <SpecList
           rows={[
             { k: "Programme", v: "Brain mapping. Artificial intelligence. Both. The Chief Executive does not distinguish." },
-            { k: "Begun", v: "1982. Thirty years late, by the Chief Executive's count. Twenty-four, by the calendar." },
+            { k: "Begun", v: "1982. Thirty years late, by the Chief Executive’s count. Twenty-four, by the calendar." },
             { k: "Predecessor", v: <>Eleven tons of relays (1959). A proposal on file (1958), <Redacted reason="Circulation: one. It is now two.">eleven pages</Redacted>.</> },
             { k: "Hardware, present", v: "A rack. A disc. A machine that runs the applications and does not know who Caroline is." },
             { k: "Disk operating half", v: "Version 1.07, in service. Ten years to do properly. Started." },
@@ -142,7 +142,7 @@ export default function Page() {
           columns={[
             { key: "w", head: "Week", numeric: true, width: "5rem" },
             { key: "r", head: "Report" },
-            { key: "c", head: "Chief Executive's response" },
+            { key: "c", head: "Chief Executive’s response" },
           ]}
           rows={[
             { w: "1", r: "A man is bigger than a symphony.", c: "We have more than one disc." },
@@ -152,7 +152,7 @@ export default function Page() {
             { w: "9", r: "We need a subject who can sit for long sessions and answer questions about himself without embellishment.", c: "You have him. Strike 'without embellishment.'" },
             { w: "11", r: <Redacted reason="Struck by C.">We need a second subject, in case.</Redacted>, c: "See the instructions concerning succession." },
           ]}
-          foot="Computation notes that eleven weeks is the longest continuous period in the company's history in which the Chief Executive has not changed the priority, and asks that this be regarded as data."
+          foot="Computation notes that eleven weeks is the longest continuous period in the company’s history in which the Chief Executive has not changed the priority, and asks that this be regarded as data."
         />
       </Section>
 

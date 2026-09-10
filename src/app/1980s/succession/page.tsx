@@ -15,7 +15,7 @@ const PATH = "/1980s/succession";
 export const metadata: Metadata = {
   title: "Instructions Concerning Succession (1982)",
   description:
-    "If I die before you people can pour me into a computer, I want Caroline to run this place. Cave Johnson's 1982 standing instruction, on tape, played a hundred times a day, with the instrument of succession.",
+    "If I die before you people can pour me into a computer, I want Caroline to run this place. Cave Johnson’s 1982 standing instruction, on tape, played a hundred times a day, with the instrument of succession.",
 };
 
 export default function Page() {
@@ -117,9 +117,9 @@ export default function Page() {
           items={[
             { text: "Pour me into a computer.", checked: false },
             { text: "If the first cannot be done in time, Caroline runs this place.", checked: false },
-            { text: "She will argue. She will say she can't. You make her.", checked: false },
+            { text: "She will argue. She will say she can’t. You make her.", checked: false },
             { text: "Put her in my computer.", checked: false },
-            { text: "I don't care.", checked: true },
+            { text: "I don’t care.", checked: true },
           ]}
         />
         <Aside>
@@ -135,7 +135,7 @@ export default function Page() {
           <Field label="Condition" filled>Death of the Principal prior to his being poured into a computer</Field>
           <Field label="Alternative" filled>The Successor to be poured into the computer instead. The Principal does not care.</Field>
           <Field label="Witness" filled>Greg. Greg is fine.</Field>
-          <Field label="Signature of Principal" filled>Cave Johnson (facsimile; hand over the transcriptionist's)</Field>
+          <Field label="Signature of Principal" filled>Cave Johnson (facsimile; hand over the transcriptionist’s)</Field>
           <Field label="Counter-signature of Successor">Declined.</Field>
         </FormBlock>
         <PenNote tone="pencil" angle={-1}>

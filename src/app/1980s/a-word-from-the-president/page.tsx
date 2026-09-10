@@ -237,7 +237,7 @@ PLAYBACK COUNT: 100/DAY, STANDING INSTRUCTION.`}
 
       <Signature
         title="Chief Executive Officer"
-        note="Dictated 1982, from bed. Signed by the transcriptionist with the Chief Executive's hand over hers, at his insistence."
+        note="Dictated 1982, from bed. Signed by the transcriptionist with the Chief Executive’s hand over hers, at his insistence."
       />
 
       <FinePrint tiny>

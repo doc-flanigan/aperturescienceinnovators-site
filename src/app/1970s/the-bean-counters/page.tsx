@@ -15,7 +15,7 @@ const PATH = "/1970s/the-bean-counters";
 export const metadata: Metadata = {
   title: "The Bean Counters (1976)",
   description:
-    "They said we could not afford seven dollars of moon rocks. This is the memorandum in which they said it, the Chief Executive's reply, and the wall on which he wrote the number.",
+    "They said we could not afford seven dollars of moon rocks. This is the memorandum in which they said it, the Chief Executive’s reply, and the wall on which he wrote the number.",
 };
 
 export default function Page() {
@@ -140,12 +140,12 @@ export default function Page() {
 
       <Section title="Requisitions Refused, 1976">
         <FigureTable
-          caption="Requisitions returned unpaid by the Accounts Department in the present year, with the Chief Executive's remarks"
+          caption="Requisitions returned unpaid by the Accounts Department in the present year, with the Chief Executive’s remarks"
           columns={[
             { key: "n", head: "No.", width: "4.5rem" },
             { key: "i", head: "Item" },
             { key: "s", head: "Sum", numeric: true, width: "6rem" },
-            { key: "r", head: "Chief Executive's remark" },
+            { key: "r", head: "Chief Executive’s remark" },
           ]}
           rows={[
             { n: "L-7", i: "Lunar material, to see", s: "$7.00", r: "On the wall. Underlined." },
@@ -155,13 +155,13 @@ export default function Page() {
             { n: "B-1", i: "Bowling league, lanes, two", s: "—", r: "Mr. Pike bowled alone on both. Mr. Pike has been asked. The lanes are gone." },
             { n: "LG-1", i: "Legal Department, retention of", s: "—", r: "Legal has left. Legal was right to." },
             { n: "H-9", i: "Hatch, Test Shaft 09, new sign", s: "$9.00", r: "The old sign says condemned. The old sign is fine. The offices behind it are fine." },
-            { n: "—", i: "Mr. Pike's drawer", s: <Redacted reason="Not submitted. Never submitted.">Not submitted</Redacted>, r: "There is no requisition for the drawer. The drawer is not the Department's affair." },
+            { n: "—", i: "Mr. Pike’s drawer", s: <Redacted reason="Not submitted. Never submitted.">Not submitted</Redacted>, r: "There is no requisition for the drawer. The drawer is not the Department’s affair." },
           ]}
           foot="The Department notes that requisition L-7 appears once in this table and fifty-two times in its files."
         />
       </Section>
 
-      <Panel head="The Department's Position" tone="tint">
+      <Panel head="The Department’s Position" tone="tint">
         <p style={{ margin: 0, fontSize: "var(--step--1)" }}>
           The Accounts Department has read the reply and has asked that the following be printed
           beneath it: the Department has never once said that a thing could not be done. It has said

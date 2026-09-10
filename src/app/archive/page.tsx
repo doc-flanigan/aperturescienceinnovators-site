@@ -99,7 +99,7 @@ export default function ArchivePage() {
       </Section>
 
       <FigureTable
-        caption="Register of printings held, with the clerk's remarks"
+        caption="Register of printings held, with the clerk’s remarks"
         columns={[
           { key: "ed", head: "Printing", width: "7rem" },
           { key: "mast", head: "Wordmark on the masthead" },

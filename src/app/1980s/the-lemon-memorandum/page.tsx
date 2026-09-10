@@ -16,7 +16,7 @@ const PATH = "/1980s/the-lemon-memorandum";
 export const metadata: Metadata = {
   title: "The Lemon Memorandum (1982)",
   description:
-    "When life gives you lemons? Don't make lemonade. Cave Johnson's 1982 instruction to the engineers concerning a combustible lemon, dictated on tape and read aloud in the lobby on the hour.",
+    "When life gives you lemons? Don’t make lemonade. Cave Johnson’s 1982 instruction to the engineers concerning a combustible lemon, dictated on tape and read aloud in the lobby on the hour.",
 };
 
 export default function Page() {
@@ -148,7 +148,7 @@ export default function Page() {
             { k: "Form", v: "A lemon" },
             { k: "Yield", v: "One house. With the manager in it." },
             { k: "Delivery", v: "Thrown. By the Chief Executive, if he is able, and he has said he will be able." },
-            { k: "Target", v: "Life's house. Address unknown. Caroline is looking." },
+            { k: "Target", v: "Life’s house. Address unknown. Caroline is looking." },
             { k: "Colour", v: "Lemon. Materials has asked whether it could be orange, since they have the orange. It cannot be orange." },
             { k: "Predecessor", v: <><Link href="/vault/combustible-lemons">1959 sheet</Link>, twenty years, optimistic</> },
             { k: "Priority", v: <Redacted reason="Struck by C. He said 'above the computer.' He did not mean it. He said it again.">Above the computer</Redacted> },
@@ -162,8 +162,8 @@ export default function Page() {
             [
               ["lemon", "The lemon"],
               ["fire", "Combustible"],
-              ["hazard", "Life's house"],
-              ["handshake", "Life's manager"],
+              ["hazard", "Life’s house"],
+              ["handshake", "Life’s manager"],
             ] as const
           ).map(([name, label]) => (
             <figure key={name} style={{ textAlign: "center", width: "6.5rem", margin: 0 }}>

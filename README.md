@@ -1,7 +1,7 @@
 # aperturescienceinnovators.com
 
 A *Portal* / *Portal 2* lore fan site, built as the corporate website Aperture
-Science Innovators would have printed in **Spring 1957** — and written
+Science Innovators would have printed in **Spring 1959** — and written
 throughout in the voice of Cave Johnson.
 
 Not a modern site with a retro filter. The conceit is that a 1950s industrial
@@ -16,7 +16,7 @@ classification.
 
 Everything a contributor needs is in **[`docs/HOUSE-STYLE.md`](docs/HOUSE-STYLE.md)**:
 the conceit, the Cave Johnson voice guide, the hard canon table for what may
-and may not appear in 1957, the full component API, the easter-egg quota, and
+and may not appear in 1959, the full component API, the easter-egg quota, and
 the period orthography rules. **[`docs/PAGE-BRIEFS.md`](docs/PAGE-BRIEFS.md)**
 holds the commission for each individual sheet.
 
@@ -37,6 +37,29 @@ A few load-bearing decisions:
 - **One filing registry.** `src/lib/structure.ts` is the single source for
   navigation, sub-navigation, breadcrumbs, the printed directory, adjacent-page
   links and `sitemap.xml`. Register a sheet there and it appears everywhere.
+
+## The Archive
+
+The 1959 edition is the front of house. **The Archive** (`/archive`) holds
+three later printings of the same publication, filed by the Records
+Department in a drawer that was already full when it was opened:
+
+| Printing | Path | Wordmark | Author |
+|---|---|---|---|
+| 1976 | `/1970s` | Aperture Science · *A Vital Participant In The 1968 Senate Hearings* | Cave Johnson, CEO, bankrupt |
+| 1982 | `/1980s` | Aperture Laboratories · *Enrichment Center* | Cave Johnson, CEO, from his bed |
+| Undated | `/glados` | Aperture Laboratories · *Computer-Aided Enrichment Center* | The Central Core |
+
+Nothing becomes a modern web page. Every later sheet uses exactly the 1959
+component kit, typefaces and layout; a `data-era` attribute set from the path
+only changes the paper stock, the one spot ink and the masthead subline, so a
+1976 sheet reads as the same press on stock that has yellowed, 1982 as a
+photocopy with tractor-feed memoranda, and the GLaDOS printing as white enamel
+with portal orange and blue as its only inks. Each printing has an index and
+eight to thirteen sheets, and the archive pays off the 1959 edition: Margaret's
+potato, the 171 cubes, the sentry's fourteenth phrase, Category IX, Mr. Pike's
+drawer, and Greg, who is fine. Canon and voice rules by printing are in
+section 10 of the house style.
 
 ## Easter eggs
 

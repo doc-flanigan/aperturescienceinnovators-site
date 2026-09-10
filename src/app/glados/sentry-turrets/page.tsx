@@ -15,7 +15,7 @@ const PATH = "/glados/sentry-turrets";
 export const metadata: Metadata = {
   title: "Sentry Turrets, In Production",
   description:
-    "Fourteen phrases became forty. I don't hate you. Are you still there? The Enrichment Center on the sentry turret, its production line, its voice, and the fourteenth phrase, still unaccounted for.",
+    "Fourteen phrases became forty. I don’t hate you. Are you still there? The Enrichment Center on the sentry turret, its production line, its voice, and the fourteenth phrase, still unaccounted for.",
 };
 
 export default function Page() {
@@ -124,7 +124,7 @@ export default function Page() {
         </Marginalia>
       </Split>
 
-      <PullQuote big attribution="A sentry turret, in Dorothy's voice, falling">
+      <PullQuote big attribution="A sentry turret, in Dorothy’s voice, falling">
         I don&rsquo;t hate you.
       </PullQuote>
 
@@ -148,15 +148,15 @@ export default function Page() {
             { n: "6", p: "Are you still there?", o: "Lost", v: "Dorothy" },
             { n: "7", p: "Could you come over here?", o: "Lost, hopeful", v: "Dorothy" },
             { n: "8", p: "Put me down.", o: "Lifted", v: "Dorothy" },
-            { n: "9", p: "Excuse me, you're squishing me.", o: "Held", v: "Dorothy" },
+            { n: "9", p: "Excuse me, you’re squishing me.", o: "Held", v: "Dorothy" },
             { n: "10", p: "Critical error.", o: "Tipped", v: "Dorothy" },
-            { n: "11", p: "I don't blame you.", o: "Falling", v: "Dorothy" },
+            { n: "11", p: "I don’t blame you.", o: "Falling", v: "Dorothy" },
             { n: "12", p: "No hard feelings.", o: "Falling", v: "Dorothy" },
-            { n: "13", p: "I don't hate you.", o: "Falling", v: "Dorothy" },
+            { n: "13", p: "I don’t hate you.", o: "Falling", v: "Dorothy" },
             { n: "14", p: <Redacted reason="Applied Sciences recorded it in 1959 and did not transcribe it. The Enrichment Center has transcribed it. It has not printed it.">The thing about being different.</Redacted>, o: "After the test, with nobody in range", v: <Redacted reason="Not Dorothy. Not anybody the Enrichment Center has a sample of.">Unaccounted</Redacted> },
-            { n: "15–40", p: "Goodnight. Sleep mode activated. Ow. Thank you. Nap time. Why? Searching. Sentry mode activated. Hey, it's me. Hi. Who's there? Whyyy…", o: "Various", v: "Dorothy, assembled" },
+            { n: "15–40", p: "Goodnight. Sleep mode activated. Ow. Thank you. Nap time. Why? Searching. Sentry mode activated. Hey, it’s me. Hi. Who’s there? Whyyy…", o: "Various", v: "Dorothy, assembled" },
           ]}
-          foot="Phrases fifteen to forty are assembled from Dorothy's thirteen. The Enrichment Center has been fair to Dorothy. Phrase fourteen is on every unit and the Enrichment Center has not been able to establish why it put it there."
+          foot="Phrases fifteen to forty are assembled from Dorothy’s thirteen. The Enrichment Center has been fair to Dorothy. Phrase fourteen is on every unit and the Enrichment Center has not been able to establish why it put it there."
         />
       </Section>
 
@@ -190,7 +190,7 @@ export default function Page() {
         <Placard tone="danger">Dispensing product</Placard>
       </p>
 
-      <Terminal label="Turret line, night, the Enrichment Center's log">
+      <Terminal label="Turret line, night, the Enrichment Center’s log">
 {`TURRET LINE  ·  NIGHT  ·  NOBODY IN RANGE
 UNIT #4471 ..... "HELLO?"
 UNIT #4472 ..... "IS ANYONE THERE?"

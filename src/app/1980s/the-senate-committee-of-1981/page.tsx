@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "A Senate committee sat in 1981 on the portal and the Heimlich Counter-Manoeuvre, recessed permanently, and left Aperture Laboratories an open-ended contract to continue both. The company did not ask how.",
 };
 
-/* The stenographer's record, set as the stenographer set it. */
+/* The stenographer’s record, set as the stenographer set it. */
 function Line({ who, children }: { who: string; children: React.ReactNode }) {
   return (
     <div

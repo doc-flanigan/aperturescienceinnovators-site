@@ -138,7 +138,7 @@ export default function Page() {
             four cups butter or margarine. One and two third cups granulated sugar. Two cups all purpose
             flour. Don&rsquo;t forget garnishes such as: fish shaped crackers. Fish shaped candies. Fish
             shaped solid waste. Fish shaped dirt.{" "}
-            <Redacted reason="The recipe continues. The intelligence core has it. It will not stop. The Enrichment Center has stopped it here for the reader's sake and for its own.">
+            <Redacted reason="The recipe continues. The intelligence core has it. It will not stop. The Enrichment Center has stopped it here for the reader’s sake and for its own.">
               Fish shaped ethyl benzene. Pull and peel licorice. Fish shaped volatile organic compounds and
               sediment shaped sediment.
             </Redacted>
@@ -183,7 +183,7 @@ export default function Page() {
         <Placard tone="danger">You will be baked</Placard>
       </p>
 
-      <Terminal label="Conclusion of the test, provisions, the Enrichment Center's inventory">
+      <Terminal label="Conclusion of the test, provisions, the Enrichment Center’s inventory">
 {`CONCLUSION OF THE TEST  ·  PROVISIONS
 CAKE ..................... 1   CHOCOLATE. COCONUT PECAN. CANDLE LIT.
 GRIEF COUNSELING ......... AVAILABLE. COUNSELLOR: THE ENRICHMENT CENTER.

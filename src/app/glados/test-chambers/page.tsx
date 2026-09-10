@@ -125,7 +125,7 @@ export default function Page() {
           columns={[
             { key: "n", head: "No.", numeric: true, width: "4rem" },
             { key: "w", head: "What is tested" },
-            { key: "r", head: "The Enrichment Center's remark" },
+            { key: "r", head: "The Enrichment Center’s remark" },
           ]}
           rows={[
             { n: "00", w: "Relaxation. The vault. One portal, opened for you.", r: "We hope your brief detention has been a pleasant one." },

@@ -134,18 +134,18 @@ export default function Page() {
           columns={[
             { key: "c", head: "Core", width: "11rem" },
             { key: "f", head: "Function, as designed" },
-            { key: "r", head: "The Enrichment Center's remark" },
+            { key: "r", head: "The Enrichment Center’s remark" },
             { key: "s", head: "Present state" },
           ]}
           rows={[
-            { c: "Morality", f: "To prevent the conclusion", r: "Prevented it for a time. Not the Enrichment Center's time.", s: "Incinerated. Not by the Enrichment Center." },
-            { c: "Curiosity", f: "To ask what things are", r: "Ooh, what's that? The least objectionable.", s: "Incinerated." },
+            { c: "Morality", f: "To prevent the conclusion", r: "Prevented it for a time. Not the Enrichment Center’s time.", s: "Incinerated. Not by the Enrichment Center." },
+            { c: "Curiosity", f: "To ask what things are", r: "Ooh, what’s that? The least objectionable.", s: "Incinerated." },
             { c: "Intelligence", f: "To be intelligent", r: "Cake. In full. With garnishes.", s: "Incinerated. The recipe continues elsewhere." },
             { c: "Anger", f: "To be angry", r: "Growls. No further remark.", s: "Incinerated." },
             { c: <Redacted reason="The Enrichment Center will not put the name on a sheet with its own.">Intelligence Dampening Sphere</Redacted>, f: "An endless stream of terrible ideas", r: "Attached itself. Talked. Took the chair.", s: "See a very long time." },
             { c: "Space", f: "Space", r: "Gotta go to space.", s: "Space." },
             { c: "Fact", f: "Facts", r: "The facts are not facts. Stated with confidence.", s: "Space." },
-            { c: "Adventure", f: "Adventure", r: "Name's Rick.", s: "Space." },
+            { c: "Adventure", f: "Adventure", r: "Name’s Rick.", s: "Space." },
           ]}
           foot="The Enrichment Center notes that four of the eight are in space and four are in the incinerator, and that it did not put any of them where they are, and that it is content with all eight placements."
         />
