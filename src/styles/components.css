@@ -148,7 +148,7 @@
 
 .ap-nav__link {
   display: block;
-  padding: 0.6rem clamp(0.42rem, 1vw, 0.8rem);
+  padding: 0.6rem clamp(0.42rem, 1vw, 0.64rem);
   font-family: var(--font-grot);
   font-size: clamp(0.6rem, 0.55rem + 0.2vw, 0.7rem);
   font-weight: 500;
